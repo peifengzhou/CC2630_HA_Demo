@@ -1,0 +1,404 @@
+/*******************************************************************************
+  Filename:       cc26xx_zstack.icf
+  Revised:        $Date$
+  Revision:       $Revision$
+
+  Description:    IAR ARM Linker Configuration File - ZStack
+
+  Note: Code stack and heap are allocated by the Application/RTOS build.
+
+  Imported Symbols
+  Note: Linker defines are located in the IAR IDE project using --config_def
+        in Options->Linker->Extra Options, or placed in Options->Linker->
+        Config->Configuration file symbol definitions.
+
+  CCxxxx:            Device Name (e.g. CC2650)
+  FLASH_ONLY_BUILD:  Build full ZStack stack in flash only memory.
+  FLASH_ROM_BUILD:   Build Flash portion of ZStack stack to work with ROM code.
+  ROM_BUILD:         Build ROM portion of ZStack stack.
+  COMMON_ROM_BUILD:  Build of common ROM code.
+  TEST_ROM_IN_FLASH: Build ROM code in Flash memory to test.
+
+  Exported Symbols
+  Note: Can be used as externs in C code.
+
+  ROM_BASE_ADDR:        Location of start of ROM (where RT Init is expected).
+  RAM_BASE_ADDR:        Location of start of RAM (for ICall and JT pointers).
+  COMMON_RAM_BASE_ADDR: Location of start of RAM (for ICall and JT pointers).
+
+  Copyright 2014 Texas Instruments Incorporated. All rights reserved.
+
+  IMPORTANT: Your use of this Software is limited to those specific rights
+  granted under the terms of a software license agreement between the user
+  who downloaded the software, his/her employer (which must be your employer)
+  and Texas Instruments Incorporated (the "License").  You may not use this
+  Software unless you agree to abide by the terms of the License. The License
+  limits your use, and you acknowledge, that the Software may not be modified,
+  copied or distributed unless embedded on a Texas Instruments microcontroller
+  or used solely and exclusively in conjunction with a Texas Instruments radio
+  frequency transceiver, which is integrated into your product.  Other than for
+  the foregoing purpose, you may not use, reproduce, copy, prepare derivative
+  works of, modify, distribute, perform, display or sell this Software and/or
+  its documentation for any purpose.
+
+  YOU FURTHER ACKNOWLEDGE AND AGREE THAT THE SOFTWARE AND DOCUMENTATION ARE
+  PROVIDED “AS IS” WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED,
+  INCLUDING WITHOUT LIMITATION, ANY WARRANTY OF MERCHANTABILITY, TITLE,
+  NON-INFRINGEMENT AND FITNESS FOR A PARTICULAR PURPOSE. IN NO EVENT SHALL
+  TEXAS INSTRUMENTS OR ITS LICENSORS BE LIABLE OR OBLIGATED UNDER CONTRACT,
+  NEGLIGENCE, STRICT LIABILITY, CONTRIBUTION, BREACH OF WARRANTY, OR OTHER
+  LEGAL EQUITABLE THEORY ANY DIRECT OR INDIRECT DAMAGES OR EXPENSES
+  INCLUDING BUT NOT LIMITED TO ANY INCIDENTAL, SPECIAL, INDIRECT, PUNITIVE
+  OR CONSEQUENTIAL DAMAGES, LOST PROFITS OR LOST DATA, COST OF PROCUREMENT
+  OF SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
+  (INCLUDING BUT NOT LIMITED TO ANY DEFENSE THEREOF), OR OTHER SIMILAR COSTS.
+
+  Should you have any questions regarding your right to use this Software,
+  contact Texas Instruments Incorporated at www.TI.com.
+*******************************************************************************/
+
+////////////////////////////////////////////////////////////////////////////////
+// Memory Sizes
+////////////////////////////////////////////////////////////////////////////////
+//
+// In general, the naming convention is: CC26x1x2Yzzz, where:
+// x1:  0=Transceiver (only subGHz)
+//      1=Proprietary SoC
+//      2=RF4CE/IEEE802.15.4 MAC
+//      3=Zigbee/6LoWPAN SoC
+//      4=BLE SoC
+//      5=Flexible Technology SoC
+//      6=OFDM (only subGHz so far)
+//      7=ANT SoC
+// x2:  0=Chameleon
+//      2=Iguana
+//      5=Komodo
+// Y:   F=Flash
+//      L=OTP
+//      S=SimpleLink WNP
+//      R=ROM Only
+// zzz: Flash Size (kB)
+//
+////////////////////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////////////////////
+// Chameleon
+if ( isdefinedsymbol(CC2620) ||
+     isdefinedsymbol(CC2630) ||
+     isdefinedsymbol(CC2640) ||
+     isdefinedsymbol(CC2650) ||
+     isdefinedsymbol(CC2660) ||
+     isdefinedsymbol(CC2670) )
+{
+  define symbol RAM_SIZE            = 0x00005000;  // 20K
+  define symbol FLASH_SIZE          = 0x00020000;  // 128K
+  define symbol ROM_SIZE            = 0x0001C000;  // 115K
+}
+////////////////////////////////////////////////////////////////////////////////
+// Chameleon - Small Flash
+else if ( isdefinedsymbol(CC2620F64) ||
+          isdefinedsymbol(CC2630F64) ||
+          isdefinedsymbol(CC2640F64) ||
+          isdefinedsymbol(CC2650F64) ||
+          isdefinedsymbol(CC2660F64) ||
+          isdefinedsymbol(CC2670F64) )
+{
+  define symbol RAM_SIZE            = 0x00004000;  // 16K
+  define symbol FLASH_SIZE          = 0x00010000;  // 64K
+  define symbol ROM_SIZE            = 0x00018000;  // 96K
+}
+////////////////////////////////////////////////////////////////////////////////
+// Chameleon - Low Cost
+else if ( isdefinedsymbol(CC2620L32) ||
+          isdefinedsymbol(CC2630L32) ||
+          isdefinedsymbol(CC2640L32) ||
+          isdefinedsymbol(CC2650L32) ||
+          isdefinedsymbol(CC2660L32) ||
+          isdefinedsymbol(CC2670L32) )
+{
+  define symbol RAM_SIZE            = 0x00004000;  // 16K
+  define symbol FLASH_SIZE          = 0x00008000;  // 32K (OTP)
+  define symbol ROM_SIZE            = 0x00018000;  // 96K
+}
+////////////////////////////////////////////////////////////////////////////////
+// Iguana
+else if ( isdefinedsymbol(CC2622) ||
+          isdefinedsymbol(CC2632) ||
+          isdefinedsymbol(CC2642) ||
+          isdefinedsymbol(CC2652) ||
+          isdefinedsymbol(CC2662) ||
+          isdefinedsymbol(CC2672) )
+{
+  define symbol RAM_SIZE            = 0x00008000;  // 32K
+  define symbol FLASH_SIZE          = 0x00040000;  // 256K
+  define symbol ROM_SIZE            = 0x00018000;  // 96K
+}
+////////////////////////////////////////////////////////////////////////////////
+// Iguana - Small Flash
+else if ( isdefinedsymbol(CC2622F128) ||
+          isdefinedsymbol(CC2632F128) ||
+          isdefinedsymbol(CC2642F128) ||
+          isdefinedsymbol(CC2652F128) ||
+          isdefinedsymbol(CC2662F128) ||
+          isdefinedsymbol(CC2672F128) )
+{
+  define symbol RAM_SIZE            = 0x00008000;  // 32K
+  define symbol FLASH_SIZE          = 0x00020000;  // 128K
+  define symbol ROM_SIZE            = 0x00018000;  // 96K
+}
+////////////////////////////////////////////////////////////////////////////////
+// Komodo
+else if ( isdefinedsymbol(CC2625) ||
+          isdefinedsymbol(CC2635) ||
+          isdefinedsymbol(CC2645) ||
+          isdefinedsymbol(CC2655) ||
+          isdefinedsymbol(CC2665) ||
+          isdefinedsymbol(CC2675) )
+{
+  define symbol RAM_SIZE            = 0x00010000;  // 64K
+  define symbol FLASH_SIZE          = 0x00080000;  // 512K
+  define symbol ROM_SIZE            = 0x00018000;  // 96K
+}
+////////////////////////////////////////////////////////////////////////////////
+// Default
+else
+{
+  define symbol RAM_SIZE            = 0x00004000;  // 16K
+  define symbol FLASH_SIZE          = 0x00020000;  // 128K
+  define symbol ROM_SIZE            = 0x00018000;  // 96K
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// Memory Definitions
+////////////////////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////////////////////
+// CM3 FW
+//
+define symbol FW_START              = 0x10000000;
+define symbol FW_END                = 0x10004BFF;
+
+////////////////////////////////////////////////////////////////////////////////
+// ROM
+//
+if ( isdefinedsymbol(COMMON_ROM_BUILD) )
+{
+  if ( isdefinedsymbol(TEST_ROM_IN_FLASH) )
+  {
+    define symbol ROM_START         = 0x0001A000;
+    define symbol ROM_END           = 0x0001EFFF;
+  }
+  else // ROM code is in ROM memory
+  {
+    define symbol ROM_START         = 0x10014C00;
+    define symbol ROM_END           = 0x10019FFF;
+  }
+}
+else if ( isdefinedsymbol(ROM_BUILD) )
+{
+  if ( isdefinedsymbol(TEST_ROM_IN_FLASH) )
+  {
+    define symbol ROM_START         = 0x00010000;
+    define symbol ROM_END           = 0x00019FFF;
+  }
+  else // ROM code is in ROM memory
+  {
+    define symbol ROM_START         = 0x1000E000;
+    define symbol ROM_END           = 0x10014BFF;
+  }
+}
+else // not a ROM build
+{
+  define symbol ROM_START           = 0x00010000;
+  define symbol ROM_END             = 0x0001EFFF;
+}
+
+// export the ROM base address
+if ( isdefinedsymbol(ROM_BUILD) || isdefinedsymbol(COMMON_ROM_BUILD) )
+{
+  define symbol ROM_BASE_ADDR       = ROM_START+1;
+  export symbol ROM_BASE_ADDR;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// RAM
+//
+if ( isdefinedsymbol(FLASH_ONLY_BUILD) )
+{
+  define symbol RAM_START           = 0x20002A00;
+  define symbol RAM_END             = 0x20003FFF;
+}
+else if ( isdefinedsymbol(COMMON_ROM_BUILD) )
+{
+  if ( isdefinedsymbol(CC2650) )
+  {
+    define symbol RAM_START         = 0x20004F2C;
+    define symbol RAM_END           = 0x20004FFF;
+  }
+  else // default
+  {
+    define symbol RAM_START         = 0x20003200;
+    define symbol RAM_END           = 0x200032FF;
+  }
+
+  define symbol COMMON_RAM_BASE_ADDR = RAM_START;
+  export symbol COMMON_RAM_BASE_ADDR;
+}
+else if ( isdefinedsymbol(ROM_BUILD) )
+{
+  if ( isdefinedsymbol(CC2650) )
+  {
+    define symbol RAM_START         = 0x20004A14;
+    define symbol RAM_END           = 0x20004EFF;
+  }
+  else
+  {
+    define symbol RAM_START         = 0x20003300;
+    define symbol RAM_END           = 0x20003FFF;
+  }
+
+  define symbol RAM_BASE_ADDR       = RAM_START;
+  export symbol RAM_BASE_ADDR;
+}
+else if ( isdefinedsymbol(FLASH_ROM_BUILD) )
+{
+  if ( isdefinedsymbol(CC2650) )
+  {
+    define symbol RAM_START         = 0x20002A00;
+    define symbol RAM_END           = 0x20004A13;
+  }
+  else
+  {
+    define symbol RAM_START         = 0x20002A00;
+    define symbol RAM_END           = 0x200031FF;
+  }
+}
+else // unknown build
+{
+  define symbol RAM_START           = 0xFFFFFFFF;
+  define symbol RAM_END             = 0xFFFFFFFF;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// Flash
+//
+if ( isdefinedsymbol(FLASH_ONLY_BUILD) )
+{
+  define symbol FLASH_START     = 0x00008000;
+  define symbol FLASH_END       = (FLASH_SIZE-1);
+}
+else if ( isdefinedsymbol(ROM_ONLY_BUILD) || isdefinedsymbol(COMMON_ROM_BUILD) )
+{
+  define symbol FLASH_START     = ROM_START;
+  define symbol FLASH_END       = ROM_END;
+}
+else if ( isdefinedsymbol(FLASH_ROM_BUILD) )
+{
+  define symbol FLASH_START     = 0x0000C000;
+
+  if ( isdefinedsymbol(TEST_ROM_IN_FLASH) )
+  {
+    define symbol FLASH_END     = (ROM_START-1);
+  }
+  else // ROM code is in ROM memory
+  {
+    define symbol FLASH_END     = (FLASH_SIZE-1);
+  }
+}
+else // unknown build
+{
+  define symbol FLASH_START     = 0xFFFFFFFF;
+  define symbol FLASH_END       = 0xFFFFFFFF;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// ROM Revision Number
+//
+if ( isdefinedsymbol(ROM_BUILD) || isdefinedsymbol(COMMON_ROM_BUILD) )
+{
+  define symbol ROM_CRC_SIZE      = 2;
+  define symbol ROM_REV_SIZE      = 2;
+  define symbol ROM_REV_START     = ROM_END - (ROM_CRC_SIZE + 1);
+  define symbol ROM_REV_END       = ROM_REV_START + ROM_REV_SIZE - 1;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// Memory Regions
+////////////////////////////////////////////////////////////////////////////////
+
+define memory mem with size = 4G;
+
+define region FW        = mem:[from FW_START    to FW_END];
+define region ROM       = mem:[from ROM_START   to ROM_END];
+define region FLASH     = mem:[from FLASH_START to FLASH_END];
+define region RAM       = mem:[from RAM_START   to RAM_END];
+
+if ( isdefinedsymbol(ROM_BUILD) || isdefinedsymbol(COMMON_ROM_BUILD) )
+{
+  define region ROM_REV = mem:[from ROM_REV_START to ROM_REV_END];
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// Flash Software Entry Point
+////////////////////////////////////////////////////////////////////////////////
+
+if ( isdefinedsymbol(FLASH_ONLY_BUILD) || isdefinedsymbol(FLASH_ROM_BUILD) )
+{
+  place at start of FLASH { readonly section EntrySection };
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// Memory Placement
+// For ROM: C Runtime, Checksum, ROM Revision Number, Flash JT, and FPB.
+////////////////////////////////////////////////////////////////////////////////
+
+if ( isdefinedsymbol(ROM_BUILD) || isdefinedsymbol(COMMON_ROM_BUILD) )
+{
+  place in ROM { readonly };
+  place in RAM { readwrite };
+
+  // ROM C Runtime Routine
+  place at start of ROM { ro section .romRuntimeInit };
+  keep { section .romRuntimeInit };
+
+  // Checksum
+  place at end of ROM { ro section .checksum };
+  keep { section .checksum };
+
+  // ROM Revision Number
+  place at start of ROM_REV { ro section .rom_rev };
+  keep { section .rom_rev };
+
+  // ICall Functions and R2F and R2R Flash Jump Table Location Pointers
+  place at start of RAM { section .ramInitTable };
+  keep                  { section .ramInitTable };
+}
+else // !ROM_BUILD && !COMMON_ROM_BUILD
+{
+  place in FLASH { readonly };
+  place in RAM { readwrite };
+
+  //if ( isdefinedsymbol(FLASH_ROM_BUILD) )
+  //{
+  //  // FPB Flash Address Table
+  //  place at address mem:FLASH_ADDR_TBL_ADDR { section FPB_FLS_ADDR_TBL object FPB.o };
+  //  keep                                     { section FPB_FLS_ADDR_TBL object FPB.o };
+
+  // // FPB Opcode Table
+  //  place at start of RAM { section FPB_RAM_OPCODE_TBL };
+  //}
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// Initialization
+////////////////////////////////////////////////////////////////////////////////
+
+initialize by copy { readwrite };
+
+do not initialize
+{
+  section .noinit,
+  section .stack,
+};
+
+////////////////////////////////////////////////////////////////////////////////

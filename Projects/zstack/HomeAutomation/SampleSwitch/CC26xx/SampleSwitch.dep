@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <fileChecksum>631106178</fileChecksum>
+  <configuration>
+    <name>SmartRF06</name>
+    <outputs>
+      <file>$PROJ_DIR$\..\..\..\common\CC26xx\SmartRF06\board_lcd.c</file>
+      <file>$PROJ_DIR$\..\..\..\common\CC26xx\SmartRF06\board_key.c</file>
+      <file>$PROJ_DIR$\SmartRF06\Obj\board_lcd.o</file>
+      <file>$PROJ_DIR$\SmartRF06\Obj\zcl_ezmode.pbi</file>
+      <file>$PROJ_DIR$\SmartRF06\Obj\ICall.o</file>
+      <file>$PROJ_DIR$\SmartRF06\Obj\CryptoBoard.o</file>
+      <file>$PROJ_DIR$\SmartRF06\Obj\ICallCC2650.o</file>
+      <file>$PROJ_DIR$\SmartRF06\Obj\nvoctp.o</file>
+      <file>$PROJ_DIR$\SmartRF06\Obj\pwrmon.o</file>
+      <file>$PROJ_DIR$\SmartRF06\Obj\Board.o</file>
+      <file>$PROJ_DIR$\SmartRF06\Obj\ccfg.o</file>
+      <file>$PROJ_DIR$\SmartRF06\Obj\main.o</file>
+      <file>$PROJ_DIR$\SmartRF06\Obj\zcl.o</file>
+      <file>$PROJ_DIR$\SmartRF06\Obj\zcl_diagnostic.o</file>
+      <file>$PROJ_DIR$\SmartRF06\Obj\zcl_ezmode.o</file>
+      <file>$PROJ_DIR$\SmartRF06\Obj\zcl_general.o</file>
+      <file>$PROJ_DIR$\SmartRF06\Obj\board_key.pbi</file>
+      <file>$PROJ_DIR$\SmartRF06\Obj\zstackapi.o</file>
+      <file>$PROJ_DIR$\SmartRF06\Obj\board_lcd.pbi</file>
+      <file>$PROJ_DIR$\SmartRF06\Obj\board_led.pbi</file>
+      <file>$PROJ_DIR$\SmartRF06\Obj\switch.pbi</file>
+      <file>$PROJ_DIR$\SmartRF06\Obj\util.pbi</file>
+      <file>$PROJ_DIR$\SmartRF06\Obj\zcl_port.pbi</file>
+      <file>$PROJ_DIR$\SmartRF06\Obj\zstart.pbi</file>
+      <file>$PROJ_DIR$\SmartRF06\Obj\ICall.pbi</file>
+      <file>$PROJ_DIR$\SmartRF06\Obj\CryptoBoard.pbi</file>
+      <file>$PROJ_DIR$\SmartRF06\Obj\ICallCC2650.pbi</file>
+      <file>$PROJ_DIR$\SmartRF06\Obj\nvoctp.pbi</file>
+      <file>$PROJ_DIR$\SmartRF06\Obj\pwrmon.pbi</file>
+      <file>$PROJ_DIR$\SmartRF06\Obj\zcl_general.pbi</file>
+      <file>$PROJ_DIR$\SmartRF06\Obj\zstackapi.pbi</file>
+      <file>$PROJ_DIR$\SmartRF06\Exe\SampleSwitch.out</file>
+      <file>$PROJ_DIR$\SmartRF06\Obj\SampleSwitch.pbd</file>
+      <file>$PROJ_DIR$\..\..\..\common\CC26xx\SmartRF06\board_led.c</file>
+      <file>$PROJ_DIR$\switch.c</file>
+      <file>$PROJ_DIR$\..\..\..\common\CC26xx\util.c</file>
+      <file>$PROJ_DIR$\..\..\..\common\CC26xx\zcl_port.c</file>
+      <file>$PROJ_DIR$\..\..\..\common\CC26xx\zstart.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\Components\icall\ports\tirtos\CryptoBoard.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\Components\icall\ports\tirtos\ICall.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\Components\icall\ports\tirtos\ICallCC2650.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\Components\services\nv\cc26xx\nvoctp.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\Components\hal\target\_common\cc26xx\pwrmon.c</file>
+      <file>$PROJ_DIR$\..\..\..\common\CC26xx\SmartRF06\Board.c</file>
+      <file>$PROJ_DIR$\..\..\..\common\CC26xx\SmartRF06\ccfg.c</file>
+      <file>$PROJ_DIR$\main.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\Components\stack\zcl\zcl.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\Components\stack\zcl\zcl_diagnostic.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\Components\stack\zcl\zcl_ezmode.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\Components\stack\zcl\zcl_general.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\Components\stack\icall\client\zstackapi.c</file>
+      <file>$PROJ_DIR$\SmartRF06\Obj\zcl_diagnostic.pbi</file>
+      <file>$PROJ_DIR$\SmartRF06\Obj\zcl.pbi</file>
+      <file>$PROJ_DIR$\SmartRF06\Obj\main.pbi</file>
+      <file>$PROJ_DIR$\SmartRF06\Obj\board_key.o</file>
+      <file>$PROJ_DIR$\SmartRF06\Obj\Board.pbi</file>
+      <file>$PROJ_DIR$\SmartRF06\Obj\ccfg.pbi</file>
+      <file>$PROJ_DIR$\SmartRF06\Obj\zcl_port.o</file>
+      <file>$PROJ_DIR$\SmartRF06\Obj\board_led.o</file>
+      <file>$PROJ_DIR$\SmartRF06\Obj\util.o</file>
+      <file>$PROJ_DIR$\SmartRF06\Obj\zstart.o</file>
+      <file>$PROJ_DIR$\SmartRF06\Obj\switch.o</file>
+      <file>$PROJ_DIR$\..\..\..\Core\Thread\CC26xx\Config\coreCoordinator.xcl</file>
+    </outputs>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\common\CC26xx\SmartRF06\board_lcd.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 18</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 2</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\common\CC26xx\SmartRF06\board_key.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 16</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 54</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 31</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\common\CC26xx\SmartRF06\board_led.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 19</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 58</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\switch.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 20</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 61</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\common\CC26xx\util.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 21</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 59</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\common\CC26xx\zcl_port.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 22</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 57</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\common\CC26xx\zstart.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 23</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 60</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\Components\icall\ports\tirtos\CryptoBoard.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 25</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 5</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\Components\icall\ports\tirtos\ICall.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 24</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 4</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\Components\icall\ports\tirtos\ICallCC2650.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 26</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 6</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\Components\services\nv\cc26xx\nvoctp.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 27</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 7</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\Components\hal\target\_common\cc26xx\pwrmon.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 28</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 8</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\common\CC26xx\SmartRF06\Board.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 55</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 9</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\common\CC26xx\SmartRF06\ccfg.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 56</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 10</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\main.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 53</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 11</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\Components\stack\zcl\zcl.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 52</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 12</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\Components\stack\zcl\zcl_diagnostic.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 51</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 13</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\Components\stack\zcl\zcl_ezmode.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 3</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 14</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\Components\stack\zcl\zcl_general.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 29</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 15</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\Components\stack\icall\client\zstackapi.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 30</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 17</file>
+        </tool>
+      </outputs>
+    </file>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>ILINK</tool>
+    </forcedrebuild>
+  </configuration>
+</project>
+
+

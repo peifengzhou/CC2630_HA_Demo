@@ -1,0 +1,2121 @@
+###############################################################################
+#
+# IAR ELF Linker V7.30.4.8167/W32 for ARM                 12/May/2015  09:29:10
+# Copyright 2007-2014 IAR Systems AB.
+#
+#    Output file  =  
+#        D:\Development\zstack_home_1_02_02_42930\Projects\zstack\Core\Thread\CC26xx\Coordinator\Exe\ZStackCoreCoordinator.out
+#    Map file     =  
+#        D:\Development\zstack_home_1_02_02_42930\Projects\zstack\Core\Thread\CC26xx\Coordinator\List\ZStackCoreCoordinator.map
+#    Command line =  
+#        D:\Development\zstack_home_1_02_02_42930\Projects\zstack\Core\Thread\CC26xx\Coordinator\Obj\AF.o
+#        D:\Development\zstack_home_1_02_02_42930\Projects\zstack\Core\Thread\CC26xx\Coordinator\Obj\BindingTable.o
+#        D:\Development\zstack_home_1_02_02_42930\Projects\zstack\Core\Thread\CC26xx\Coordinator\Obj\CommonROM_Init.o
+#        D:\Development\zstack_home_1_02_02_42930\Projects\zstack\Core\Thread\CC26xx\Coordinator\Obj\dbg.o
+#        D:\Development\zstack_home_1_02_02_42930\Projects\zstack\Core\Thread\CC26xx\Coordinator\Obj\hal_aes.o
+#        D:\Development\zstack_home_1_02_02_42930\Projects\zstack\Core\Thread\CC26xx\Coordinator\Obj\hal_assert.o
+#        D:\Development\zstack_home_1_02_02_42930\Projects\zstack\Core\Thread\CC26xx\Coordinator\Obj\hal_ccm.o
+#        D:\Development\zstack_home_1_02_02_42930\Projects\zstack\Core\Thread\CC26xx\Coordinator\Obj\hal_trng_wrapper.o
+#        D:\Development\zstack_home_1_02_02_42930\Projects\zstack\Core\Thread\CC26xx\Coordinator\Obj\ICall_startup.o
+#        D:\Development\zstack_home_1_02_02_42930\Projects\zstack\Core\Thread\CC26xx\Coordinator\Obj\mac.o
+#        D:\Development\zstack_home_1_02_02_42930\Projects\zstack\Core\Thread\CC26xx\Coordinator\Obj\mac_autopend.o
+#        D:\Development\zstack_home_1_02_02_42930\Projects\zstack\Core\Thread\CC26xx\Coordinator\Obj\mac_backoff_timer.o
+#        D:\Development\zstack_home_1_02_02_42930\Projects\zstack\Core\Thread\CC26xx\Coordinator\Obj\mac_cfg.o
+#        D:\Development\zstack_home_1_02_02_42930\Projects\zstack\Core\Thread\CC26xx\Coordinator\Obj\mac_coord_PATCH.o
+#        D:\Development\zstack_home_1_02_02_42930\Projects\zstack\Core\Thread\CC26xx\Coordinator\Obj\mac_isr.o
+#        D:\Development\zstack_home_1_02_02_42930\Projects\zstack\Core\Thread\CC26xx\Coordinator\Obj\mac_low_level.o
+#        D:\Development\zstack_home_1_02_02_42930\Projects\zstack\Core\Thread\CC26xx\Coordinator\Obj\mac_mcu.o
+#        D:\Development\zstack_home_1_02_02_42930\Projects\zstack\Core\Thread\CC26xx\Coordinator\Obj\mac_radio.o
+#        D:\Development\zstack_home_1_02_02_42930\Projects\zstack\Core\Thread\CC26xx\Coordinator\Obj\mac_radio_tx.o
+#        D:\Development\zstack_home_1_02_02_42930\Projects\zstack\Core\Thread\CC26xx\Coordinator\Obj\mac_rx.o
+#        D:\Development\zstack_home_1_02_02_42930\Projects\zstack\Core\Thread\CC26xx\Coordinator\Obj\mac_rx_onoff.o
+#        D:\Development\zstack_home_1_02_02_42930\Projects\zstack\Core\Thread\CC26xx\Coordinator\Obj\mac_sleep.o
+#        D:\Development\zstack_home_1_02_02_42930\Projects\zstack\Core\Thread\CC26xx\Coordinator\Obj\mac_tx.o
+#        D:\Development\zstack_home_1_02_02_42930\Projects\zstack\Core\Thread\CC26xx\Coordinator\Obj\mb_PATCH.o
+#        D:\Development\zstack_home_1_02_02_42930\Projects\zstack\Core\Thread\CC26xx\Coordinator\Obj\nwk_globals.o
+#        D:\Development\zstack_home_1_02_02_42930\Projects\zstack\Core\Thread\CC26xx\Coordinator\Obj\OnBoard.o
+#        D:\Development\zstack_home_1_02_02_42930\Projects\zstack\Core\Thread\CC26xx\Coordinator\Obj\OSAL.o
+#        D:\Development\zstack_home_1_02_02_42930\Projects\zstack\Core\Thread\CC26xx\Coordinator\Obj\osal_bufmgr.o
+#        D:\Development\zstack_home_1_02_02_42930\Projects\zstack\Core\Thread\CC26xx\Coordinator\Obj\OSAL_Clock.o
+#        D:\Development\zstack_home_1_02_02_42930\Projects\zstack\Core\Thread\CC26xx\Coordinator\Obj\OSAL_MemoryICall.o
+#        D:\Development\zstack_home_1_02_02_42930\Projects\zstack\Core\Thread\CC26xx\Coordinator\Obj\osal_nv.o
+#        D:\Development\zstack_home_1_02_02_42930\Projects\zstack\Core\Thread\CC26xx\Coordinator\Obj\OSAL_PwrMgr.o
+#        D:\Development\zstack_home_1_02_02_42930\Projects\zstack\Core\Thread\CC26xx\Coordinator\Obj\OSAL_Timers.o
+#        D:\Development\zstack_home_1_02_02_42930\Projects\zstack\Core\Thread\CC26xx\Coordinator\Obj\osaltasks.o
+#        D:\Development\zstack_home_1_02_02_42930\Projects\zstack\Core\Thread\CC26xx\Coordinator\Obj\ROM_Init.o
+#        D:\Development\zstack_home_1_02_02_42930\Projects\zstack\Core\Thread\CC26xx\Coordinator\Obj\ssp.o
+#        D:\Development\zstack_home_1_02_02_42930\Projects\zstack\Core\Thread\CC26xx\Coordinator\Obj\ssp_hash.o
+#        D:\Development\zstack_home_1_02_02_42930\Projects\zstack\Core\Thread\CC26xx\Coordinator\Obj\stub_aps.o
+#        D:\Development\zstack_home_1_02_02_42930\Projects\zstack\Core\Thread\CC26xx\Coordinator\Obj\zaesccm_cc2650.o
+#        D:\Development\zstack_home_1_02_02_42930\Projects\zstack\Core\Thread\CC26xx\Coordinator\Obj\ZDApp.o
+#        D:\Development\zstack_home_1_02_02_42930\Projects\zstack\Core\Thread\CC26xx\Coordinator\Obj\ZDConfig.o
+#        D:\Development\zstack_home_1_02_02_42930\Projects\zstack\Core\Thread\CC26xx\Coordinator\Obj\ZDiags.o
+#        D:\Development\zstack_home_1_02_02_42930\Projects\zstack\Core\Thread\CC26xx\Coordinator\Obj\ZDNwkMgr.o
+#        D:\Development\zstack_home_1_02_02_42930\Projects\zstack\Core\Thread\CC26xx\Coordinator\Obj\ZDObject.o
+#        D:\Development\zstack_home_1_02_02_42930\Projects\zstack\Core\Thread\CC26xx\Coordinator\Obj\ZDProfile.o
+#        D:\Development\zstack_home_1_02_02_42930\Projects\zstack\Core\Thread\CC26xx\Coordinator\Obj\ZDSecMgr.o
+#        D:\Development\zstack_home_1_02_02_42930\Projects\zstack\Core\Thread\CC26xx\Coordinator\Obj\ZGlobals.o
+#        D:\Development\zstack_home_1_02_02_42930\Projects\zstack\Core\Thread\CC26xx\Coordinator\Obj\zmac.o
+#        D:\Development\zstack_home_1_02_02_42930\Projects\zstack\Core\Thread\CC26xx\Coordinator\Obj\zmac_cb.o
+#        D:\Development\zstack_home_1_02_02_42930\Projects\zstack\Core\Thread\CC26xx\Coordinator\Obj\zstacktask.o
+#        -o
+#        D:\Development\zstack_home_1_02_02_42930\Projects\zstack\Core\Thread\CC26xx\Coordinator\Exe\ZStackCoreCoordinator.out
+#        --config_def CC2650=1 --config_def FLASH_ROM_BUILD=1 --map
+#        D:\Development\zstack_home_1_02_02_42930\Projects\zstack\Core\Thread\CC26xx\Coordinator\List\ZStackCoreCoordinator.map
+#        --config
+#        D:\Development\zstack_home_1_02_02_42930\Projects\zstack\Core\Thread\CC26xx\Config\cc26xx_zstack.icf
+#        -f
+#        D:\Development\zstack_home_1_02_02_42930\Projects\zstack\Core\Thread\CC26xx\..\..\..\Core\Thread\CC26xx\Config\coreCoordinator.xcl
+#        (--config_def ICALL_STACK0_ADDR=0x0000D000 --config_def
+#        ICALL_RAM0_ADDR=0x200040E0 --config_def SNV_FIRST_PAGE=0x0000001D)
+#        --semihosting
+#        C:\ti\tirtos_simplelink_2_11_01_09\products\cc26xxware_2_20_06_14829\driverlib\bin\iar\driverlib.lib
+#        D:\Development\zstack_home_1_02_02_42930\Projects\zstack\Core\Thread\CC26xx\..\..\..\Libraries\CC26xx\bin\EndDevice.a
+#        D:\Development\zstack_home_1_02_02_42930\Projects\zstack\Core\Thread\CC26xx\..\..\..\..\..\Projects\common\TIMAC_ROM_Release\03282014\timac_rom_PATCH.symbols
+#        --entry startup_entry --no_vfe
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+
+
+*******************************************************************************
+*** RESERVED RANGES
+***
+
+Ranges reserved by absolute symbols:
+   [0x1000e000-0x1000e003]
+   [0x1000e004-0x10013c73]
+   [0x10013c74-0x10014bfb]
+   [0x10014bfc-0x10014bfd]
+   [0x10014bfe-0x10014bff]
+   [0x100182ad-0x10018312]
+   [0x10018315-0x1001833a]
+   [0x1001833d-0x10018366]
+   [0x10018369-0x1001838e]
+   [0x10018391-0x100183b6]
+   [0x100183b9-0x100183c4]
+   [0x10018415-0x10018482]
+   [0x10018485-0x100184a6]
+   [0x100184a9-0x100184c2]
+   [0x100184c5-0x100184cc]
+   [0x100184cd-0x100184d0]
+   [0x100184d1-0x100184d4]
+   [0x100184d5-0x100184f8]
+   [0x100184f9-0x10018546]
+   [0x10018549-0x10018550]
+   [0x10018551-0x100185e0]
+   [0x100185e1-0x1001865c]
+   [0x10018669-0x100186f6]
+   [0x10018935-0x1001893a]
+   [0x1001893d-0x10018944]
+   [0x10018945-0x10018946]
+   [0x10018cf9-0x10018d00]
+   [0x20004a14-0x20004a27]
+   [0x20004a28-0x20004ac3]
+   [0x20004ac4-0x20004eff]
+   [0x20004fac-0x20004fcb]
+   [0x20004fec-0x20004ffb]
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A1":  place at start of [0x0000d000-0x0001cfff] { ro section EntrySection };
+"P1":  place in [from 0x0000d000 to 0x0001cfff] { ro };
+"P2":  place in [from 0x200040e0 to 0x20004a13] { rw };
+
+  Section            Kind        Address    Size  Object
+  -------            ----        -------    ----  ------
+"A1":                                       0x30
+  EntrySection       ro code  0x0000d000    0x30  ICall_startup.o [2]
+                            - 0x0000d030    0x30
+
+"P1":                                     0xfe8b
+  Veneer             ro code  0x0000d030     0x8  - Linker created -
+  Veneer             ro code  0x0000d038     0x8  - Linker created -
+  .text              ro code  0x0000d040  0x54ac  AddrMgr.o [4]
+  .text              ro code  0x000124ec  0x1150  ZDApp.o [2]
+  .text              ro code  0x0001363c    0x40  OSAL_MemoryICall.o [2]
+  .text              ro code  0x0001367c   0x7b4  OSAL.o [2]
+  .text              ro code  0x00013e30   0x1fc  osal_nv.o [2]
+  .text              ro code  0x0001402c   0x5b8  BindingTable.o [2]
+  .text              ro code  0x000145e4   0x588  AF.o [2]
+  .text              ro code  0x00014b6c   0x21c  OSAL_Timers.o [2]
+  .text              ro code  0x00014d88    0x34  hal_assert.o [2]
+  .text              ro code  0x00014dbc   0xa5c  ZDSecMgr.o [2]
+  .text              ro code  0x00015818   0x508  ssp.o [2]
+  .text              ro code  0x00015d20     0x2  ZDiags.o [2]
+  .text              ro code  0x00015d22    0x22  zero_init3.o [7]
+  Veneer             ro code  0x00015d44     0x8  - Linker created -
+  Veneer             ro code  0x00015d4c     0x8  - Linker created -
+  Veneer             ro code  0x00015d54     0x8  - Linker created -
+  Veneer             ro code  0x00015d5c     0x8  - Linker created -
+  Veneer             ro code  0x00015d64     0x8  - Linker created -
+  Veneer             ro code  0x00015d6c     0x8  - Linker created -
+  Veneer             ro code  0x00015d74     0x8  - Linker created -
+  Veneer             ro code  0x00015d7c     0x8  - Linker created -
+  Veneer             ro code  0x00015d84     0x8  - Linker created -
+  Veneer             ro code  0x00015d8c     0x8  - Linker created -
+  .text              ro code  0x00015d94   0x1a6  zmac.o [2]
+  .rodata            const    0x00015f3a     0x1  mac_tx.o [2]
+  .text              ro code  0x00015f3c   0x128  nwk_globals.o [2]
+  .text              ro code  0x00016064     0x6  ABImemclr4.o [7]
+  .text              ro code  0x0001606c   0x742  ZDObject.o [2]
+  .text              ro code  0x000167ae    0x1a  OnBoard.o [2]
+  .text              ro code  0x000167c8   0x318  ZGlobals.o [2]
+  .text              ro code  0x00016ae0    0x6c  ZDConfig.o [2]
+  .text              ro code  0x00016b4c   0x7bc  ZDProfile.o [2]
+  .text              ro code  0x00017308    0x66  ABImemset.o [7]
+  .text              ro code  0x00017370    0x94  OSAL_PwrMgr.o [2]
+  Veneer             ro code  0x00017404     0x8  - Linker created -
+  .text              ro code  0x0001740c   0x19c  osaltasks.o [2]
+  .text              ro code  0x000175a8   0x132  I64DivMod.o [7]
+  .text              ro code  0x000176dc    0x60  OSAL_Clock.o [2]
+  .text              ro code  0x0001773c   0x19e  ssp_hash.o [2]
+  .text              ro code  0x000178dc    0x58  hal_aes.o [2]
+  .text              ro code  0x00017934    0x8c  hal_ccm.o [2]
+  .text              ro code  0x000179c0   0x1f8  mac_autopend.o [2]
+  .text              ro code  0x00017bb8    0x32  ABImemset48.o [7]
+  .text              ro code  0x00017bec    0x76  ABImemcpy_unaligned.o [7]
+  .text              ro code  0x00017c64   0x148  mac_mcu.o [2]
+  .text              ro code  0x00017dac  0x2002  zstacktask.o [2]
+  Veneer             ro code  0x00019db0     0x8  - Linker created -
+  Veneer             ro code  0x00019db8     0x8  - Linker created -
+  Veneer             ro code  0x00019dc0     0x8  - Linker created -
+  Veneer             ro code  0x00019dc8     0x8  - Linker created -
+  Veneer             ro code  0x00019dd0     0x8  - Linker created -
+  .text              ro code  0x00019dd8   0x6b0  mac.o [2]
+  .text              ro code  0x0001a488    0x68  hal_trng_wrapper.o [2]
+  .text              ro code  0x0001a4f0    0xea  mac_low_level.o [2]
+  .text              ro code  0x0001a5dc     0x2  I64DivZer.o [7]
+  .text              ro code  0x0001a5e0   0x548  crypto.o [6]
+  .text              ro code  0x0001ab28   0x2d0  mb_PATCH.o [2]
+  .text              ro code  0x0001adf8   0x21e  mac_radio.o [2]
+  Veneer             ro code  0x0001b018     0x8  - Linker created -
+  Veneer             ro code  0x0001b020     0x8  - Linker created -
+  Veneer             ro code  0x0001b028     0x8  - Linker created -
+  .text              ro code  0x0001b030   0x470  mac_backoff_timer.o [2]
+  .text              ro code  0x0001b4a0   0x15c  mac_rx_onoff.o [2]
+  Veneer             ro code  0x0001b5fc     0x8  - Linker created -
+  Veneer             ro code  0x0001b604     0x8  - Linker created -
+  Veneer             ro code  0x0001b60c     0x8  - Linker created -
+  Veneer             ro code  0x0001b614     0x8  - Linker created -
+  Veneer             ro code  0x0001b61c     0x8  - Linker created -
+  Veneer             ro code  0x0001b624     0x8  - Linker created -
+  Veneer             ro code  0x0001b62c     0x8  - Linker created -
+  .text              ro code  0x0001b634   0x5cc  mac_rx.o [2]
+  Veneer             ro code  0x0001bc00     0x8  - Linker created -
+  .text              ro code  0x0001bc08   0x360  mac_tx.o [2]
+  .text              ro code  0x0001bf68    0x18  cpu.o [6]
+  Veneer             ro code  0x0001bf80     0x8  - Linker created -
+  .text              ro code  0x0001bf88    0x5c  mac_radio_tx.o [2]
+  .text              ro code  0x0001bfe4     0xc  mac_csma.o [4]
+  Veneer             ro code  0x0001bff0     0x8  - Linker created -
+  .text              ro code  0x0001bff8   0x4f0  ROM_Init.o [2]
+  .text              ro code  0x0001c4e8    0x62  ICall_startup.o [2]
+  Veneer             ro code  0x0001c54c     0x8  - Linker created -
+  .text              ro code  0x0001c554   0x230  zmac_cb.o [2]
+  .text              ro code  0x0001c784   0x11a  zaesccm_cc2650.o [2]
+  Veneer             ro code  0x0001c8a0     0x8  - Linker created -
+  .text              ro code  0x0001c8a8   0x108  mac_isr.o [2]
+  Veneer             ro code  0x0001c9b0     0x8  - Linker created -
+  .text              ro code  0x0001c9b8    0xe4  CommonROM_Init.o [2]
+  .text              ro code  0x0001ca9c    0xdc  mac_sleep.o [2]
+  Veneer             ro code  0x0001cb78     0x8  - Linker created -
+  .text              ro code  0x0001cb80    0xd0  packbits_init.o [7]
+  .rodata            const    0x0001cc50    0x7c  nwk_globals.o [2]
+  Veneer             ro code  0x0001cccc     0x8  - Linker created -
+  Veneer             ro code  0x0001ccd4     0x8  - Linker created -
+  Veneer             ro code  0x0001ccdc     0x8  - Linker created -
+  Veneer             ro code  0x0001cce4     0x8  - Linker created -
+  .text              ro code  0x0001ccec    0x74  mac_coord_PATCH.o [2]
+  .text              ro code  0x0001cd60    0x58  osal_bufmgr.o [2]
+  .text              ro code  0x0001cdb8    0x28  data_init.o [7]
+  .iar.init_table    const    0x0001cde0    0x2c  - Linker created -
+  .rodata            const    0x0001ce0c    0x19  osaltasks.o [2]
+  .rodata            const    0x0001ce28     0x8  mac_cfg.o [2]
+  .rodata            const    0x0001ce30     0x0  zero_init3.o [7]
+  .rodata            const    0x0001ce30     0x0  packbits_init.o [7]
+  Initializer bytes  const    0x0001ce30    0x8b  <for P2 s0>
+                            - 0x0001cebb  0xfe8b
+
+"P2":                                      0x91c
+  P2 s0                       0x200040e0   0x1fd  <Init block>
+    .data            inited   0x200040e0    0x8c  AddrMgr.o [4]
+    .data            inited   0x2000416c    0x64  ZDApp.o [2]
+    .data            inited   0x200041d0    0x5c  ZDProfile.o [2]
+    .data            inited   0x2000422c    0x28  OSAL.o [2]
+    .data            inited   0x20004254    0x20  AddrMgr.o [4]
+    .data            inited   0x20004274     0xc  ZGlobals.o [2]
+    .data            inited   0x20004280     0xc  zstacktask.o [2]
+    .data            inited   0x2000428c     0x8  AF.o [2]
+    .data            inited   0x20004294     0x8  AddrMgr.o [4]
+    .data            inited   0x2000429c     0x4  ZGlobals.o [2]
+    .data            inited   0x200042a0     0x4  ZGlobals.o [2]
+    .data            inited   0x200042a4     0x4  ZGlobals.o [2]
+    .data            inited   0x200042a8     0x2  ZDObject.o [2]
+    .data            inited   0x200042aa     0x2  ZGlobals.o [2]
+    .data            inited   0x200042ac     0x2  ZGlobals.o [2]
+    .data            inited   0x200042ae     0x2  ZGlobals.o [2]
+    .data            inited   0x200042b0     0x2  ZGlobals.o [2]
+    .data            inited   0x200042b2     0x2  ZGlobals.o [2]
+    .data            inited   0x200042b4     0x2  ZGlobals.o [2]
+    .data            inited   0x200042b6     0x2  ZGlobals.o [2]
+    .data            inited   0x200042b8     0x2  ZGlobals.o [2]
+    .data            inited   0x200042ba     0x2  ZGlobals.o [2]
+    .data            inited   0x200042bc     0x2  AddrMgr.o [4]
+    .data            inited   0x200042be     0x1  mac_sleep.o [2]
+    .data            inited   0x200042bf     0x1  nwk_globals.o [2]
+    .data            inited   0x200042c0     0x1  ZGlobals.o [2]
+    .data            inited   0x200042c1     0x1  ZGlobals.o [2]
+    .data            inited   0x200042c2     0x1  ZGlobals.o [2]
+    .data            inited   0x200042c3     0x1  ZGlobals.o [2]
+    .data            inited   0x200042c4     0x1  ZGlobals.o [2]
+    .data            inited   0x200042c5     0x1  ZGlobals.o [2]
+    .data            inited   0x200042c6     0x1  ZGlobals.o [2]
+    .data            inited   0x200042c7     0x1  ZGlobals.o [2]
+    .data            inited   0x200042c8     0x1  ZGlobals.o [2]
+    .data            inited   0x200042c9     0x1  ZGlobals.o [2]
+    .data            inited   0x200042ca     0x1  ZGlobals.o [2]
+    .data            inited   0x200042cb     0x1  ZGlobals.o [2]
+    .data            inited   0x200042cc     0x1  ZGlobals.o [2]
+    .data            inited   0x200042cd     0x1  ZGlobals.o [2]
+    .data            inited   0x200042ce     0x1  ZGlobals.o [2]
+    .data            inited   0x200042cf     0x1  ZGlobals.o [2]
+    .data            inited   0x200042d0     0x1  ZGlobals.o [2]
+    .data            inited   0x200042d1     0x1  ZGlobals.o [2]
+    .data            inited   0x200042d2     0x1  ZGlobals.o [2]
+    .data            inited   0x200042d3     0x1  ZGlobals.o [2]
+    .data            inited   0x200042d4     0x1  ZGlobals.o [2]
+    .data            inited   0x200042d5     0x1  ZGlobals.o [2]
+    .data            inited   0x200042d6     0x1  ZGlobals.o [2]
+    .data            inited   0x200042d7     0x1  ZGlobals.o [2]
+    .data            inited   0x200042d8     0x1  ZGlobals.o [2]
+    .data            inited   0x200042d9     0x1  ZGlobals.o [2]
+    .data            inited   0x200042da     0x1  ZGlobals.o [2]
+    .data            inited   0x200042db     0x1  ZGlobals.o [2]
+    .data            inited   0x200042dc     0x1  ZGlobals.o [2]
+  .bss               zero     0x200042e0   0x140  nwk_globals.o [2]
+  .bss               zero     0x20004420   0x108  mac.o [2]
+  .bss               zero     0x20004528    0x88  mac.o [2]
+  .bss               zero     0x200045b0    0x80  AddrMgr.o [4]
+  .bss               zero     0x20004630    0x70  nwk_globals.o [2]
+  .bss               zero     0x200046a0    0x60  nwk_globals.o [2]
+  .bss               zero     0x20004700    0x50  nwk_globals.o [2]
+  .bss               zero     0x20004750    0x3c  mac.o [2]
+  .bss               zero     0x2000478c    0x38  nwk_globals.o [2]
+  .bss               zero     0x200047c4    0x34  ZDObject.o [2]
+  .bss               zero     0x200047f8    0x28  ZDSecMgr.o [2]
+  .bss               zero     0x20004820    0x20  BindingTable.o [2]
+  .bss               zero     0x20004840    0x20  mac.o [2]
+  .bss               zero     0x20004860    0x18  mac.o [2]
+  .bss               zero     0x20004878    0x18  mac_backoff_timer.o [2]
+  .bss               zero     0x20004890    0x18  mac_rx.o [2]
+  .bss               zero     0x200048a8    0x18  nwk_globals.o [2]
+  .bss               zero     0x200048c0    0x14  mac.o [2]
+  .bss               zero     0x200048d4    0x10  mac.o [2]
+  .bss               zero     0x200048e4    0x10  ZDConfig.o [2]
+  .bss               zero     0x200048f4    0x10  AddrMgr.o [4]
+  .bss               zero     0x20004904     0xc  ICall_startup.o [2]
+  .bss               zero     0x20004910     0xc  nwk_globals.o [2]
+  .bss               zero     0x2000491c     0xc  ZDSecMgr.o [2]
+  .bss               zero     0x20004928     0xc  AddrMgr.o [4]
+  .bss               zero     0x20004934     0x8  mac.o [2]
+  .bss               zero     0x2000493c     0x8  mac_tx.o [2]
+  .bss               zero     0x20004944     0x8  OnBoard.o [2]
+  .bss               zero     0x2000494c     0x8  OSAL_Clock.o [2]
+  .bss               zero     0x20004954     0x8  OSAL_PwrMgr.o [2]
+  .bss               zero     0x2000495c     0x8  OSAL_Timers.o [2]
+  .bss               zero     0x20004964     0x8  osaltasks.o [2]
+  .bss               zero     0x2000496c     0x8  ssp.o [2]
+  .bss               zero     0x20004974     0x8  ssp.o [2]
+  .bss               zero     0x2000497c     0x8  ZGlobals.o [2]
+  .bss               zero     0x20004984     0x8  ZGlobals.o [2]
+  .bss               zero     0x2000498c     0x8  zmac.o [2]
+  .bss               zero     0x20004994     0x8  AddrMgr.o [4]
+  .bss               zero     0x2000499c     0x8  AddrMgr.o [4]
+  .bss               zero     0x200049a4     0x6  mac_radio.o [2]
+  .bss               zero     0x200049aa     0x2  mac_autopend.o [2]
+  .bss               zero     0x200049ac     0x4  hal_aes.o [2]
+  .bss               zero     0x200049b0     0x4  hal_trng_wrapper.o [2]
+  .bss               zero     0x200049b4     0x4  mac_backoff_timer.o [2]
+  .bss               zero     0x200049b8     0x4  mac_mcu.o [2]
+  .bss               zero     0x200049bc     0x4  osal_bufmgr.o [2]
+  .bss               zero     0x200049c0     0x4  ZDConfig.o [2]
+  .bss               zero     0x200049c4     0x4  ZDObject.o [2]
+  .bss               zero     0x200049c8     0x4  ZDProfile.o [2]
+  .bss               zero     0x200049cc     0x4  ZGlobals.o [2]
+  .bss               zero     0x200049d0     0x4  zmac_cb.o [2]
+  .bss               zero     0x200049d4     0x4  AddrMgr.o [4]
+  .bss               zero     0x200049d8     0x4  AddrMgr.o [4]
+  .bss               zero     0x200049dc     0x4  crypto.o [6]
+  .bss               zero     0x200049e0     0x2  mac_radio.o [2]
+  .bss               zero     0x200049e2     0x2  mac_rx_onoff.o [2]
+  .bss               zero     0x200049e4     0x2  OSAL.o [2]
+  .bss               zero     0x200049e6     0x1  mac_autopend.o [2]
+  .bss               zero     0x200049e7     0x1  ZDApp.o [2]
+  .bss               zero     0x200049e8     0x1  ZDObject.o [2]
+  .bss               zero     0x200049e9     0x1  ZGlobals.o [2]
+  .bss               zero     0x200049ea     0x1  ZGlobals.o [2]
+  .bss               zero     0x200049eb     0x1  ZGlobals.o [2]
+  .bss               zero     0x200049ec     0x1  ZGlobals.o [2]
+  .bss               zero     0x200049ed     0x1  ZGlobals.o [2]
+  .bss               zero     0x200049ee     0x1  ZGlobals.o [2]
+  .bss               zero     0x200049ef     0x1  ZGlobals.o [2]
+  .bss               zero     0x200049f0     0x1  ZGlobals.o [2]
+  .bss               zero     0x200049f1     0x1  ZGlobals.o [2]
+  .bss               zero     0x200049f2     0x1  ZGlobals.o [2]
+  .bss               zero     0x200049f3     0x1  ZGlobals.o [2]
+  .bss               zero     0x200049f4     0x1  zmac_cb.o [2]
+  .bss               zero     0x200049f5     0x1  AddrMgr.o [4]
+  .bss               zero     0x200049f6     0x1  AddrMgr.o [4]
+  .bss               zero     0x200049f7     0x1  AddrMgr.o [4]
+  .bss               zero     0x200049f8     0x1  AddrMgr.o [4]
+                            - 0x200049f9   0x919
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x719:
+          0x200042e0  0x719
+
+Copy/packbits (__iar_packbits_init3)
+    1 source range, total size 0x8b (27% of destination):
+          0x0001ce30   0x8b
+    1 destination range, total size 0x1fd:
+          0x200040e0  0x1fd
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                 ro code  ro data  rw data
+    ------                 -------  -------  -------
+D:\Development\zstack_home_1_02_02_42930\Projects\common\TIMAC_ROM_Release\03282014: [1]
+    ------------------------------------------------
+    Total:
+
+D:\Development\zstack_home_1_02_02_42930\Projects\zstack\Core\Thread\CC26xx\Coordinator\Obj: [2]
+    AF.o                     1 416        3        8
+    BindingTable.o           1 464                32
+    CommonROM_Init.o           228
+    ICall_startup.o            146                12
+    OSAL.o                   1 972       11       42
+    OSAL_Clock.o                96                 8
+    OSAL_MemoryICall.o          64
+    OSAL_PwrMgr.o              148                 8
+    OSAL_Timers.o              540                 8
+    OnBoard.o                   26                 8
+    ROM_Init.o               1 264
+    ZDApp.o                  4 432       27      101
+    ZDConfig.o                 108                20
+    ZDObject.o               1 858        1       59
+    ZDProfile.o              1 980       25       96
+    ZDSecMgr.o               2 652                52
+    ZDiags.o                     2
+    ZGlobals.o                 792       18      102
+    hal_aes.o                   88                 4
+    hal_assert.o                52
+    hal_ccm.o                  140
+    hal_trng_wrapper.o         104                 4
+    mac.o                    1 712               560
+    mac_autopend.o             504                 3
+    mac_backoff_timer.o      1 136                28
+    mac_cfg.o                             8
+    mac_coord_PATCH.o          116
+    mac_isr.o                  264
+    mac_low_level.o            234
+    mac_mcu.o                  328                 4
+    mac_radio.o                542                 8
+    mac_radio_tx.o              92
+    mac_rx.o                 1 484                24
+    mac_rx_onoff.o             348                 2
+    mac_sleep.o                220                 1
+    mac_tx.o                   864        1        8
+    mb_PATCH.o                 720
+    nwk_globals.o              296      125      701
+    osal_bufmgr.o               88                 4
+    osal_nv.o                  508
+    osaltasks.o                412       25        8
+    ssp.o                    1 288                16
+    ssp_hash.o                 414
+    zaesccm_cc2650.o           282
+    zmac.o                     422                 8
+    zmac_cb.o                  560                 5
+    zstacktask.o             8 194        3       12
+    ------------------------------------------------
+    Total:                  40 600      247    1 956
+
+command line: [3]
+    ------------------------------------------------
+    Total:
+
+EndDevice.a: [4]
+    AddrMgr.o               21 676       50      366
+    mac_csma.o                  12
+    ------------------------------------------------
+    Total:                  21 688       50      366
+
+dl7M_tln.a: [5]
+    ------------------------------------------------
+    Total:
+
+driverlib.lib: [6]
+    cpu.o                       24
+    crypto.o                 1 352                 4
+    ------------------------------------------------
+    Total:                   1 376                 4
+
+rt7M_tl.a: [7]
+    ABImemclr4.o                 6
+    ABImemcpy_unaligned.o      118
+    ABImemset.o                102
+    ABImemset48.o               50
+    I64DivMod.o                306
+    I64DivZer.o                  2
+    data_init.o                 40
+    packbits_init.o            208
+    zero_init3.o                34
+    ------------------------------------------------
+    Total:                     866
+
+    Gaps                        25        3        3
+    Linker created             312       44
+----------------------------------------------------
+    Grand Total:            64 867      344    2 329
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address    Size  Type      Object
+-----                      -------    ----  ----      ------
+.iar.init_table$$Base   0x0001cde0           --   Gb  - Linker created -
+.iar.init_table$$Limit  0x0001ce0c           --   Gb  - Linker created -
+A1_rw_1 {Abs}           0x1000e000     0x4   --   Gb  timac_rom_PATCH.symbols [1]
+A2_rw_1 {Abs}           0x10014bfe     0x2   --   Gb  timac_rom_PATCH.symbols [1]
+A3_rw_1 {Abs}           0x10014bfc     0x2   --   Gb  timac_rom_PATCH.symbols [1]
+A4_rw_1 {Abs}           0x20004a14    0x14   --   Gb  timac_rom_PATCH.symbols [1]
+AF_DataRequest          0x0001487b   0x1b2  Code  Gb  AF.o [2]
+AF_DataRequestDiscoverRoute
+                        0x2000428c     0x1  Data  Gb  AF.o [2]
+AF_DataRequestSrcRtg    0x00014a2d    0x42  Code  Gb  AF.o [2]
+AIB_apsTrustCenterAddress
+                        0x200040f8     0x4  Data  Gb  AddrMgr.o [4]
+AIB_apsUseExtendedPANID
+                        0x20004154     0x8  Data  Gb  AddrMgr.o [4]
+AIB_apsUseInsecureJoin  0x200040e2     0x1  Data  Gb  AddrMgr.o [4]
+APSDE_DataCnf           0x0000f115     0xa  Code  Gb  AddrMgr.o [4]
+APSDE_DataConfirm       0x0000f0fd    0x18  Code  Gb  AddrMgr.o [4]
+APSDE_DataIndication    0x0000f11f    0x9a  Code  Gb  AddrMgr.o [4]
+APSDE_DataReq           0x0000e5eb   0x1d0  Code  Gb  AddrMgr.o [4]
+APSDE_DataReqMTU        0x0000e7c5    0x28  Code  Gb  AddrMgr.o [4]
+APSDE_FrameAlloc        0x0000ef79    0xc6  Code  Gb  AddrMgr.o [4]
+APSDE_FrameSend         0x0000f03f    0x34  Code  Gb  AddrMgr.o [4]
+APSDE_ParseMsg          0x0000e3c3   0x100  Code  Gb  AddrMgr.o [4]
+APSF_Init               0x0000db75    0x1a  Code  Gb  AddrMgr.o [4]
+APSF_ProcessAck         0x0000de1d    0x84  Code  Gb  AddrMgr.o [4]
+APSF_ProcessEvent       0x0000e0b7    0xae  Code  Gb  AddrMgr.o [4]
+APSF_SendFragmented     0x0000dc0d   0x110  Code  Gb  AddrMgr.o [4]
+APSF_SendOsalMsg        0x0000e0ad     0xa  Code  Gb  AddrMgr.o [4]
+APSF_taskID             0x200040e4     0x1  Data  Gb  AddrMgr.o [4]
+APSME_BindRequest       0x0000e7ed    0x26  Code  Gb  AddrMgr.o [4]
+APSME_CmdPkt            0x0000ef39    0x40  Code  Gb  AddrMgr.o [4]
+APSME_FrameSecurityRemove
+                        0x0000f081    0x2c  Code  Gb  AddrMgr.o [4]
+APSME_GetRequest        0x0000e82d    0x48  Code  Gb  AddrMgr.o [4]
+APSME_HoldDataRequests  0x0000da1d    0x1a  Code  Gb  AddrMgr.o [4]
+APSME_IsDefaultTCLK     0x000155dd     0x8  Code  Gb  ZDSecMgr.o [2]
+APSME_IsDistributedSecurity
+                        0x0000f0e9     0xe  Code  Gb  AddrMgr.o [4]
+APSME_LinkKeyNVIdGet    0x00015229    0x16  Code  Gb  ZDSecMgr.o [2]
+APSME_LinkKeySet        0x00015145    0x76  Code  Gb  ZDSecMgr.o [2]
+APSME_LookupExtAddr     0x0000e891    0x38  Code  Gb  AddrMgr.o [4]
+APSME_LookupNwkAddr     0x0000e8c9    0x2c  Code  Gb  AddrMgr.o [4]
+APSME_SecurityCM_ED     0x0000f0d1    0x12  Code  Gb  AddrMgr.o [4]
+APSME_SetRequest        0x0000e875    0x1c  Code  Gb  AddrMgr.o [4]
+APSME_SwitchKeyInd      0x0000f221    0x2a  Code  Gb  AddrMgr.o [4]
+APSME_TCLinkKeyInit     0x00015439    0x68  Code  Gb  ZDSecMgr.o [2]
+APSME_TCLinkKeyLoad     0x0001553d    0x9a  Code  Gb  ZDSecMgr.o [2]
+APSME_TCLinkKeySync     0x000154ab    0x92  Code  Gb  ZDSecMgr.o [2]
+APSME_TransportKeyInd   0x0000f1c1    0x3e  Code  Gb  AddrMgr.o [4]
+APSME_UnBindRequest     0x0000e813    0x14  Code  Gb  AddrMgr.o [4]
+APS_AllowDataRequests   0x200040e3     0x1  Data  Gb  AddrMgr.o [4]
+APS_CmdInd              0x0000d597    0x5c  Code  Gb  AddrMgr.o [4]
+APS_Counter             0x200040e1     0x1  Data  Gb  AddrMgr.o [4]
+APS_Init                0x0000d4db    0x28  Code  Gb  AddrMgr.o [4]
+APS_ReflectorInit       0x0000d4b7    0x24  Code  Gb  AddrMgr.o [4]
+APS_TaskID              0x200040e0     0x1  Data  Gb  AddrMgr.o [4]
+APS_event_loop          0x0000d503    0x94  Code  Gb  AddrMgr.o [4]
+APS_lastDupTime         0x20004120     0x4  Data  Gb  AddrMgr.o [4]
+AddrMgrEntryAddRef      0x0000d1dd    0x32  Code  Gb  AddrMgr.o [4]
+AddrMgrEntryGet         0x0000d2d5    0x3e  Code  Gb  AddrMgr.o [4]
+AddrMgrEntryLookupExt   0x0000d27d    0x58  Code  Gb  AddrMgr.o [4]
+AddrMgrEntryLookupNwk   0x0000d21f    0x50  Code  Gb  AddrMgr.o [4]
+AddrMgrEntryRelease     0x0000d1b3    0x2a  Code  Gb  AddrMgr.o [4]
+AddrMgrEntryUpdate      0x0000d321    0xc4  Code  Gb  AddrMgr.o [4]
+AddrMgrExtAddrEqual     0x0000d149    0x18  Code  Gb  AddrMgr.o [4]
+AddrMgrExtAddrLookup    0x0000d161    0x26  Code  Gb  AddrMgr.o [4]
+AddrMgrExtAddrSet       0x0000d121     0xe  Code  Gb  AddrMgr.o [4]
+AddrMgrExtAddrValid     0x0000d12f    0x1a  Code  Gb  AddrMgr.o [4]
+AddrMgrInit             0x0000d0f7    0x2a  Code  Gb  AddrMgr.o [4]
+AddrMgrInitNV           0x0000d45d    0x22  Code  Gb  AddrMgr.o [4]
+AddrMgrNwkAddrLookup    0x0000d187    0x2c  Code  Gb  AddrMgr.o [4]
+AddrMgrRestoreFromNV    0x0000d3e5    0x30  Code  Gb  AddrMgr.o [4]
+AddrMgrSetDefaultNV     0x0000d487    0x26  Code  Gb  AddrMgr.o [4]
+AddrMgrWriteNV          0x0000d415    0x3c  Code  Gb  AddrMgr.o [4]
+AddrMgrWriteNVRequest   0x000132df    0x14  Code  Gb  ZDApp.o [2]
+ApsLinkKeyFrmCntr       0x200047f8    0x24  Data  Gb  ZDSecMgr.o [2]
+BindInitNV              0x0001450d    0x20  Code  Gb  BindingTable.o [2]
+BindRestoreFromNV       0x00014565    0x34  Code  Gb  BindingTable.o [2]
+BindSetDefaultNV        0x0001452d    0x2c  Code  Gb  BindingTable.o [2]
+BindWriteNV             0x000145a5    0x26  Code  Gb  BindingTable.o [2]
+BindingTable            0x2000478c    0x38  Data  Gb  nwk_globals.o [2]
+COMMON_RAM_BASE_ADDR {Abs}
+                        0x20004f2c           --   Gb  timac_rom_PATCH.symbols [1]
+COMMON_ROM_BASE_ADDR {Abs}
+                        0x10014c01           --   Gb  timac_rom_PATCH.symbols [1]
+CRYPTOAesEcbFinish      0x000178dd     0xc  Code  Lc  hal_aes.o [2]
+CommonROM_Init          0x0001c9b9    0x3c  Code  Gb  CommonROM_Init.o [2]
+CryptoBoard_AesLoadKey  0x0001c785    0x1e  Code  Lc  zaesccm_cc2650.o [2]
+CryptoBoard_AesReleaseKey
+                        0x0001c7a3    0x1a  Code  Lc  zaesccm_cc2650.o [2]
+CryptoBoard_CCMDecrypt  0x0001c7db    0x16  Code  Lc  zaesccm_cc2650.o [2]
+CryptoBoard_CCMEncrypt  0x0001c7c3    0x18  Code  Lc  zaesccm_cc2650.o [2]
+Fill1_1 {Abs}           0x10013c74   0xf88   --   Gb  timac_rom_PATCH.symbols [1]
+GetBindingTableEntry    0x000144db    0x32  Code  Gb  BindingTable.o [2]
+HalAesInit              0x000178e9    0x14  Code  Gb  hal_aes.o [2]
+HalLedBlink             0x000167b3     0x2  Code  Gb  OnBoard.o [2]
+HalLedSet               0x000167af     0x4  Code  Gb  OnBoard.o [2]
+HalTRNG_GetTRNG         0x0001a4ad    0x2e  Code  Gb  hal_trng_wrapper.o [2]
+HalTRNG_InitTRNG        0x0001a489    0x24  Code  Gb  hal_trng_wrapper.o [2]
+ICall_abort             0x000136c5     0xe  Code  Lc  OSAL.o [2]
+ICall_allocMsg          0x00017dad    0x16  Code  Lc  zstacktask.o [2]
+ICall_disableInt        0x0001b041     0xe  Code  Lc  mac_backoff_timer.o [2]
+ICall_disableInt        0x0001ab39     0xe  Code  Lc  mb_PATCH.o [2]
+ICall_disableMInt       0x00014d89    0x18  Code  Lc  hal_assert.o [2]
+ICall_dispatcher        0x20004904     0x4  Data  Gb  ICall_startup.o [2]
+ICall_enableInt         0x0001ab29    0x10  Code  Lc  mb_PATCH.o [2]
+ICall_enterCriticalSection
+                        0x20004908     0x4  Data  Gb  ICall_startup.o [2]
+ICall_free              0x00017de3    0x10  Code  Lc  zstacktask.o [2]
+ICall_getTicks          0x000136e1    0x12  Code  Lc  OSAL.o [2]
+ICall_leaveCriticalSection
+                        0x2000490c     0x4  Data  Gb  ICall_startup.o [2]
+ICall_malloc            0x00017dc3    0x16  Code  Lc  zstacktask.o [2]
+ICall_pwrRequire        0x0001a4f1    0x1c  Code  Lc  mac_low_level.o [2]
+ICall_pwrUpdActivityCounter
+                        0x00017371    0x1e  Code  Lc  OSAL_PwrMgr.o [2]
+ICall_registerISR       0x0001ab55    0x1c  Code  Lc  mb_PATCH.o [2]
+ICall_send              0x0001369b    0x2a  Code  Lc  OSAL.o [2]
+ICall_send              0x00017e01    0x2a  Code  Lc  zstacktask.o [2]
+ICall_setTimer          0x0001b05f    0x2e  Code  Lc  mac_backoff_timer.o [2]
+ICall_signal            0x0001b031    0x10  Code  Lc  mac_backoff_timer.o [2]
+ICall_signal            0x0001367d    0x1e  Code  Lc  OSAL.o [2]
+InStream_Read           0x0001cb81    0x22  Code  Lc  packbits_init.o [7]
+InitBindingTable        0x0001402d    0x50  Code  Gb  BindingTable.o [2]
+IntMasterDisable        0x0001c001     0x6  Code  Lc  ROM_Init.o [2]
+IntMasterEnable         0x0001bff9     0x8  Code  Lc  ROM_Init.o [2]
+MAC_CbackCheckPending   0x0001c71d     0x4  Code  Gb  zmac_cb.o [2]
+MAC_CbackEvent          0x0001c555   0x1c8  Code  Gb  zmac_cb.o [2]
+MAC_CbackQueryRetransmit
+                        0x0001c721     0x4  Code  Gb  zmac_cb.o [2]
+MAC_Init {Abs}          0x1000f735    0x54  Code  Gb  timac_rom_PATCH.symbols [1]
+MAC_InitBeaconCoord {Abs}
+                        0x10012045    0x42  Code  Gb  timac_rom_PATCH.symbols [1]
+MAC_InitBeaconDevice {Abs}
+                        0x10010ee9    0x62  Code  Gb  timac_rom_PATCH.symbols [1]
+MAC_InitCoord {Abs}     0x1000eb65    0x46  Code  Gb  timac_rom_PATCH.symbols [1]
+MAC_InitDevice {Abs}    0x10011949    0x2c  Code  Gb  timac_rom_PATCH.symbols [1]
+MAC_McpsDataAlloc {Abs}
+                        0x1000ff81    0x40  Code  Gb  timac_rom_PATCH.symbols [1]
+MAC_McpsDataReq {Abs}   0x1000fef1    0x90  Code  Gb  timac_rom_PATCH.symbols [1]
+MAC_McpsPurgeReq {Abs}  0x1000ebcd    0x16  Code  Gb  timac_rom_PATCH.symbols [1]
+MAC_MlmeAssociateReq {Abs}
+                        0x10011975    0x10  Code  Gb  timac_rom_PATCH.symbols [1]
+MAC_MlmeAssociateRsp {Abs}
+                        0x1000ebad    0x10  Code  Gb  timac_rom_PATCH.symbols [1]
+MAC_MlmeDisassociateReq {Abs}
+                        0x1000f59d    0x10  Code  Gb  timac_rom_PATCH.symbols [1]
+MAC_MlmeGetPointerSecurityReq {Abs}
+                        0x10011b7d    0x22  Code  Gb  timac_rom_PATCH.symbols [1]
+MAC_MlmeGetReq {Abs}    0x100132b9    0x46  Code  Gb  timac_rom_PATCH.symbols [1]
+MAC_MlmeGetReqSize {Abs}
+                        0x10013301    0x20  Code  Gb  timac_rom_PATCH.symbols [1]
+MAC_MlmeGetSecurityReq {Abs}
+                        0x100119f9   0x184  Code  Gb  timac_rom_PATCH.symbols [1]
+MAC_MlmeGetSecurityReqSize {Abs}
+                        0x10011ba1    0x4c  Code  Gb  timac_rom_PATCH.symbols [1]
+MAC_MlmeOrphanRsp {Abs}
+                        0x1000ebbd    0x10  Code  Gb  timac_rom_PATCH.symbols [1]
+MAC_MlmePollReq {Abs}   0x10011985     0xe  Code  Gb  timac_rom_PATCH.symbols [1]
+MAC_MlmeResetReq {Abs}  0x1000f5ad    0xe2  Code  Gb  timac_rom_PATCH.symbols [1]
+MAC_MlmeScanReq {Abs}   0x10012e91     0xe  Code  Gb  timac_rom_PATCH.symbols [1]
+MAC_MlmeSetReq {Abs}    0x10013321   0x122  Code  Gb  timac_rom_PATCH.symbols [1]
+MAC_MlmeSetSecurityReq {Abs}
+                        0x10011bed   0x210  Code  Gb  timac_rom_PATCH.symbols [1]
+MAC_MlmeStartReq {Abs}  0x1000ebe5     0xe  Code  Gb  timac_rom_PATCH.symbols [1]
+MAC_MlmeSyncReq {Abs}   0x1000f725     0xe  Code  Gb  timac_rom_PATCH.symbols [1]
+MAC_PwrMode {Abs}       0x100139f1     0x6  Code  Gb  timac_rom_PATCH.symbols [1]
+MAC_PwrNextTimeout {Abs}
+                        0x100131e1    0x40  Code  Gb  timac_rom_PATCH.symbols [1]
+MAC_PwrOffReq {Abs}     0x100139a9    0x2e  Code  Gb  timac_rom_PATCH.symbols [1]
+MAC_PwrOnReq {Abs}      0x100139d9    0x16  Code  Gb  timac_rom_PATCH.symbols [1]
+MAC_RandomByte {Abs}    0x1000f789     0x8  Code  Gb  timac_rom_PATCH.symbols [1]
+MAC_ResumeReq {Abs}     0x1000f691    0x6c  Code  Gb  timac_rom_PATCH.symbols [1]
+MAC_SrcMatchAckAllPending
+                        0x00017ab3    0x1c  Code  Gb  mac_autopend.o [2]
+MAC_SrcMatchAddEntry    0x000179d3    0xb6  Code  Gb  mac_autopend.o [2]
+MAC_SrcMatchCheckAllPending
+                        0x00017acf     0xe  Code  Gb  mac_autopend.o [2]
+MAC_SrcMatchCheckResult
+                        0x00017add    0x16  Code  Gb  mac_autopend.o [2]
+MAC_SrcMatchDeleteEntry
+                        0x00017a89    0x2a  Code  Gb  mac_autopend.o [2]
+MAC_SrcMatchEnable      0x000179c1    0x12  Code  Gb  mac_autopend.o [2]
+MAC_YieldReq {Abs}      0x1000f6fd    0x28  Code  Gb  timac_rom_PATCH.symbols [1]
+MB_ClearInts            0x0001ac47    0x10  Code  Gb  mb_PATCH.o [2]
+MB_DisableInts          0x0001ac0b    0x3c  Code  Gb  mb_PATCH.o [2]
+MB_EnableHWInts         0x0001ac57    0x2c  Code  Gb  mb_PATCH.o [2]
+MB_EnableInts           0x0001abb5    0x56  Code  Gb  mb_PATCH.o [2]
+MB_FwDebugDump {Abs}    0x10018945     0x2  Code  Gb  timac_rom_PATCH.symbols [1]
+MB_Init                 0x0001ab71    0x44  Code  Gb  mb_PATCH.o [2]
+MB_ReadMailboxStatus {Abs}
+                        0x10018935     0x6  Code  Gb  timac_rom_PATCH.symbols [1]
+MB_RegisterIsrCback {Abs}
+                        0x1001893d     0x8  Code  Gb  timac_rom_PATCH.symbols [1]
+MB_SendCommand          0x0001ac89    0x3c  Code  Gb  mb_PATCH.o [2]
+MB_SendCommandSynch     0x0001acc5    0x8c  Code  Gb  mb_PATCH.o [2]
+NIB_init                0x00015f43    0xd0  Code  Gb  nwk_globals.o [2]
+NLDE_CheckForAddrConflict
+                        0x000116c1    0x36  Code  Gb  AddrMgr.o [4]
+NLDE_CheckFrameSecurity
+                        0x00010f63    0x2c  Code  Gb  AddrMgr.o [4]
+NLDE_DataCnf            0x0000f6d1    0xf8  Code  Gb  AddrMgr.o [4]
+NLDE_DataIndSend        0x00010bed    0x58  Code  Gb  AddrMgr.o [4]
+NLDE_DataIndication     0x0000f7c9   0x204  Code  Gb  AddrMgr.o [4]
+NLDE_DataReq            0x0000f2b5    0x5a  Code  Gb  AddrMgr.o [4]
+NLDE_DataReqAlloc       0x0000f30f    0x40  Code  Gb  AddrMgr.o [4]
+NLDE_DataReqSend        0x00010ad5   0x10a  Code  Gb  AddrMgr.o [4]
+NLDE_FrameDataLoad      0x0000e8f5    0x38  Code  Gb  AddrMgr.o [4]
+NLDE_GetHandle          0x0001105f    0x1e  Code  Gb  AddrMgr.o [4]
+NLDE_ParseFrameControl  0x00010f19    0x4a  Code  Gb  AddrMgr.o [4]
+NLDE_ParseMsg           0x00010e15    0xfe  Code  Gb  AddrMgr.o [4]
+NLDE_ParseMsg2          0x00010f91    0x8e  Code  Gb  AddrMgr.o [4]
+NLDE_SendMsg            0x00010c51    0x7c  Code  Gb  AddrMgr.o [4]
+NLME_AssocPermission    0x200040e6     0x1  Data  Gb  AddrMgr.o [4]
+NLME_CheckNewAddrSet    0x00011639    0x78  Code  Gb  AddrMgr.o [4]
+NLME_CmdBcast           0x00011519    0x12  Code  Gb  AddrMgr.o [4]
+NLME_CmdCnf             0x0001149d    0x72  Code  Gb  AddrMgr.o [4]
+NLME_CmdDataReqAlloc    0x0001152b    0x22  Code  Gb  AddrMgr.o [4]
+NLME_DeviceJoiningInit  0x0000f2a3     0xc  Code  Gb  AddrMgr.o [4]
+NLME_GetCoordExtAddr    0x00011057     0x8  Code  Gb  AddrMgr.o [4]
+NLME_GetCoordShortAddr  0x0001104f     0x8  Code  Gb  AddrMgr.o [4]
+NLME_GetExtAddr         0x00011035    0x12  Code  Gb  AddrMgr.o [4]
+NLME_GetShortAddr       0x00011047     0x8  Code  Gb  AddrMgr.o [4]
+NLME_InitNV             0x0001113b    0x32  Code  Gb  AddrMgr.o [4]
+NLME_IsAddressBroadcast
+                        0x0001156d    0x3e  Code  Gb  AddrMgr.o [4]
+NLME_JoinConfirm        0x0000f9cd     0x4  Code  Gb  AddrMgr.o [4]
+NLME_JoinRequest        0x0000f5d5    0xb0  Code  Gb  AddrMgr.o [4]
+NLME_LeaveCmdProcess    0x000113fb    0xa2  Code  Gb  AddrMgr.o [4]
+NLME_LeaveCmdSend       0x0001136d    0x8e  Code  Gb  AddrMgr.o [4]
+NLME_LeaveRsp           0x0000f685    0x48  Code  Gb  AddrMgr.o [4]
+NLME_NetworkDiscoveryRequest
+                        0x0000f34f    0x4e  Code  Gb  AddrMgr.o [4]
+NLME_NetworkStatusCB    0x0000fa29     0x4  Code  Gb  AddrMgr.o [4]
+NLME_NwkDiscReq2        0x0000f3ab    0x52  Code  Gb  AddrMgr.o [4]
+NLME_NwkDiscTerm        0x0000f3fd    0x1a  Code  Gb  AddrMgr.o [4]
+NLME_OrphanJoinRequest  0x0000f42f    0x82  Code  Gb  AddrMgr.o [4]
+NLME_PermitJoining      0x200040e5     0x1  Data  Gb  AddrMgr.o [4]
+NLME_PollConfirm        0x0000f9d5    0x26  Code  Gb  AddrMgr.o [4]
+NLME_ProcessEndDevTimeoutRsp
+                        0x000117fd    0x66  Code  Gb  AddrMgr.o [4]
+NLME_ProcessNetworkStatus
+                        0x00011745    0x4e  Code  Gb  AddrMgr.o [4]
+NLME_ReJoinRequest      0x0000f4b1     0x4  Code  Gb  AddrMgr.o [4]
+NLME_ReJoinRequestUnsecure
+                        0x0000f4b5     0x2  Code  Gb  AddrMgr.o [4]
+NLME_ReadNwkKeyInfo     0x00011bf1    0x20  Code  Gb  AddrMgr.o [4]
+NLME_RejoinRspCmdProcess
+                        0x000112f9    0x62  Code  Gb  AddrMgr.o [4]
+NLME_RestoreFromNV      0x000111a5    0xc6  Code  Gb  AddrMgr.o [4]
+NLME_RouteDiscoveryIndication
+                        0x0000fa01    0x22  Code  Gb  AddrMgr.o [4]
+NLME_RouteDiscoveryRequest
+                        0x00011db3   0x114  Code  Gb  AddrMgr.o [4]
+NLME_ScanFields         0x20004624     0x4  Data  Gb  AddrMgr.o [4]
+NLME_SendEndDevTimeoutReq
+                        0x000117a9    0x3c  Code  Gb  AddrMgr.o [4]
+NLME_SendNetworkStatus  0x000116f7    0x4e  Code  Gb  AddrMgr.o [4]
+NLME_SetBroadcastFilter
+                        0x00011551    0x18  Code  Gb  AddrMgr.o [4]
+NLME_SetDefaultNV       0x0001116d    0x26  Code  Gb  AddrMgr.o [4]
+NLME_SetPollRate        0x00011101    0x2a  Code  Gb  AddrMgr.o [4]
+NLME_SetQueuedPollRate  0x0001112b     0x8  Code  Gb  AddrMgr.o [4]
+NLME_SetResponseRate    0x00011133     0x8  Code  Gb  AddrMgr.o [4]
+NLME_SetUpdateID        0x000112b9    0x3a  Code  Gb  AddrMgr.o [4]
+NLME_SyncIndication     0x0000f9d1     0x4  Code  Gb  AddrMgr.o [4]
+NLME_UpdateNV           0x00011281    0x2a  Code  Gb  AddrMgr.o [4]
+NOROM_CPUcpsid          0x0001bf69     0x8  Code  Gb  cpu.o [6]
+NOROM_CPUcpsie          0x0001bf71     0x8  Code  Gb  cpu.o [6]
+NOROM_CPUdelay          0x0001bf79     0x8  Code  Gb  cpu.o [6]
+NOROM_CRYPTOAesEcb      0x0001a687    0x9e  Code  Gb  crypto.o [6]
+NOROM_CRYPTOAesEcbStatus
+                        0x0001a725    0x30  Code  Gb  crypto.o [6]
+NOROM_CRYPTOAesLoadKey  0x0001a5e1    0xa6  Code  Gb  crypto.o [6]
+NOROM_CRYPTOCcmAuthEncrypt
+                        0x0001a755   0x14a  Code  Gb  crypto.o [6]
+NOROM_CRYPTOCcmAuthEncryptResultGet
+                        0x0001a8c3    0x4c  Code  Gb  crypto.o [6]
+NOROM_CRYPTOCcmAuthEncryptStatus
+                        0x0001a89f    0x24  Code  Gb  crypto.o [6]
+NOROM_CRYPTOCcmInvAuthDecrypt
+                        0x0001a90f   0x13c  Code  Gb  crypto.o [6]
+NOROM_CRYPTOCcmInvAuthDecryptResultGet
+                        0x0001aa7f    0x6e  Code  Gb  crypto.o [6]
+NOROM_CRYPTOCcmInvAuthDecryptStatus
+                        0x0001aa51    0x24  Code  Gb  crypto.o [6]
+NUM_SNV_PAGES {Abs}     0x00000002           --   Gb  command line/config [3]
+NWK_TaskID              0x200040e8     0x1  Data  Gb  AddrMgr.o [4]
+NwkDescList             0x20004628     0x4  Data  Gb  AddrMgr.o [4]
+NwkPollReq              0x0000fcc7    0x16  Code  Gb  AddrMgr.o [4]
+OSAL_timeSeconds        0x20004950     0x4  Data  Gb  OSAL_Clock.o [2]
+Onboard_rand            0x000167b5    0x14  Code  Gb  OnBoard.o [2]
+P1_ro_1 {Abs}           0x1000e004  0x5c70   --   Gb  timac_rom_PATCH.symbols [1]
+P1_ro_2 {Abs}           0x10019ffe           --   Gb  timac_rom_PATCH.symbols [1]
+P1_ro_2_1 {Abs}         0x10014bfe           --   Gb  timac_rom_PATCH.symbols [1]
+P2_rw {Abs}             0x20004f40           --   Gb  timac_rom_PATCH.symbols [1]
+P2_s0_1 {Abs}           0x20004a28    0x9c   --   Gb  timac_rom_PATCH.symbols [1]
+P2_zi_1 {Abs}           0x20004ac4   0x43c   --   Gb  timac_rom_PATCH.symbols [1]
+PAGE_SIZE {Abs}         0x00001000           --   Gb  command line/config [3]
+R2F_Flash_JT            0x0001c064   0x10c  Data  Gb  ROM_Init.o [2]
+R2F_Flash_JT_CommonROM  0x0001ca0c    0x10  Data  Gb  CommonROM_Init.o [2]
+R2R_Flash_JT            0x0001c170   0x378  Data  Gb  ROM_Init.o [2]
+R2R_Flash_JT_CommonROM  0x0001ca1c    0x80  Data  Gb  CommonROM_Init.o [2]
+RAM_BASE_ADDR {Abs}     0x20004a14           --   Gb  timac_rom_PATCH.symbols [1]
+RFHAL_AddTxDataEntry {Abs}
+                        0x10018415    0x6e  Code  Gb  timac_rom_PATCH.symbols [1]
+RFHAL_AllocDataEntry {Abs}
+                        0x100184f9    0x4e  Code  Gb  timac_rom_PATCH.symbols [1]
+RFHAL_AllocDataEntryQueue {Abs}
+                        0x100184a9    0x1a  Code  Gb  timac_rom_PATCH.symbols [1]
+RFHAL_AllocRatChan {Abs}
+                        0x10018315    0x26  Code  Gb  timac_rom_PATCH.symbols [1]
+RFHAL_BuildDataEntryRingBuffer {Abs}
+                        0x100185e1    0x7c  Code  Gb  timac_rom_PATCH.symbols [1]
+RFHAL_BuildLinkedBuffer {Abs}
+                        0x10018669    0x8e  Code  Gb  timac_rom_PATCH.symbols [1]
+RFHAL_BuildRingBuffer {Abs}
+                        0x10018551    0x90  Code  Gb  timac_rom_PATCH.symbols [1]
+RFHAL_FreeDataEntry {Abs}
+                        0x10018549     0x8  Code  Gb  timac_rom_PATCH.symbols [1]
+RFHAL_FreeDataEntryQueue {Abs}
+                        0x100184c5     0x8  Code  Gb  timac_rom_PATCH.symbols [1]
+RFHAL_FreeNextTxDataEntry {Abs}
+                        0x10018485    0x22  Code  Gb  timac_rom_PATCH.symbols [1]
+RFHAL_FreeRatChan {Abs}
+                        0x1001833d    0x2a  Code  Gb  timac_rom_PATCH.symbols [1]
+RFHAL_GetNextDataEntry {Abs}
+                        0x100184cd     0x4  Code  Gb  timac_rom_PATCH.symbols [1]
+RFHAL_GetTempDataEntry {Abs}
+                        0x100184d1     0x4  Code  Gb  timac_rom_PATCH.symbols [1]
+RFHAL_InitDataQueue {Abs}
+                        0x100183b9     0xc  Code  Gb  timac_rom_PATCH.symbols [1]
+RFHAL_InitRfHal {Abs}   0x100182ad    0x66  Code  Gb  timac_rom_PATCH.symbols [1]
+RFHAL_MapRatChansToInt {Abs}
+                        0x10018369    0x26  Code  Gb  timac_rom_PATCH.symbols [1]
+RFHAL_NextDataEntryDone {Abs}
+                        0x100184d5    0x24  Code  Gb  timac_rom_PATCH.symbols [1]
+RFHAL_RegisterRatChanCallback {Abs}
+                        0x10018391    0x26  Code  Gb  timac_rom_PATCH.symbols [1]
+ROM_BASE_ADDR {Abs}     0x1000e001           --   Gb  timac_rom_PATCH.symbols [1]
+ROM_Init                0x0001c00f    0x3c  Code  Gb  ROM_Init.o [2]
+RTG_AddSrcRtgEntry_Guaranteed
+                        0x000120c1    0x9a  Code  Gb  AddrMgr.o [4]
+RTG_BcastDel            0x000122b9    0x22  Code  Gb  AddrMgr.o [4]
+RTG_CheckRtStatus       0x00012387    0x5c  Code  Gb  AddrMgr.o [4]
+RTG_GetRtgEntry         0x00012313    0x72  Code  Gb  AddrMgr.o [4]
+RTG_MTORouteReq         0x00011ecd    0x46  Code  Gb  AddrMgr.o [4]
+RTG_RemoveRtgEntry      0x00012217    0x2a  Code  Gb  AddrMgr.o [4]
+RTG_SendBrokenRoute     0x00012411    0x48  Code  Gb  AddrMgr.o [4]
+RTG_SendRErr            0x00011f25    0x58  Code  Gb  AddrMgr.o [4]
+RTG_UpdateNeighborEntry
+                        0x0001107d    0x84  Code  Gb  AddrMgr.o [4]
+RTG_ValidateSrcRtg      0x000121cd    0x32  Code  Gb  AddrMgr.o [4]
+RTG_nextHopIsBad        0x00012459    0x32  Code  Gb  AddrMgr.o [4]
+Region$$Table$$Base     0x0001cde0           --   Gb  - Linker created -
+Region$$Table$$Limit    0x0001ce0c           --   Gb  - Linker created -
+SNV_FIRST_PAGE {Abs}    0x0000001d           --   Gb  command line/config [3]
+SSP_BuildAuxHdr         0x00015a67    0x48  Code  Gb  ssp.o [2]
+SSP_BuildAuxHdr2        0x0001588d    0x44  Code  Gb  ssp.o [2]
+SSP_BuildNonce          0x00015ab9    0x1e  Code  Gb  ssp.o [2]
+SSP_CCM_Auth_Encrypt    0x00017935    0x42  Code  Gb  hal_ccm.o [2]
+SSP_CCM_InvAuth_Decrypt
+                        0x00017979    0x48  Code  Gb  hal_ccm.o [2]
+SSP_GetMicLen           0x00015cf5     0xe  Code  Gb  ssp.o [2]
+SSP_GetMicLenHook       0x20004978     0x4  Data  Lc  ssp.o [2]
+SSP_GetMicLenProc       0x00015ad9    0x10  Code  Gb  ssp.o [2]
+SSP_GetNwkKey           0x00015ae9    0x48  Code  Gb  ssp.o [2]
+SSP_Init                0x00015819    0x12  Code  Gb  ssp.o [2]
+SSP_KeyedHash           0x0001773d    0x54  Code  Gb  ssp_hash.o [2]
+SSP_NwkSecurity         0x00015ce3    0x12  Code  Gb  ssp.o [2]
+SSP_NwkSecurityHook     0x20004974     0x4  Data  Lc  ssp.o [2]
+SSP_NwkSecurityProc     0x00015b31    0xfc  Code  Gb  ssp.o [2]
+SSP_ParseAuxHdr         0x0001582b    0x62  Code  Gb  ssp.o [2]
+SSP_Process             0x000158d1    0xac  Code  Gb  ssp.o [2]
+SSP_ReadNwkActiveKey    0x0001597d    0x16  Code  Gb  ssp.o [2]
+SSP_SwitchNwkKey        0x000159c1    0x9c  Code  Gb  ssp.o [2]
+SSP_UpdateNwkKey        0x00015993    0x2e  Code  Gb  ssp.o [2]
+TCLinkKeyFrmCntr        0x2000491c     0xc  Data  Gb  ZDSecMgr.o [2]
+ZDAppDetermineDeviceType
+                        0x00012795    0x4a  Code  Gb  ZDApp.o [2]
+ZDAppNwkAddr            0x2000416c     0xc  Data  Gb  ZDApp.o [2]
+ZDAppPendingBindReq     0x200041a8     0x4  Data  Gb  ZDApp.o [2]
+ZDAppTaskID             0x2000417b     0x1  Data  Gb  ZDApp.o [2]
+ZDApp_AgeOutPendingBindEntry
+                        0x00013515    0x96  Code  Gb  ZDApp.o [2]
+ZDApp_AnnounceNewAddress
+                        0x000133bd    0x44  Code  Gb  ZDApp.o [2]
+ZDApp_ChangeState       0x000135c7    0x14  Code  Gb  ZDApp.o [2]
+ZDApp_DeviceAuthEvt     0x000127df    0x44  Code  Gb  ZDApp.o [2]
+ZDApp_ForceConcentratorChange
+                        0x00012ce5    0x46  Code  Gb  ZDApp.o [2]
+ZDApp_GetEmptyPendingBindReq
+                        0x00013491    0x20  Code  Gb  ZDApp.o [2]
+ZDApp_InMsgCB           0x000132f3    0x2c  Code  Gb  ZDApp.o [2]
+ZDApp_Init              0x000124ed    0x54  Code  Gb  ZDApp.o [2]
+ZDApp_InitPendingBind   0x00013469    0x28  Code  Gb  ZDApp.o [2]
+ZDApp_InitZdoCBFunc     0x00013419    0x14  Code  Gb  ZDApp.o [2]
+ZDApp_LeaveCtrl         0x200049e7     0x1  Data  Gb  ZDApp.o [2]
+ZDApp_LeaveCtrlInit     0x00012dd5    0x28  Code  Gb  ZDApp.o [2]
+ZDApp_LeaveCtrlSet      0x00012dfd    0x10  Code  Gb  ZDApp.o [2]
+ZDApp_LeaveReset        0x00012e17    0x92  Code  Gb  ZDApp.o [2]
+ZDApp_LeaveUpdate       0x00012eb9    0x4c  Code  Gb  ZDApp.o [2]
+ZDApp_NVUpdate          0x00013401     0xc  Code  Gb  ZDApp.o [2]
+ZDApp_NetworkInit       0x0001331f    0x1a  Code  Gb  ZDApp.o [2]
+ZDApp_NewDeviceList     0x200041b4     0x4  Data  Gb  ZDApp.o [2]
+ZDApp_NodeProfileSync   0x0001335d    0x26  Code  Gb  ZDApp.o [2]
+ZDApp_NwkDescListProcessing
+                        0x00012f69    0xd0  Code  Gb  ZDApp.o [2]
+ZDApp_NwkStateUpdateCB  0x00013339    0x14  Code  Gb  ZDApp.o [2]
+ZDApp_ProcessMsgCBs     0x00012a61    0x58  Code  Gb  ZDApp.o [2]
+ZDApp_ProcessNetworkJoin
+                        0x00012b11   0x192  Code  Gb  ZDApp.o [2]
+ZDApp_ProcessOSALMsg    0x0001288f   0x1d2  Code  Gb  ZDApp.o [2]
+ZDApp_ProcessPendingBindReq
+                        0x000134b9    0x5c  Code  Gb  ZDApp.o [2]
+ZDApp_ProcessSecEvent   0x000126a7    0x40  Code  Gb  ZDApp.o [2]
+ZDApp_ProcessSecMsg     0x00012ae7    0x2a  Code  Gb  ZDApp.o [2]
+ZDApp_ReadNetworkRestoreState
+                        0x00012783    0x12  Code  Gb  ZDApp.o [2]
+ZDApp_RegisterCBs       0x00012ab9    0x2e  Code  Gb  ZDApp.o [2]
+ZDApp_ResetNwkKey       0x00012d2b    0x10  Code  Gb  ZDApp.o [2]
+ZDApp_ResetTimerCancel  0x00012dbb    0x1a  Code  Gb  ZDApp.o [2]
+ZDApp_ResetTimerStart   0x00012d99    0x22  Code  Gb  ZDApp.o [2]
+ZDApp_RestoreNetworkState
+                        0x00012841    0x4e  Code  Gb  ZDApp.o [2]
+ZDApp_RestoreNwkKey     0x00012d47    0x52  Code  Gb  ZDApp.o [2]
+ZDApp_SaveNetworkStateEvt
+                        0x0001282d    0x14  Code  Gb  ZDApp.o [2]
+ZDApp_SaveNwkKey        0x00012cbd    0x1e  Code  Gb  ZDApp.o [2]
+ZDApp_SavedPollRate     0x200041b0     0x4  Data  Gb  ZDApp.o [2]
+ZDApp_SecInit           0x00012541    0x68  Code  Gb  ZDApp.o [2]
+ZDApp_SendMsg           0x00012f05    0x38  Code  Gb  ZDApp.o [2]
+ZDApp_SetPendingBindDefault
+                        0x00013455    0x14  Code  Gb  ZDApp.o [2]
+ZDApp_SetRejoinBackoffDuration
+                        0x000135e1     0x6  Code  Gb  ZDApp.o [2]
+ZDApp_SetRejoinScanDuration
+                        0x000135db     0x6  Code  Gb  ZDApp.o [2]
+ZDApp_StartJoiningCycle
+                        0x00013383    0x20  Code  Gb  ZDApp.o [2]
+ZDApp_StopJoiningCycle  0x000133a3    0x1a  Code  Gb  ZDApp.o [2]
+ZDApp_epDesc            0x200041c0    0x10  Data  Gb  ZDApp.o [2]
+ZDApp_event_loop        0x000125a9    0xfe  Code  Gb  ZDApp.o [2]
+ZDConfig_InitDescriptors
+                        0x00016ae1     0xc  Code  Gb  ZDConfig.o [2]
+ZDConfig_UpdateNodeDescriptor
+                        0x00016aed    0x2e  Code  Gb  ZDConfig.o [2]
+ZDConfig_UpdatePowerDescriptor
+                        0x00016b1b    0x24  Code  Gb  ZDConfig.o [2]
+ZDOBuildBuf             0x200047c4    0x34  Data  Lc  ZDObject.o [2]
+ZDOInitDevice           0x000126e7    0x9c  Code  Gb  ZDApp.o [2]
+ZDO_AnyClusterMatches   0x000161b7    0x2e  Code  Gb  ZDObject.o [2]
+ZDO_Config_Node_Descriptor
+                        0x200048e4    0x10  Data  Gb  ZDConfig.o [2]
+ZDO_Config_Power_Descriptor
+                        0x200049c0     0x4  Data  Gb  ZDConfig.o [2]
+ZDO_ConvertOTAClusters  0x000162fd    0x20  Code  Gb  ZDObject.o [2]
+ZDO_DeregisterForZdoCB  0x0001343d    0x12  Code  Gb  ZDApp.o [2]
+ZDO_EDBind              0x200049c4     0x4  Data  Lc  ZDObject.o [2]
+ZDO_Init                0x0001606d    0x22  Code  Gb  ZDObject.o [2]
+ZDO_JoinConfirmCB       0x00013171    0x8a  Code  Gb  ZDApp.o [2]
+ZDO_LeaveCnf            0x00013205    0x2c  Code  Gb  ZDApp.o [2]
+ZDO_LeaveInd            0x00013239    0x6e  Code  Gb  ZDApp.o [2]
+ZDO_NetworkDiscoveryConfirmCB
+                        0x00012f3d    0x28  Code  Gb  ZDApp.o [2]
+ZDO_NetworkStatusCB     0x000132db     0x4  Code  Gb  ZDApp.o [2]
+ZDO_ParseAddrRsp        0x000166d5    0x62  Code  Gb  ZDObject.o [2]
+ZDO_ParseBindUnbindReq  0x00016691    0x44  Code  Gb  ZDObject.o [2]
+ZDO_ParseDeviceAnnce    0x0001678f    0x20  Code  Gb  ZDObject.o [2]
+ZDO_ParseEPListRsp      0x00016737    0x30  Code  Gb  ZDObject.o [2]
+ZDO_PollConfirmCB       0x000132d9     0x2  Code  Gb  ZDApp.o [2]
+ZDO_ProcessActiveEPReq  0x000162a9    0x54  Code  Gb  ZDObject.o [2]
+ZDO_ProcessBindUnbindReq
+                        0x0001651f   0x10c  Code  Gb  ZDObject.o [2]
+ZDO_ProcessMatchDescReq
+                        0x0001631d   0x1ee  Code  Gb  ZDObject.o [2]
+ZDO_ProcessNodeDescReq  0x000161e5    0x24  Code  Gb  ZDObject.o [2]
+ZDO_ProcessPowerDescReq
+                        0x00016209    0x22  Code  Gb  ZDObject.o [2]
+ZDO_ProcessSimpleDescReq
+                        0x0001624f    0x5a  Code  Gb  ZDObject.o [2]
+ZDO_RegisterForZDOMsg   0x0001718d    0x44  Code  Gb  ZDProfile.o [2]
+ZDO_RegisterForZdoCB    0x0001342d    0x10  Code  Gb  ZDApp.o [2]
+ZDO_SendMsgCBs          0x000171d1    0x64  Code  Gb  ZDProfile.o [2]
+ZDO_StartDevice         0x0001608f    0xa2  Code  Gb  ZDObject.o [2]
+ZDO_SyncIndicationCB    0x000132a7    0x2c  Code  Gb  ZDApp.o [2]
+ZDO_UpdateAddrManager   0x0001662b    0x1e  Code  Gb  ZDObject.o [2]
+ZDO_UpdateNwkStatus     0x0001616f    0x48  Code  Gb  ZDObject.o [2]
+ZDO_UseExtendedPANID    0x200041b8     0x8  Data  Gb  ZDApp.o [2]
+ZDO_beaconNotifyIndCB   0x00013059    0xfa  Code  Gb  ZDApp.o [2]
+ZDP_BindUnbindReq       0x000170b1    0x74  Code  Gb  ZDProfile.o [2]
+ZDP_Buf                 0x200041dc    0x50  Data  Lc  ZDProfile.o [2]
+ZDP_DeviceAnnce         0x00016d13    0x32  Code  Gb  ZDProfile.o [2]
+ZDP_EPRsp               0x00016f8f    0x50  Code  Gb  ZDProfile.o [2]
+ZDP_EndDeviceBindReq    0x00016fff    0x9c  Code  Gb  ZDProfile.o [2]
+ZDP_GenericRsp          0x00016fdf    0x20  Code  Gb  ZDProfile.o [2]
+ZDP_IEEEAddrReq         0x00016c37    0x2e  Code  Gb  ZDProfile.o [2]
+ZDP_IncomingData        0x0001724d    0x84  Code  Gb  ZDProfile.o [2]
+ZDP_MatchDescReq        0x00016c65    0xae  Code  Gb  ZDProfile.o [2]
+ZDP_MgmtPermitJoinReq   0x00017125    0x5a  Code  Gb  ZDProfile.o [2]
+ZDP_NodeDescMsg         0x00016e01    0x68  Code  Gb  ZDProfile.o [2]
+ZDP_NwkAddrReq          0x00016bdb    0x5c  Code  Gb  ZDProfile.o [2]
+ZDP_PowerDescMsg        0x00016e69    0x34  Code  Gb  ZDProfile.o [2]
+ZDP_SendData            0x00016ba3    0x38  Code  Gb  ZDProfile.o [2]
+ZDP_SimpleDescMsg       0x00016eb7    0xc8  Code  Gb  ZDProfile.o [2]
+ZDP_TmpBuf              0x200041d4     0x4  Data  Lc  ZDProfile.o [2]
+ZDP_TransID             0x200041d8     0x1  Data  Gb  ZDProfile.o [2]
+ZDP_TxOptions           0x200041d0     0x1  Data  Gb  ZDProfile.o [2]
+ZDSecMgrAddLinkKey      0x00015247    0x48  Code  Gb  ZDSecMgr.o [2]
+ZDSecMgrAddrClear       0x00014e19    0x2e  Code  Gb  ZDSecMgr.o [2]
+ZDSecMgrAddrStore       0x00014dbd    0x1a  Code  Gb  ZDSecMgr.o [2]
+ZDSecMgrApsLinkKeyInit  0x0001567b    0x24  Code  Gb  ZDSecMgr.o [2]
+ZDSecMgrAuthNwkKey      0x00015003    0x18  Code  Gb  ZDSecMgr.o [2]
+ZDSecMgrAuthenticationCheck
+                        0x000151d9    0x44  Code  Gb  ZDSecMgr.o [2]
+ZDSecMgrAuthenticationSet
+                        0x000151c3    0x10  Code  Gb  ZDSecMgr.o [2]
+ZDSecMgrClearNVKeyValues
+                        0x000157c5    0x1e  Code  Gb  ZDSecMgr.o [2]
+ZDSecMgrDeviceRemoveByExtAddr
+                        0x00014fed    0x16  Code  Gb  ZDSecMgr.o [2]
+ZDSecMgrEntries         0x2000481c     0x4  Data  Gb  ZDSecMgr.o [2]
+ZDSecMgrEntryFree       0x00014f3b    0x7a  Code  Gb  ZDSecMgr.o [2]
+ZDSecMgrEntryInit       0x00014e47    0x3c  Code  Gb  ZDSecMgr.o [2]
+ZDSecMgrEntryLookupAMI  0x00014e83    0x2e  Code  Gb  ZDSecMgr.o [2]
+ZDSecMgrEntryLookupAMIGetIndex
+                        0x00014f11    0x2a  Code  Gb  ZDSecMgr.o [2]
+ZDSecMgrEntryLookupExt  0x00014eb1    0x22  Code  Gb  ZDSecMgr.o [2]
+ZDSecMgrEntryLookupExtGetIndex
+                        0x00014ed3    0x3e  Code  Gb  ZDSecMgr.o [2]
+ZDSecMgrEntryNew        0x00014fb5    0x38  Code  Gb  ZDSecMgr.o [2]
+ZDSecMgrExtAddrLookup   0x00014df3    0x26  Code  Gb  ZDSecMgr.o [2]
+ZDSecMgrInit            0x0001501b     0x8  Code  Gb  ZDSecMgr.o [2]
+ZDSecMgrInitNV          0x00015299    0x26  Code  Gb  ZDSecMgr.o [2]
+ZDSecMgrInitNVKeyTables
+                        0x000156a9    0x14  Code  Gb  ZDSecMgr.o [2]
+ZDSecMgrNwkKeyInit      0x000155e5    0x56  Code  Gb  ZDSecMgr.o [2]
+ZDSecMgrReadKeyFromNv   0x0001563b    0x40  Code  Gb  ZDSecMgr.o [2]
+ZDSecMgrRestoreFromNV   0x00015323    0xa0  Code  Lc  ZDSecMgr.o [2]
+ZDSecMgrSaveApsLinkKey  0x000156bd    0x66  Code  Gb  ZDSecMgr.o [2]
+ZDSecMgrSaveTCLinkKey   0x00015723    0x4c  Code  Gb  ZDSecMgr.o [2]
+ZDSecMgrSetDefaultNV    0x000153df    0x5a  Code  Gb  ZDSecMgr.o [2]
+ZDSecMgrSwitchKeyInd    0x00015135    0x10  Code  Gb  ZDSecMgr.o [2]
+ZDSecMgrTCDataLoad      0x0001502f    0x32  Code  Gb  ZDSecMgr.o [2]
+ZDSecMgrTransportKeyInd
+                        0x00015061    0xd4  Code  Gb  ZDSecMgr.o [2]
+ZDSecMgrUpdateTCAddress
+                        0x0001576f    0x24  Code  Gb  ZDSecMgr.o [2]
+ZDSecMgrWriteNV         0x000152d1    0x46  Code  Lc  ZDSecMgr.o [2]
+ZDiagsUpdateStats       0x00015d21     0x2  Code  Gb  ZDiags.o [2]
+ZMacAssociateReq        0x00015e29     0xe  Code  Gb  zmac.o [2]
+ZMacDataReqSec          0x00015e8d    0x60  Code  Gb  zmac.o [2]
+ZMacGetReq              0x00015ded    0x1e  Code  Gb  zmac.o [2]
+ZMacInit                0x00015d95    0x1c  Code  Gb  zmac.o [2]
+ZMacLqiAdjust           0x0001c725    0x30  Code  Lc  zmac_cb.o [2]
+ZMacPollReq             0x00015e7f     0xe  Code  Gb  zmac.o [2]
+ZMacReset               0x00015db1    0x3c  Code  Gb  zmac.o [2]
+ZMacScanReq             0x00015e37    0x48  Code  Gb  zmac.o [2]
+ZMacSetReq              0x00015e0b    0x1e  Code  Gb  zmac.o [2]
+ZMacSetTransmitPower    0x00015f09     0xc  Code  Gb  zmac.o [2]
+ZMacSrcMatchAckAllPending
+                        0x00015eff     0xa  Code  Gb  zmac.o [2]
+ZMacSrcMatchAddEntry    0x00015ef7     0x4  Code  Gb  zmac.o [2]
+ZMacSrcMatchDeleteEntry
+                        0x00015efb     0x4  Code  Gb  zmac.o [2]
+ZMacSrcMatchEnable      0x00015eed     0xa  Code  Gb  zmac.o [2]
+ZMac_ScanBuf            0x20004990     0x4  Data  Gb  zmac.o [2]
+ZStackEntity            0x20004286     0x2  Data  Lc  zstacktask.o [2]
+ZStackTaskId            0x20004280     0x1  Data  Gb  zstacktask.o [2]
+ZStackTaskInit          0x00017e2b    0x88  Code  Gb  zstacktask.o [2]
+ZStackTaskProcessEvent  0x00017eb3   0x13e  Code  Gb  zstacktask.o [2]
+_NIB                    0x200045b0    0x74  Data  Gb  AddrMgr.o [4]
+_ScanChannels           0x2000498c     0x4  Data  Gb  zmac.o [2]
+__aeabi_ldiv0           0x0001a5dd          Code  Gb  I64DivZer.o [7]
+__aeabi_ldivmod         0x000175a9          Code  Gb  I64DivMod.o [7]
+__aeabi_memclr4         0x00016065          Code  Gb  ABImemclr4.o [7]
+__aeabi_memset          0x00017309          Code  Gb  ABImemset.o [7]
+__aeabi_uldivmod        0x000175ed          Code  Gb  I64DivMod.o [7]
+__checksum_begin {Abs}  0x1000e000           --   Gb  timac_rom_PATCH.symbols [1]
+__checksum_begin_CommonROM {Abs}
+                        0x10014c00           --   Gb  timac_rom_PATCH.symbols [1]
+__checksum_end {Abs}    0x10014bfd           --   Gb  timac_rom_PATCH.symbols [1]
+__checksum_end_CommonROM {Abs}
+                        0x10019ffd           --   Gb  timac_rom_PATCH.symbols [1]
+__checksum_value {Abs}  0x0000f12d          Data  Gb  timac_rom_PATCH.symbols [1]
+__checksum_value_CommonROM {Abs}
+                        0x0000e0ea          Data  Gb  timac_rom_PATCH.symbols [1]
+__exit {Abs}            0x10018ced          Code  Gb  timac_rom_PATCH.symbols [1]
+__iar_Memset            0x00017309          Code  Gb  ABImemset.o [7]
+__iar_Memset4_word      0x00017bb9          Code  Gb  ABImemset48.o [7]
+__iar_Memset8_word      0x00017bb9          Code  Gb  ABImemset48.o [7]
+__iar_Memset_word       0x00017311          Code  Gb  ABImemset.o [7]
+__iar_data_init3        0x0001cdb9    0x28  Code  Gb  data_init.o [7]
+__iar_packbits_init3    0x0001cba3    0xae  Code  Gb  packbits_init.o [7]
+__iar_unaligned___aeabi_memcpy
+                        0x00017bed          Code  Gb  ABImemcpy_unaligned.o [7]
+__iar_unaligned___aeabi_memcpy4
+                        0x00017c0d          Code  Gb  ABImemcpy_unaligned.o [7]
+__iar_unaligned___aeabi_memcpy8
+                        0x00017c0d          Code  Gb  ABImemcpy_unaligned.o [7]
+__iar_zero_init3        0x00015d23    0x22  Code  Gb  zero_init3.o [7]
+_savedRejoinRspAddr     0x200040f2     0x2  Data  Gb  AddrMgr.o [4]
+_tmpRejoinState         0x2000417a     0x1  Data  Gb  ZDApp.o [2]
+aExtendedAddress        0x20004944     0x8  Data  Gb  OnBoard.o [2]
+abort {Abs}             0x10018cf9     0x8  Code  Gb  timac_rom_PATCH.symbols [1]
+activeTaskID            0x2000422c     0x1  Data  Lc  OSAL.o [2]
+afAPSF_ConfigGet        0x00014b2d    0x24  Code  Gb  AF.o [2]
+afAPSF_ConfigSet        0x00014b51    0x1c  Code  Gb  AF.o [2]
+afBuildMSGIncoming      0x000147dd    0x9e  Code  Lc  AF.o [2]
+afCopyAddress           0x00014b0d    0x20  Code  Gb  AF.o [2]
+afDataConfirm           0x00014677    0x28  Code  Gb  AF.o [2]
+afDataReqMTU            0x00014abf    0x18  Code  Gb  AF.o [2]
+afDelete                0x00014635    0x42  Code  Gb  AF.o [2]
+afEndPoints             0x00014aeb    0x1a  Code  Gb  AF.o [2]
+afFindEndPointDesc      0x00014a87     0xc  Code  Gb  AF.o [2]
+afFindEndPointDescList  0x00014a6f    0x18  Code  Lc  AF.o [2]
+afFindSimpleDesc        0x00014a93    0x2c  Code  Gb  AF.o [2]
+afIncomingData          0x000146db   0x102  Code  Gb  AF.o [2]
+afNumEndPoints          0x00014ad7    0x14  Code  Gb  AF.o [2]
+afReflectError          0x0001469f    0x30  Code  Gb  AF.o [2]
+afRegister              0x00014611    0x24  Code  Gb  AF.o [2]
+afRegisterExtended      0x000145e5    0x2c  Code  Gb  AF.o [2]
+appMsg                  0x00017ff1   0x6e4  Code  Lc  zstacktask.o [2]
+apsGenerateAck          0x0000e4c3    0x84  Code  Gb  AddrMgr.o [4]
+apsGroupTable           0x200049d4     0x4  Data  Gb  AddrMgr.o [4]
+apsProcessAck           0x0000e5a9    0x42  Code  Gb  AddrMgr.o [4]
+aps_AddGroup            0x0000e165    0x60  Code  Gb  AddrMgr.o [4]
+aps_CountAllGroups      0x0000e2d3    0x14  Code  Gb  AddrMgr.o [4]
+aps_CountGroups         0x0000e2b9    0x1a  Code  Gb  AddrMgr.o [4]
+aps_FindAllGroupsForEndpoint
+                        0x0000e225    0x24  Code  Gb  AddrMgr.o [4]
+aps_FindGroup           0x0000e1c5    0x1e  Code  Gb  AddrMgr.o [4]
+aps_FindGroupForEndpoint
+                        0x0000e1f1    0x30  Code  Gb  AddrMgr.o [4]
+aps_GroupsInitNV        0x0000e2e7    0x24  Code  Gb  AddrMgr.o [4]
+aps_GroupsRestoreFromNV
+                        0x0000e375    0x4e  Code  Gb  AddrMgr.o [4]
+aps_GroupsSetDefaultNV  0x0000e30b     0xe  Code  Gb  AddrMgr.o [4]
+aps_GroupsWriteNV       0x0000e319    0x52  Code  Gb  AddrMgr.o [4]
+aps_RemoveAllGroup      0x0000e283    0x36  Code  Gb  AddrMgr.o [4]
+aps_RemoveGroup         0x0000e249    0x3a  Code  Gb  AddrMgr.o [4]
+apsfProcessAck          0x20004114     0x4  Data  Gb  AddrMgr.o [4]
+apsfSendFragmented      0x20004110     0x4  Data  Gb  AddrMgr.o [4]
+apsfSendOsalMsg         0x20004118     0x4  Data  Gb  AddrMgr.o [4]
+backoffTimerTrigger     0x20004884     0x4  Data  Lc  mac_backoff_timer.o [2]
+bcastHoldHandle         0x20004910     0xc  Data  Gb  nwk_globals.o [2]
+bindAddClusterIdToList  0x00014201    0x22  Code  Gb  BindingTable.o [2]
+bindAddEntry            0x000140d1    0xbc  Code  Gb  BindingTable.o [2]
+bindAddrIndexGet        0x00014483    0x38  Code  Gb  BindingTable.o [2]
+bindAddrMgrLocalLoad    0x0001442d    0x4e  Code  Gb  BindingTable.o [2]
+bindAddrMgrLocalLoaded  0x20004820     0x1  Data  Lc  BindingTable.o [2]
+bindAddressClear        0x00014383    0x40  Code  Gb  BindingTable.o [2]
+bindFind                0x00014333    0x46  Code  Gb  BindingTable.o [2]
+bindFindEmpty           0x0001407d    0x28  Code  Gb  BindingTable.o [2]
+bindFindExisting        0x00014223    0x6e  Code  Gb  BindingTable.o [2]
+bindIsClusterIDinList   0x0001419f    0x22  Code  Gb  BindingTable.o [2]
+bindNumOfEntries        0x000140a5    0x2c  Code  Gb  BindingTable.o [2]
+bindNumReflections      0x000142fd    0x36  Code  Gb  BindingTable.o [2]
+bindRemoveClusterIdFromList
+                        0x000141c1    0x40  Code  Gb  BindingTable.o [2]
+bindRemoveDev           0x00014291    0x62  Code  Gb  BindingTable.o [2]
+bindRemoveEntry         0x0001418d    0x12  Code  Gb  BindingTable.o [2]
+bindingAddrMgsHelperConvert
+                        0x000143df    0x24  Code  Gb  BindingTable.o [2]
+bindingAddrMgsHelperConvertShort
+                        0x00014411    0x1c  Code  Gb  BindingTable.o [2]
+bindingAddrMgsHelperFind
+                        0x000143c3    0x1c  Code  Gb  BindingTable.o [2]
+bm_list_ptr             0x200049bc     0x4  Data  Lc  osal_bufmgr.o [2]
+ccmStar                 0x00015c37    0x9a  Code  Gb  ssp.o [2]
+continueJoining         0x20004179     0x1  Data  Gb  ZDApp.o [2]
+cpe0IntCback            0x0001c8a9    0x42  Code  Gb  mac_isr.o [2]
+cpe1IntCback            0x0001c8eb    0x7c  Code  Gb  mac_isr.o [2]
+defaultKey              0x0001ccac    0x10  Data  Gb  nwk_globals.o [2]
+defaultTCLinkKey        0x0001ccbc    0x10  Data  Gb  nwk_globals.o [2]
+devStartMode            0x2000417f     0x1  Data  Gb  ZDApp.o [2]
+devState                0x2000417d     0x1  Data  Gb  ZDApp.o [2]
+epList                  0x20004290     0x4  Data  Gb  AF.o [2]
+epTableAddNewEntry      0x00018881    0x32  Code  Lc  zstacktask.o [2]
+epTableFindEntryConnection
+                        0x000188cb    0x18  Code  Lc  zstacktask.o [2]
+epTableFindEntryEP      0x000188b3    0x18  Code  Lc  zstacktask.o [2]
+epTableNumEntries       0x000188e3    0x14  Code  Lc  zstacktask.o [2]
+fillAndSend             0x00016b4d    0x56  Code  Lc  ZDProfile.o [2]
+freeEpItem              0x000188f7     0xa  Code  Lc  zstacktask.o [2]
+gAPS_MAX_GROUPS         0x0001cca8     0x1  Data  Gb  nwk_globals.o [2]
+gBIND_REC_SIZE          0x0001cca6     0x2  Data  Gb  nwk_globals.o [2]
+gDEFAULT_ROUTE_REQUEST_RADIUS
+                        0x0001cc5f     0x1  Data  Gb  nwk_globals.o [2]
+gDEF_NWK_RADIUS         0x0001cc60     0x1  Data  Gb  nwk_globals.o [2]
+gLINK_DOWN_TRIGGER      0x0001cc59     0x1  Data  Gb  nwk_globals.o [2]
+gMAX_BCAST              0x0001cc5a     0x1  Data  Gb  nwk_globals.o [2]
+gMAX_BINDING_CLUSTER_IDS
+                        0x0001cca5     0x1  Data  Gb  nwk_globals.o [2]
+gMAX_BROADCAST_QUEUED   0x0001cc58     0x1  Data  Gb  nwk_globals.o [2]
+gMAX_NEIGHBOR_ENTRIES   0x0001cc56     0x1  Data  Gb  nwk_globals.o [2]
+gMAX_NWK_FRAMECOUNTER_CHANGES
+                        0x0001cca0     0x4  Data  Gb  nwk_globals.o [2]
+gMAX_RREQ_ENTRIES       0x0001cc55     0x1  Data  Gb  nwk_globals.o [2]
+gMAX_RTG_ENTRIES        0x0001cc53     0x1  Data  Gb  nwk_globals.o [2]
+gMAX_RTG_SRC_ENTRIES    0x0001cc54     0x1  Data  Gb  nwk_globals.o [2]
+gMAX_SOURCE_ROUTE       0x0001cc57     0x1  Data  Gb  nwk_globals.o [2]
+gMIN_TREE_LQI           0x200042bf     0x1  Data  Gb  nwk_globals.o [2]
+gMTO_ROUTE_EXPIRY_TIME  0x0001cc5e     0x1  Data  Gb  nwk_globals.o [2]
+gMTO_RREQ_LIMIT_TIME    0x0001cc5c     0x2  Data  Gb  nwk_globals.o [2]
+gNWK_CONFLICTED_ADDR_EXPIRY_TIME
+                        0x0001cc5b     0x1  Data  Gb  nwk_globals.o [2]
+gNWK_MAX_BINDING_ENTRIES
+                        0x0001cca4     0x1  Data  Gb  nwk_globals.o [2]
+gNWK_MAX_DATABUFS_SCHEDULED
+                        0x0001cc51     0x1  Data  Gb  nwk_globals.o [2]
+gNWK_MAX_DATABUFS_TOTAL
+                        0x0001cc52     0x1  Data  Gb  nwk_globals.o [2]
+gNWK_MAX_DATABUFS_WAITING
+                        0x0001cc50     0x1  Data  Gb  nwk_globals.o [2]
+g_ui32CurrentAesOp      0x200049dc     0x4  Data  Gb  crypto.o [6]
+halAssertHandler        0x00014da1    0x16  Code  Gb  hal_assert.o [2]
+hwIntCback              0x0001c967    0x3e  Code  Gb  mac_isr.o [2]
+lastTrngVal             0x200049b0     0x4  Data  Lc  hal_trng_wrapper.o [2]
+lqiAdjMode              0x200049f4     0x1  Data  Lc  zmac_cb.o [2]
+mADD {Abs}              0x10016551          Code  Gb  timac_rom_PATCH.symbols [1]
+mMULT {Abs}             0x10015f81          Code  Gb  timac_rom_PATCH.symbols [1]
+mOUT {Abs}              0x10016749          Code  Gb  timac_rom_PATCH.symbols [1]
+mSUB {Abs}              0x1001664d          Code  Gb  timac_rom_PATCH.symbols [1]
+macAllocTxBuffer {Abs}  0x1000f825    0x7a  Code  Gb  timac_rom_PATCH.symbols [1]
+macApiAssociateReq {Abs}
+                        0x10011445    0x9e  Code  Gb  timac_rom_PATCH.symbols [1]
+macApiAssociateRsp {Abs}
+                        0x1000e6ad    0x3c  Code  Gb  timac_rom_PATCH.symbols [1]
+macApiBadState {Abs}    0x1000f28d     0xe  Code  Gb  timac_rom_PATCH.symbols [1]
+macApiBeaconStartReq {Abs}
+                        0x10012111    0x68  Code  Gb  timac_rom_PATCH.symbols [1]
+macApiDataReq {Abs}     0x1000fe71    0x72  Code  Gb  timac_rom_PATCH.symbols [1]
+macApiDisassociateReq {Abs}
+                        0x1000f3ad    0x6e  Code  Gb  timac_rom_PATCH.symbols [1]
+macApiOrphanRsp {Abs}   0x1000e725    0x6e  Code  Gb  timac_rom_PATCH.symbols [1]
+macApiPending {Abs}     0x1000f29d    0x30  Code  Gb  timac_rom_PATCH.symbols [1]
+macApiPollReq {Abs}     0x10011735    0x5c  Code  Gb  timac_rom_PATCH.symbols [1]
+macApiPurgeReq {Abs}    0x1000e795    0x9a  Code  Gb  timac_rom_PATCH.symbols [1]
+macApiPwrOnReq {Abs}    0x100139a5     0x2  Code  Gb  timac_rom_PATCH.symbols [1]
+macApiScanReq {Abs}     0x10012a3d    0xce  Code  Gb  timac_rom_PATCH.symbols [1]
+macApiStartReq {Abs}    0x1000e831    0x80  Code  Gb  timac_rom_PATCH.symbols [1]
+macApiSyncReq {Abs}     0x1001109d    0xec  Code  Gb  timac_rom_PATCH.symbols [1]
+macApiUnsupported {Abs}
+                        0x1000f265     0xe  Code  Gb  timac_rom_PATCH.symbols [1]
+macAssocDataReq {Abs}   0x100114e5    0x4c  Code  Gb  timac_rom_PATCH.symbols [1]
+macAssocDataReqComplete {Abs}
+                        0x10011531    0x60  Code  Gb  timac_rom_PATCH.symbols [1]
+macAssocDataRxInd {Abs}
+                        0x100116b9    0x7a  Code  Gb  timac_rom_PATCH.symbols [1]
+macAssocFailed {Abs}    0x10011659    0x42  Code  Gb  timac_rom_PATCH.symbols [1]
+macAssocFrameResponseTimeout {Abs}
+                        0x10011629    0x2e  Code  Gb  timac_rom_PATCH.symbols [1]
+macAssocRxDisassoc {Abs}
+                        0x1001169d    0x1c  Code  Gb  timac_rom_PATCH.symbols [1]
+macAssociateCnf {Abs}   0x10011329    0x36  Code  Gb  timac_rom_PATCH.symbols [1]
+macAutoPendAddSrcMatchTableEntry {Abs}
+                        0x1001006d    0xa4  Code  Gb  timac_rom_PATCH.symbols [1]
+macAutoPendMaintainSrcMatchTable {Abs}
+                        0x1000ffcd    0xa0  Code  Gb  timac_rom_PATCH.symbols [1]
+macAutoPoll {Abs}       0x10010f9d    0xfe  Code  Gb  timac_rom_PATCH.symbols [1]
+macBackoffSetupPwrMgmt  0x0001b2bd    0x26  Code  Gb  mac_backoff_timer.o [2]
+macBackoffTimerCancelTrigger
+                        0x0001b3c3    0x1e  Code  Gb  mac_backoff_timer.o [2]
+macBackoffTimerCompareIsr
+                        0x0001b3e5    0x16  Code  Gb  mac_backoff_timer.o [2]
+macBackoffTimerCount    0x0001b369    0x20  Code  Gb  mac_backoff_timer.o [2]
+macBackoffTimerEventHandler
+                        0x0001b08d    0xf6  Code  Lc  mac_backoff_timer.o [2]
+macBackoffTimerEvents   0x20004879     0x1  Data  Lc  mac_backoff_timer.o [2]
+macBackoffTimerGetTrigger
+                        0x0001b389     0x6  Code  Gb  mac_backoff_timer.o [2]
+macBackoffTimerICallPwrNotify
+                        0x0001b1a1    0x56  Code  Lc  mac_backoff_timer.o [2]
+macBackoffTimerICallPwrNotifyData
+                        0x200049b4     0x4  Data  Lc  mac_backoff_timer.o [2]
+macBackoffTimerICallTimerCback
+                        0x0001b183    0x1e  Code  Lc  mac_backoff_timer.o [2]
+macBackoffTimerICallTimerID
+                        0x2000488c     0x4  Data  Lc  mac_backoff_timer.o [2]
+macBackoffTimerImpending
+                        0x20004878     0x1  Data  Gb  mac_backoff_timer.o [2]
+macBackoffTimerInit     0x0001b2e3    0x54  Code  Gb  mac_backoff_timer.o [2]
+macBackoffTimerPeriodIsr
+                        0x0001b401    0x52  Code  Gb  mac_backoff_timer.o [2]
+macBackoffTimerRealign  0x0001b3e1     0x4  Code  Gb  mac_backoff_timer.o [2]
+macBackoffTimerReset    0x0001b337     0x2  Code  Gb  mac_backoff_timer.o [2]
+macBackoffTimerRollover
+                        0x2000487c     0x4  Data  Gb  mac_backoff_timer.o [2]
+macBackoffTimerRolloverCallback {Abs}
+                        0x10012fd1    0x52  Code  Gb  timac_rom_PATCH.symbols [1]
+macBackoffTimerSetCount
+                        0x0001b367     0x2  Code  Gb  mac_backoff_timer.o [2]
+macBackoffTimerSetRollover
+                        0x0001b339    0x2e  Code  Gb  mac_backoff_timer.o [2]
+macBackoffTimerSetTrigger
+                        0x0001b38f    0x1e  Code  Gb  mac_backoff_timer.o [2]
+macBackoffTimerTriggerCallback {Abs}
+                        0x10012f31    0x70  Code  Gb  timac_rom_PATCH.symbols [1]
+macBackoffTimerUpdateWakeup
+                        0x0001b1fd    0xc0  Code  Lc  mac_backoff_timer.o [2]
+macBeaconBattLifeCallback {Abs}
+                        0x10012365     0xa  Code  Gb  timac_rom_PATCH.symbols [1]
+macBeaconCheckSched {Abs}
+                        0x10013651    0x24  Code  Gb  timac_rom_PATCH.symbols [1]
+macBeaconCheckStartTime {Abs}
+                        0x100120b5    0x5c  Code  Gb  timac_rom_PATCH.symbols [1]
+macBeaconCheckTxTime {Abs}
+                        0x100136b1    0x5e  Code  Gb  timac_rom_PATCH.symbols [1]
+macBeaconClearIndirect {Abs}
+                        0x10012505    0x24  Code  Gb  timac_rom_PATCH.symbols [1]
+macBeaconInit {Abs}     0x10013575    0x2c  Code  Gb  timac_rom_PATCH.symbols [1]
+macBeaconPeriodCallback {Abs}
+                        0x10012179    0x3a  Code  Gb  timac_rom_PATCH.symbols [1]
+macBeaconPrepareCallback {Abs}
+                        0x10012225    0x5c  Code  Gb  timac_rom_PATCH.symbols [1]
+macBeaconRequeue {Abs}  0x10013675    0x3c  Code  Gb  timac_rom_PATCH.symbols [1]
+macBeaconReset {Abs}    0x100135a1    0x14  Code  Gb  timac_rom_PATCH.symbols [1]
+macBeaconSchedRequested {Abs}
+                        0x100124cd    0x2c  Code  Gb  timac_rom_PATCH.symbols [1]
+macBeaconSetPrepareTime {Abs}
+                        0x10012089    0x2c  Code  Gb  timac_rom_PATCH.symbols [1]
+macBeaconSetSched {Abs}
+                        0x100135b5    0x9c  Code  Gb  timac_rom_PATCH.symbols [1]
+macBeaconSetupBroadcast {Abs}
+                        0x10012449    0x56  Code  Gb  timac_rom_PATCH.symbols [1]
+macBeaconSetupCap {Abs}
+                        0x10013711    0x50  Code  Gb  timac_rom_PATCH.symbols [1]
+macBeaconStartContinue {Abs}
+                        0x100122c9    0x9a  Code  Gb  timac_rom_PATCH.symbols [1]
+macBeaconStartFrameResponseTimer {Abs}
+                        0x10011189    0x4e  Code  Gb  timac_rom_PATCH.symbols [1]
+macBeaconStopTrack {Abs}
+                        0x10010acd    0x40  Code  Gb  timac_rom_PATCH.symbols [1]
+macBeaconSyncLoss {Abs}
+                        0x10010b55    0x6e  Code  Gb  timac_rom_PATCH.symbols [1]
+macBeaconTxCallback {Abs}
+                        0x100121b5    0x6e  Code  Gb  timac_rom_PATCH.symbols [1]
+macBgCmdDoneIsr         0x0001bba7    0x22  Code  Gb  mac_rx.o [2]
+macBlacklistChecking {Abs}
+                        0x100102c9    0x88  Code  Gb  timac_rom_PATCH.symbols [1]
+macBroadcastPendCallback {Abs}
+                        0x10010ac1     0xc  Code  Gb  timac_rom_PATCH.symbols [1]
+macBuildAssociateReq {Abs}
+                        0x10011381    0x58  Code  Gb  timac_rom_PATCH.symbols [1]
+macBuildAssociateRsp {Abs}
+                        0x1000e0c1    0x84  Code  Gb  timac_rom_PATCH.symbols [1]
+macBuildBeacon {Abs}    0x1000e2a5   0x12c  Code  Gb  timac_rom_PATCH.symbols [1]
+macBuildBeaconNotifyInd {Abs}
+                        0x1000f195    0xbe  Code  Gb  timac_rom_PATCH.symbols [1]
+macBuildCommonReq {Abs}
+                        0x1000f031    0x6c  Code  Gb  timac_rom_PATCH.symbols [1]
+macBuildDataFrame {Abs}
+                        0x1000fab1    0x4a  Code  Gb  timac_rom_PATCH.symbols [1]
+macBuildDisassociateReq {Abs}
+                        0x1000f135    0x60  Code  Gb  timac_rom_PATCH.symbols [1]
+macBuildEnhanceBeaconReq {Abs}
+                        0x1000f09d    0x96  Code  Gb  timac_rom_PATCH.symbols [1]
+macBuildHeader {Abs}    0x1000edf5   0x23c  Code  Gb  timac_rom_PATCH.symbols [1]
+macBuildPendAddr {Abs}  0x1000e1e5    0xc0  Code  Gb  timac_rom_PATCH.symbols [1]
+macBuildRealign {Abs}   0x1000e145    0x88  Code  Gb  timac_rom_PATCH.symbols [1]
+macCanSleep             0x0001cb2b    0x28  Code  Gb  mac_sleep.o [2]
+macCbackForEvent {Abs}  0x100125c9    0x8a  Code  Gb  timac_rom_PATCH.symbols [1]
+macCcmStarInverseTransform {Abs}
+                        0x10010549    0xb8  Code  Gb  timac_rom_PATCH.symbols [1]
+macCcmStarTransform {Abs}
+                        0x10010959    0xe6  Code  Gb  timac_rom_PATCH.symbols [1]
+macCfg                  0x0001ce28     0x8  Data  Gb  mac_cfg.o [2]
+macCheckCommnadDone     0x0001a2e5    0x14  Code  Gb  mac.o [2]
+macCheckPendAddr {Abs}  0x10010f4d    0x50  Code  Gb  timac_rom_PATCH.symbols [1]
+macCheckSched {Abs}     0x1000fafd    0x18  Code  Gb  timac_rom_PATCH.symbols [1]
+macCommStatusInd {Abs}  0x1000f2cd    0xde  Code  Gb  timac_rom_PATCH.symbols [1]
+macConflictSyncLossInd {Abs}
+                        0x1000f57d    0x1e  Code  Gb  timac_rom_PATCH.symbols [1]
+macCoordAddrCmp {Abs}   0x1000ed85    0x2c  Code  Gb  timac_rom_PATCH.symbols [1]
+macCoordDestAddrCmp {Abs}
+                        0x1000edb1    0x42  Code  Gb  timac_rom_PATCH.symbols [1]
+macCoordReset {Abs}     0x1000e005    0xba  Code  Gb  timac_rom_PATCH.symbols [1]
+macCsmaCaCmd            0x20004840    0x20  Data  Gb  mac.o [2]
+macDataReset {Abs}      0x1000f7bd    0x66  Code  Gb  timac_rom_PATCH.symbols [1]
+macDataRxInd {Abs}      0x1000fee5     0xc  Code  Gb  timac_rom_PATCH.symbols [1]
+macDataRxMemAlloc {Abs}
+                        0x1000f93d    0x22  Code  Gb  timac_rom_PATCH.symbols [1]
+macDataRxMemFree {Abs}  0x1000f961    0x12  Code  Gb  timac_rom_PATCH.symbols [1]
+macDataSend {Abs}       0x1000fe65     0xa  Code  Gb  timac_rom_PATCH.symbols [1]
+macDataTxComplete {Abs}
+                        0x1000fb21    0x62  Code  Gb  timac_rom_PATCH.symbols [1]
+macDataTxDelayCallback {Abs}
+                        0x1000ffc1     0xa  Code  Gb  timac_rom_PATCH.symbols [1]
+macDataTxEnqueue {Abs}  0x1000fdd1    0x94  Code  Gb  timac_rom_PATCH.symbols [1]
+macDataTxSend {Abs}     0x1000fcc5   0x10c  Code  Gb  timac_rom_PATCH.symbols [1]
+macDataTxTimeAvailable {Abs}
+                        0x1000faa1    0x10  Code  Gb  timac_rom_PATCH.symbols [1]
+macDefaultAction {Abs}  0x1000f275    0x18  Code  Gb  timac_rom_PATCH.symbols [1]
+macDestAddrCmp {Abs}    0x1000ecf5    0x40  Code  Gb  timac_rom_PATCH.symbols [1]
+macDestSAddrCmp {Abs}   0x1000ed35    0x50  Code  Gb  timac_rom_PATCH.symbols [1]
+macDeviceDescriptorLookup {Abs}
+                        0x10010271    0x56  Code  Gb  timac_rom_PATCH.symbols [1]
+macDeviceReset {Abs}    0x1001125d    0xca  Code  Gb  timac_rom_PATCH.symbols [1]
+macDisassocComplete {Abs}
+                        0x1000f41d    0x58  Code  Gb  timac_rom_PATCH.symbols [1]
+macEventLoop {Abs}      0x100127dd   0x1aa  Code  Gb  timac_rom_PATCH.symbols [1]
+macExecute {Abs}        0x1001268d    0x56  Code  Gb  timac_rom_PATCH.symbols [1]
+macFgCmdDoneIsr         0x0001bda3    0xa8  Code  Gb  mac_tx.o [2]
+macFrameDuration {Abs}  0x1000f8a1    0x44  Code  Gb  timac_rom_PATCH.symbols [1]
+macGenericRadioCmd      0x00019eef    0x20  Code  Lc  mac.o [2]
+macGetCoordAddress {Abs}
+                        0x1000ecb5    0x26  Code  Gb  timac_rom_PATCH.symbols [1]
+macGetMyAddrMode {Abs}  0x1000ecdd    0x16  Code  Gb  timac_rom_PATCH.symbols [1]
+macGetRadioTxPowerReg   0x0001ae43    0x3e  Code  Gb  mac_radio.o [2]
+macIncomingFrameSecurity {Abs}
+                        0x10010609   0x158  Code  Gb  timac_rom_PATCH.symbols [1]
+macIncomingFrameSecurityMaterialRetrieval {Abs}
+                        0x10010359   0x1b6  Code  Gb  timac_rom_PATCH.symbols [1]
+macIncomingKeyUsagePolicyChecking {Abs}
+                        0x10010511    0x36  Code  Gb  timac_rom_PATCH.symbols [1]
+macIncomingNonSlottedTx {Abs}
+                        0x10010b0d    0x48  Code  Gb  timac_rom_PATCH.symbols [1]
+macIncomingSecurityLevelChecking {Abs}
+                        0x100101ed    0x84  Code  Gb  timac_rom_PATCH.symbols [1]
+macIndirectExpire {Abs}
+                        0x1000e4ad    0xda  Code  Gb  timac_rom_PATCH.symbols [1]
+macIndirectMark {Abs}   0x1000e3d1    0x56  Code  Gb  timac_rom_PATCH.symbols [1]
+macIndirectRequeueFrame {Abs}
+                        0x1000e5f5    0x64  Code  Gb  timac_rom_PATCH.symbols [1]
+macIndirectSend {Abs}   0x1000e429    0x82  Code  Gb  timac_rom_PATCH.symbols [1]
+macIndirectTxFrame {Abs}
+                        0x1000e589    0x64  Code  Gb  timac_rom_PATCH.symbols [1]
+macKeyDescriptorLookup {Abs}
+                        0x1001016d    0x7e  Code  Gb  timac_rom_PATCH.symbols [1]
+macKeySourceLen {Abs}   0x10010abc     0x4  Data  Gb  timac_rom_PATCH.symbols [1]
+macLowLevelBufferInit   0x0001a561     0xe  Code  Gb  mac_low_level.o [2]
+macLowLevelDiags        0x0001a5d9     0x2  Code  Gb  mac_low_level.o [2]
+macLowLevelInit         0x0001a50d    0x54  Code  Gb  mac_low_level.o [2]
+macLowLevelReset        0x0001a56f    0x10  Code  Gb  mac_low_level.o [2]
+macLowLevelResume       0x0001a57f     0x4  Code  Gb  mac_low_level.o [2]
+macLowLevelYield        0x0001a583    0x32  Code  Gb  mac_low_level.o [2]
+macMainReserve {Abs}    0x10012989     0xe  Code  Gb  timac_rom_PATCH.symbols [1]
+macMainReset {Abs}      0x10012569    0x4a  Code  Gb  timac_rom_PATCH.symbols [1]
+macMcuInit              0x00017c65    0x44  Code  Gb  mac_mcu.o [2]
+macMcuOverflowCapture   0x00017cd7    0x10  Code  Gb  mac_mcu.o [2]
+macMcuOverflowSetCompare
+                        0x00017ce7    0x36  Code  Gb  mac_mcu.o [2]
+macMcuOverflowSetPeriod
+                        0x00017d1d    0x34  Code  Gb  mac_mcu.o [2]
+macMcuRandomByte        0x00017ca9     0xa  Code  Gb  mac_mcu.o [2]
+macMcuRandomWord        0x00017cb3     0xa  Code  Gb  mac_mcu.o [2]
+macMcuRecordMaxRssiStart
+                        0x00017d5b    0x20  Code  Gb  mac_mcu.o [2]
+macMcuRecordMaxRssiStop
+                        0x00017d7b     0x8  Code  Gb  mac_mcu.o [2]
+macMcuTimerCapture      0x00017cbd    0x1a  Code  Gb  mac_mcu.o [2]
+macMemReadRam {Abs}     0x10013b79    0x10  Code  Gb  timac_rom_PATCH.symbols [1]
+macMemReadRamByte {Abs}
+                        0x10013b61     0x6  Code  Gb  timac_rom_PATCH.symbols [1]
+macMemWriteRam {Abs}    0x10013b69    0x10  Code  Gb  timac_rom_PATCH.symbols [1]
+macMgmtReset {Abs}      0x1000ec45    0x6e  Code  Gb  timac_rom_PATCH.symbols [1]
+macNoAction {Abs}       0x1000f261     0x2  Code  Gb  timac_rom_PATCH.symbols [1]
+macOutgoingFrameKeyRetrieval {Abs}
+                        0x10010769   0x118  Code  Gb  timac_rom_PATCH.symbols [1]
+macOutgoingFrameSecurity {Abs}
+                        0x10010881    0xd8  Code  Gb  timac_rom_PATCH.symbols [1]
+macOutgoingNonSlottedTx {Abs}
+                        0x100124a1    0x2c  Code  Gb  timac_rom_PATCH.symbols [1]
+macPanConflictComplete {Abs}
+                        0x1001193d     0xa  Code  Gb  timac_rom_PATCH.symbols [1]
+macPanCoordinator {Abs}
+                        0x20004e54     0x1  Data  Gb  timac_rom_PATCH.symbols [1]
+macPendAddrLen {Abs}    0x1000e1cd    0x16  Code  Gb  timac_rom_PATCH.symbols [1]
+macPhyChannel           0x200049a4     0x1  Data  Gb  mac_radio.o [2]
+macPhyTxPower           0x200049a6     0x2  Data  Gb  mac_radio.o [2]
+macPib {Abs}            0x20004c4c    0x6c  Data  Gb  timac_rom_PATCH.symbols [1]
+macPibIndex {Abs}       0x10013299    0x1e  Code  Gb  timac_rom_PATCH.symbols [1]
+macPibReset {Abs}       0x10013271    0x26  Code  Gb  timac_rom_PATCH.symbols [1]
+macPollCnf {Abs}        0x10011361    0x1e  Code  Gb  timac_rom_PATCH.symbols [1]
+macPollDataReqComplete {Abs}
+                        0x10011791    0x4c  Code  Gb  timac_rom_PATCH.symbols [1]
+macPollDataRxInd {Abs}  0x100117dd    0x6c  Code  Gb  timac_rom_PATCH.symbols [1]
+macPollFrameResponseTimeout {Abs}
+                        0x10011849    0x46  Code  Gb  timac_rom_PATCH.symbols [1]
+macPollRxAssocRsp {Abs}
+                        0x100118b9    0x1e  Code  Gb  timac_rom_PATCH.symbols [1]
+macPollRxDisassoc {Abs}
+                        0x10011891    0x28  Code  Gb  timac_rom_PATCH.symbols [1]
+macPowerDownCmd         0x0001a0d7    0x24  Code  Gb  mac.o [2]
+macPrevPeriodRatCount   0x20004880     0x4  Data  Gb  mac_backoff_timer.o [2]
+macPwrReset {Abs}       0x1001399d     0x8  Code  Gb  timac_rom_PATCH.symbols [1]
+macPwrVote {Abs}        0x100139f9    0x4a  Code  Gb  timac_rom_PATCH.symbols [1]
+macRATValue             0x20004888     0x4  Data  Lc  mac_backoff_timer.o [2]
+macRadioComputeLQI      0x0001b015     0x2  Code  Gb  mac_radio.o [2]
+macRadioConfig          0x20004938     0x4  Data  Gb  mac.o [2]
+macRadioEnergyDetectStart
+                        0x0001af9f     0x4  Code  Gb  mac_radio.o [2]
+macRadioEnergyDetectStop
+                        0x0001afa3    0x14  Code  Gb  mac_radio.o [2]
+macRadioInit            0x0001adf9    0x14  Code  Gb  mac_radio.o [2]
+macRadioRandomByte      0x0001ae0d     0x4  Code  Gb  mac_radio.o [2]
+macRadioSendCsmaCaCmd   0x0001bfe5     0xc  Code  Gb  mac_csma.o [4]
+macRadioSetChannel      0x0001aeb3    0x30  Code  Gb  mac_radio.o [2]
+macRadioSetIEEEAddr     0x0001ae27     0xa  Code  Gb  mac_radio.o [2]
+macRadioSetPanCoordinator
+                        0x0001ae11     0xe  Code  Gb  mac_radio.o [2]
+macRadioSetPanID        0x0001ae1f     0x2  Code  Gb  mac_radio.o [2]
+macRadioSetShortAddr    0x0001ae21     0x6  Code  Gb  mac_radio.o [2]
+macRadioSetTxPower      0x0001ae31    0x12  Code  Gb  mac_radio.o [2]
+macRadioStartScan       0x0001af3d    0x4e  Code  Gb  mac_radio.o [2]
+macRadioStopScan        0x0001af8b     0xe  Code  Gb  mac_radio.o [2]
+macRadioTxGoCsma        0x0001bf95     0xe  Code  Gb  mac_radio_tx.o [2]
+macRadioTxGoGreenPower  0x0001bfd5     0x2  Code  Gb  mac_radio_tx.o [2]
+macRadioTxGoSlotted     0x0001bfc5     0xc  Code  Gb  mac_radio_tx.o [2]
+macRadioTxGoSlottedCsma
+                        0x0001bfa3    0x1e  Code  Gb  mac_radio_tx.o [2]
+macRadioTxPrepCsmaSlotted
+                        0x0001bf8f     0x6  Code  Gb  mac_radio_tx.o [2]
+macRadioTxPrepCsmaUnslotted
+                        0x0001bf89     0x6  Code  Gb  mac_radio_tx.o [2]
+macRadioTxPrepGreenPower
+                        0x0001bfd1     0x4  Code  Gb  mac_radio_tx.o [2]
+macRadioTxPrepSlotted   0x0001bfc1     0x4  Code  Gb  mac_radio_tx.o [2]
+macRadioUpdateChannel   0x0001aee9    0x54  Code  Gb  mac_radio.o [2]
+macRadioUpdateTxPower   0x0001ae81    0x32  Code  Gb  mac_radio.o [2]
+macRatChanA             0x20004934     0x1  Data  Gb  mac.o [2]
+macRatChanB             0x20004935     0x1  Data  Gb  mac.o [2]
+macRatChanCBack_A       0x0001a259     0x4  Code  Gb  mac.o [2]
+macRatChanCBack_B       0x0001a25d     0x4  Code  Gb  mac.o [2]
+macRxAckCmd             0x200048c0    0x14  Data  Gb  mac.o [2]
+macRxAckCmdValues       0x0001a474    0x14  Data  Gb  mac.o [2]
+macRxAckTxDoneCallback  0x0001bb77    0x12  Code  Gb  mac_rx.o [2]
+macRxActive             0x20004894     0x1  Data  Gb  mac_rx.o [2]
+macRxAddrLen            0x0001bbfc     0x4  Data  Lc  mac_rx.o [2]
+macRxAssocRsp {Abs}     0x10011591    0x98  Code  Gb  timac_rom_PATCH.symbols [1]
+macRxAssociateReq {Abs}
+                        0x1000e659    0x52  Code  Gb  timac_rom_PATCH.symbols [1]
+macRxBeacon {Abs}       0x1000f4dd    0xa0  Code  Gb  timac_rom_PATCH.symbols [1]
+macRxBeaconCritical {Abs}
+                        0x10010d75   0x172  Code  Gb  timac_rom_PATCH.symbols [1]
+macRxBeaconReq {Abs}    0x1000e9dd    0x38  Code  Gb  timac_rom_PATCH.symbols [1]
+macRxCheckMACPendingCallback {Abs}
+                        0x1000f90d    0x2e  Code  Gb  timac_rom_PATCH.symbols [1]
+macRxCheckPendingCallback {Abs}
+                        0x1000f8e5    0x26  Code  Gb  timac_rom_PATCH.symbols [1]
+macRxCompleteCallback {Abs}
+                        0x1000f975   0x12a  Code  Gb  timac_rom_PATCH.symbols [1]
+macRxCoordRealign {Abs}
+                        0x100118d9    0x64  Code  Gb  timac_rom_PATCH.symbols [1]
+macRxDataEntryOffset    0x20004897     0x1  Data  Gb  mac_rx.o [2]
+macRxDataEntryQueue     0x200048a0     0x4  Data  Gb  mac_rx.o [2]
+macRxDataReq            0x0001cced    0x74  Code  Gb  mac_coord_PATCH.o [2]
+macRxDisable            0x0001b4f9    0x20  Code  Gb  mac_rx_onoff.o [2]
+macRxDisassoc {Abs}     0x1000f475    0x66  Code  Gb  timac_rom_PATCH.symbols [1]
+macRxEdScan             0x20004750    0x3c  Data  Gb  mac.o [2]
+macRxEnable             0x0001b4ad    0x2a  Code  Gb  mac_rx_onoff.o [2]
+macRxEnableFlags        0x200049e3     0x1  Data  Gb  mac_rx_onoff.o [2]
+macRxEnhancedBeaconReq {Abs}
+                        0x1000ea15    0x9a  Code  Gb  timac_rom_PATCH.symbols [1]
+macRxFilter             0x20004895     0x1  Data  Gb  mac_rx.o [2]
+macRxFrameIsr           0x0001b6cb    0x1a  Code  Gb  mac_rx.o [2]
+macRxHaltCleanup        0x0001b667    0x64  Code  Gb  mac_rx.o [2]
+macRxHardDisable        0x0001b521    0x1c  Code  Gb  mac_rx_onoff.o [2]
+macRxInit               0x0001b635    0x28  Code  Gb  mac_rx.o [2]
+macRxNokIsr             0x0001bb5d     0x6  Code  Gb  mac_rx.o [2]
+macRxOff                0x0001b5a3    0x30  Code  Gb  mac_rx_onoff.o [2]
+macRxOffRequest         0x0001b557    0x28  Code  Gb  mac_rx_onoff.o [2]
+macRxOn                 0x0001b58b    0x18  Code  Gb  mac_rx_onoff.o [2]
+macRxOnFlag             0x200049e2     0x1  Data  Gb  mac_rx_onoff.o [2]
+macRxOnOffInit          0x0001b4a1     0xc  Code  Gb  mac_rx_onoff.o [2]
+macRxOnRequest          0x0001b53d    0x14  Code  Gb  mac_rx_onoff.o [2]
+macRxOrphan {Abs}       0x1000e6e9    0x3c  Code  Gb  timac_rom_PATCH.symbols [1]
+macRxOutgoingAckFlag    0x20004896     0x1  Data  Gb  mac_rx.o [2]
+macRxOutput             0x200048d4    0x10  Data  Gb  mac.o [2]
+macRxPanConflict {Abs}  0x1000eb49    0x12  Code  Gb  timac_rom_PATCH.symbols [1]
+macRxRadioPowerUpInit   0x0001b665     0x2  Code  Gb  mac_rx.o [2]
+macRxSoftEnable         0x0001b4d7    0x1a  Code  Gb  mac_rx_onoff.o [2]
+macSavedPanID           0x200049e0     0x2  Data  Lc  mac_radio.o [2]
+macScanCnfInit {Abs}    0x10012a21    0x1a  Code  Gb  timac_rom_PATCH.symbols [1]
+macScanComplete {Abs}   0x10012e29    0x44  Code  Gb  timac_rom_PATCH.symbols [1]
+macScanFailedInProgress {Abs}
+                        0x10012e6d    0x24  Code  Gb  timac_rom_PATCH.symbols [1]
+macScanNextChan {Abs}   0x10012b0d   0x128  Code  Gb  timac_rom_PATCH.symbols [1]
+macScanRxBeacon {Abs}   0x10012c91    0xd4  Code  Gb  timac_rom_PATCH.symbols [1]
+macScanRxCoordRealign {Abs}
+                        0x10012d6d    0xbc  Code  Gb  timac_rom_PATCH.symbols [1]
+macScanStartTimer {Abs}
+                        0x10012c3d    0x54  Code  Gb  timac_rom_PATCH.symbols [1]
+macSecCpy {Abs}         0x1000f255     0xc  Code  Gb  timac_rom_PATCH.symbols [1]
+macSecurityPibIndex {Abs}
+                        0x100119e5    0x12  Code  Gb  timac_rom_PATCH.symbols [1]
+macSecurityPibReset {Abs}
+                        0x100119c9    0x1a  Code  Gb  timac_rom_PATCH.symbols [1]
+macSendDataMsg {Abs}    0x1001273d    0x90  Code  Gb  timac_rom_PATCH.symbols [1]
+macSendEdCmd            0x00019fad     0x6  Code  Gb  mac.o [2]
+macSendMsg {Abs}        0x100126e5    0x58  Code  Gb  timac_rom_PATCH.symbols [1]
+macSendReceiveCmd       0x00019f5b    0x52  Code  Gb  mac.o [2]
+macSetEvent {Abs}       0x100125b5    0x14  Code  Gb  timac_rom_PATCH.symbols [1]
+macSetSched {Abs}       0x1000fb15     0xa  Code  Gb  timac_rom_PATCH.symbols [1]
+macSetTxPowerVal        0x0001a189    0x1e  Code  Gb  mac.o [2]
+macSetUserConfig        0x0001a261     0x8  Code  Gb  mac.o [2]
+macSetupCsmaCaCmdValues
+                        0x0001a444    0x20  Data  Gb  mac.o [2]
+macSetupCsmaCaTxCmd     0x00019fb3    0x48  Code  Gb  mac.o [2]
+macSetupEdCmd           0x0001a049    0x18  Code  Gb  mac.o [2]
+macSetupEdCmdValues     0x0001a42c    0x18  Data  Gb  mac.o [2]
+macSetupGreenPowerTxCmd
+                        0x00019ffd    0x28  Code  Gb  mac.o [2]
+macSetupMailbox         0x0001a1a7    0x28  Code  Gb  mac.o [2]
+macSetupRATChanCompare  0x0001a237    0x20  Code  Gb  mac.o [2]
+macSetupRadio           0x0001a061    0x70  Code  Gb  mac.o [2]
+macSetupReceiveCmd      0x00019f45    0x16  Code  Gb  mac.o [2]
+macSetupReceiveCmdValues
+                        0x0001a3f0    0x3c  Data  Gb  mac.o [2]
+macSetupRfHal           0x0001a1cf    0x68  Code  Gb  mac.o [2]
+macSetupRxAckCmd        0x0001a025    0x18  Code  Gb  mac.o [2]
+macSetupRxAckSeqNo      0x0001a043     0x6  Code  Gb  mac.o [2]
+macSetupSlottedTxCmd    0x00019ffb     0x2  Code  Gb  mac.o [2]
+macSleep                0x0001cac5    0x66  Code  Gb  mac_sleep.o [2]
+macSleepState           0x200042be     0x1  Data  Gb  mac_sleep.o [2]
+macSleepWakeUp          0x0001ca9d    0x28  Code  Gb  mac_sleep.o [2]
+macSrcExtAddrList       0x20004420   0x108  Data  Gb  mac.o [2]
+macSrcMatchCheckSrcAddr
+                        0x00017af3    0x80  Code  Lc  mac_autopend.o [2]
+macSrcMatchGetEnableBit
+                        0x00017b9f     0xe  Code  Lc  mac_autopend.o [2]
+macSrcMatchIsAckAllPending
+                        0x200049aa     0x1  Data  Gb  mac_autopend.o [2]
+macSrcMatchIsEnabled    0x200049e6     0x1  Data  Gb  mac_autopend.o [2]
+macSrcMatchSetEnableBit
+                        0x00017b73    0x2c  Code  Lc  mac_autopend.o [2]
+macSrcResIndex          0x200049ab     0x1  Data  Gb  mac_autopend.o [2]
+macSrcShortAddrList     0x20004528    0x88  Data  Gb  mac.o [2]
+macStartBeaconPrepareCallback {Abs}
+                        0x10012281    0x46  Code  Gb  timac_rom_PATCH.symbols [1]
+macStartBegin {Abs}     0x1000e8b1    0x64  Code  Gb  timac_rom_PATCH.symbols [1]
+macStartBroadcastPendTimer {Abs}
+                        0x100111d9    0x48  Code  Gb  timac_rom_PATCH.symbols [1]
+macStartComplete {Abs}  0x1000e9b5    0x26  Code  Gb  timac_rom_PATCH.symbols [1]
+macStartContinue {Abs}  0x1000e98d    0x28  Code  Gb  timac_rom_PATCH.symbols [1]
+macStartFrameResponseTimer {Abs}
+                        0x100113f9    0x4a  Code  Gb  timac_rom_PATCH.symbols [1]
+macStartResponseTimer {Abs}
+                        0x100113d9    0x1e  Code  Gb  timac_rom_PATCH.symbols [1]
+macStartSetParams {Abs}
+                        0x1000e915    0x78  Code  Gb  timac_rom_PATCH.symbols [1]
+macStateIdle {Abs}      0x10012655     0xe  Code  Gb  timac_rom_PATCH.symbols [1]
+macStateIdleOrPolling {Abs}
+                        0x10012665    0x16  Code  Gb  timac_rom_PATCH.symbols [1]
+macStateScanning {Abs}  0x1001267d    0x10  Code  Gb  timac_rom_PATCH.symbols [1]
+macStopCmd              0x0001a0d1     0x6  Code  Gb  mac.o [2]
+macStopRAT              0x0001a0fb    0x38  Code  Gb  mac.o [2]
+macSyncStartRAT         0x0001a137    0x3a  Code  Gb  mac.o [2]
+macSyncTimeoutCallback {Abs}
+                        0x10010bc5    0x70  Code  Gb  timac_rom_PATCH.symbols [1]
+macSynchRadioCommand    0x00019f0f    0x36  Code  Lc  mac.o [2]
+macTaskInit {Abs}       0x100127d5     0x6  Code  Gb  timac_rom_PATCH.symbols [1]
+macTimer {Abs}          0x10013095    0x22  Code  Gb  timac_rom_PATCH.symbols [1]
+macTimerAddTimer {Abs}  0x10013025    0x42  Code  Gb  timac_rom_PATCH.symbols [1]
+macTimerAligned {Abs}   0x10013069    0x2a  Code  Gb  timac_rom_PATCH.symbols [1]
+macTimerCancel {Abs}    0x100130d5    0x40  Code  Gb  timac_rom_PATCH.symbols [1]
+macTimerGetTime {Abs}   0x1001311d     0x8  Code  Gb  timac_rom_PATCH.symbols [1]
+macTimerInit {Abs}      0x10012eb1    0x18  Code  Gb  timac_rom_PATCH.symbols [1]
+macTimerRealign {Abs}   0x10013149    0x56  Code  Gb  timac_rom_PATCH.symbols [1]
+macTimerRecalcUnaligned {Abs}
+                        0x10012fa1    0x30  Code  Gb  timac_rom_PATCH.symbols [1]
+macTimerRemoveTimer {Abs}
+                        0x100130b9    0x1a  Code  Gb  timac_rom_PATCH.symbols [1]
+macTimerSetRollover {Abs}
+                        0x100131b1    0x2e  Code  Gb  timac_rom_PATCH.symbols [1]
+macTimerStart {Abs}     0x10013125    0x24  Code  Gb  timac_rom_PATCH.symbols [1]
+macTimerSyncRollover {Abs}
+                        0x100131a1     0xe  Code  Gb  timac_rom_PATCH.symbols [1]
+macTimerUpdateBackoffTimer {Abs}
+                        0x10012ec9    0x68  Code  Gb  timac_rom_PATCH.symbols [1]
+macTrackPeriodCallback {Abs}
+                        0x10010d19    0x5a  Code  Gb  timac_rom_PATCH.symbols [1]
+macTrackStartCallback {Abs}
+                        0x10010cbd    0x5a  Code  Gb  timac_rom_PATCH.symbols [1]
+macTrackTimeoutCallback {Abs}
+                        0x10010c35    0x88  Code  Gb  timac_rom_PATCH.symbols [1]
+macTxAckIsr             0x0001be4b     0x4  Code  Gb  mac_tx.o [2]
+macTxAckNotReceivedCallback
+                        0x0001bec9    0x20  Code  Gb  mac_tx.o [2]
+macTxAckReceivedCallback
+                        0x0001be8b    0x38  Code  Gb  mac_tx.o [2]
+macTxActive             0x2000493c     0x1  Data  Gb  mac_tx.o [2]
+macTxBe                 0x2000493e     0x1  Data  Gb  mac_tx.o [2]
+macTxBeaconCompleteCallback {Abs}
+                        0x10012371    0xd6  Code  Gb  timac_rom_PATCH.symbols [1]
+macTxCmd                0x20004860    0x18  Data  Gb  mac.o [2]
+macTxCmdValues          0x0001a464    0x10  Data  Gb  mac.o [2]
+macTxCompleteCallback {Abs}
+                        0x1000fb85   0x140  Code  Gb  timac_rom_PATCH.symbols [1]
+macTxCsmaBackoffDelay   0x2000493f     0x1  Data  Gb  mac_tx.o [2]
+macTxDoneCallback       0x0001be4f    0x36  Code  Gb  mac_tx.o [2]
+macTxFrame              0x0001bc17    0xd8  Code  Gb  mac_tx.o [2]
+macTxFrameIsr           0x0001bd7d    0x26  Code  Gb  mac_tx.o [2]
+macTxFrameRetransmit    0x0001bd3b     0xa  Code  Gb  mac_tx.o [2]
+macTxGpInterframeDelay  0x20004940     0x1  Data  Gb  mac_tx.o [2]
+macTxInit               0x0001bc09     0xe  Code  Gb  mac_tx.o [2]
+macTxSlottedDelay       0x00015f3a     0x1  Data  Gb  mac_tx.o [2]
+macTxStartQueuedFrame   0x0001bd45    0x38  Code  Gb  mac_tx.o [2]
+macTxTimestampCallback  0x0001bf13    0x24  Code  Gb  mac_tx.o [2]
+macTxType               0x2000493d     0x1  Data  Gb  mac_tx.o [2]
+macUpdatePanId {Abs}    0x10010a41    0x62  Code  Gb  timac_rom_PATCH.symbols [1]
+macWriteRfRegCmd        0x0001a171    0x10  Code  Gb  mac.o [2]
+mac_msg_deallocate {Abs}
+                        0x10012999    0x42  Code  Gb  timac_rom_PATCH.symbols [1]
+manualJoin              0x20004285     0x1  Data  Lc  zstacktask.o [2]
+maxSupportedEndpoints   0x20004281     0x1  Data  Gb  zstacktask.o [2]
+mbCmdAckIsr             0x0001adbb    0x14  Code  Gb  mb_PATCH.o [2]
+mbCpe0Isr               0x0001ad57    0x1e  Code  Gb  mb_PATCH.o [2]
+mbCpe1Isr               0x0001ad75    0x1c  Code  Gb  mb_PATCH.o [2]
+mbHwIsr                 0x0001ada1    0x1a  Code  Gb  mb_PATCH.o [2]
+mbIntCbackTable {Abs}   0x20004fec    0x10  Data  Wk  mb_PATCH.o [2]
+neighborTable           0x20004630    0x70  Data  Gb  nwk_globals.o [2]
+newDevState             0x20004284     0x1  Data  Lc  zstacktask.o [2]
+nwkBuildDataCnf         0x0000fe43    0x44  Code  Gb  AddrMgr.o [4]
+nwkConvertLqiToCost     0x00011b3b    0x22  Code  Gb  AddrMgr.o [4]
+nwkDB_Add               0x000108ff    0x6c  Code  Gb  AddrMgr.o [4]
+nwkDB_CountTypes        0x0001096b    0x1e  Code  Gb  AddrMgr.o [4]
+nwkDB_CreateHdr         0x000108d9    0x26  Code  Gb  AddrMgr.o [4]
+nwkDB_DeleteRecAll      0x00010a17    0x2c  Code  Gb  AddrMgr.o [4]
+nwkDB_FindHandle        0x000109a9    0x1a  Code  Gb  AddrMgr.o [4]
+nwkDB_FindMatch         0x000109c3    0x28  Code  Gb  AddrMgr.o [4]
+nwkDB_FindNextType      0x00010989    0x20  Code  Gb  AddrMgr.o [4]
+nwkDB_RemoveFromList    0x000109f1    0x26  Code  Gb  AddrMgr.o [4]
+nwkDB_UserDataLoad      0x000115b9    0x12  Code  Gb  AddrMgr.o [4]
+nwkDataBufQueue         0x2000462c     0x4  Data  Gb  AddrMgr.o [4]
+nwkFrameCounter         0x20004970     0x4  Data  Gb  ssp.o [2]
+nwkFrameCounterChanges  0x2000496c     0x2  Data  Gb  ssp.o [2]
+nwkMsgProcs             0x0000fc84    0x38  Data  Gb  AddrMgr.o [4]
+nwkNeighborAdd          0x00011b5d    0x38  Code  Gb  AddrMgr.o [4]
+nwkNeighborCheckAddr    0x00011a09    0x56  Code  Gb  AddrMgr.o [4]
+nwkNeighborClearEntry   0x000119b5    0x18  Code  Gb  AddrMgr.o [4]
+nwkNeighborFind         0x0001190b    0x3a  Code  Gb  AddrMgr.o [4]
+nwkNeighborFindEmptySlot
+                        0x00011945    0x40  Code  Gb  AddrMgr.o [4]
+nwkNeighborFindRandom   0x00011a6f    0x8e  Code  Gb  AddrMgr.o [4]
+nwkNeighborGetLinkInfo  0x000119fd     0xc  Code  Gb  AddrMgr.o [4]
+nwkNeighborInitTable    0x000118d1    0x3a  Code  Gb  AddrMgr.o [4]
+nwkNeighborKeepPANID    0x000119cd    0x2a  Code  Gb  AddrMgr.o [4]
+nwkNeighborRemove       0x0001198d    0x1a  Code  Gb  AddrMgr.o [4]
+nwkNeighborUpdateNwkAddr
+                        0x00011afd    0x36  Code  Gb  AddrMgr.o [4]
+nwkSendMTOReq           0x200040ea     0x1  Data  Gb  AddrMgr.o [4]
+nwkStatus               0x2000417c     0x1  Data  Gb  ZDApp.o [2]
+nwkTransmissionFailures
+                        0x0001186d    0x38  Code  Gb  AddrMgr.o [4]
+nwkUseMultiCast         0x20004283     0x1  Data  Gb  zstacktask.o [2]
+nwk_BeaconFromNative    0x00010643    0x62  Code  Gb  AddrMgr.o [4]
+nwk_BeaconToNative      0x000105e9    0x5a  Code  Gb  AddrMgr.o [4]
+nwk_ExtPANIDValid       0x00011bd5    0x1c  Code  Gb  AddrMgr.o [4]
+nwk_MacDataBuffersAdd   0x00010745    0xea  Code  Gb  AddrMgr.o [4]
+nwk_MacDataBuffersDealloc
+                        0x0001083d    0x76  Code  Gb  AddrMgr.o [4]
+nwk_MacDataBuffersFull  0x00010715    0x2a  Code  Gb  AddrMgr.o [4]
+nwk_ScanJoiningOrphan   0x000103ad    0xd4  Code  Gb  AddrMgr.o [4]
+nwk_SendNextDataBuf     0x000106ef    0x26  Code  Gb  AddrMgr.o [4]
+nwk_Status              0x00016045     0x2  Code  Gb  nwk_globals.o [2]
+nwk_adjustDelay         0x00016047    0x1e  Code  Gb  nwk_globals.o [2]
+nwk_beaconPayload       0x2000415c    0x10  Data  Gb  AddrMgr.o [4]
+nwk_beaconPayloadSize   0x200040e9     0x1  Data  Gb  AddrMgr.o [4]
+nwk_broadcastReceive    0x00010a8d    0x44  Code  Gb  AddrMgr.o [4]
+nwk_broadcastSend       0x00010a43    0x4a  Code  Gb  AddrMgr.o [4]
+nwk_data_req_send       0x0000fd31   0x10a  Code  Gb  AddrMgr.o [4]
+nwk_desc_list_free      0x000105c1    0x1c  Code  Gb  AddrMgr.o [4]
+nwk_event_loop          0x0000fa81   0x200  Code  Gb  AddrMgr.o [4]
+nwk_getNetworkDesc      0x0001055d    0x50  Code  Gb  AddrMgr.o [4]
+nwk_getNwkDescList      0x000105b5     0x8  Code  Gb  AddrMgr.o [4]
+nwk_globals_init        0x00015f3d     0x6  Code  Gb  nwk_globals.o [2]
+nwk_init                0x0000fa2d    0x4c  Code  Gb  AddrMgr.o [4]
+nwk_set_poll_evt        0x0000fe87    0x2a  Code  Gb  AddrMgr.o [4]
+osalAddTimer            0x00014b75    0x3c  Code  Gb  OSAL_Timers.o [2]
+osalAdjustTimer         0x000176dd    0x4e  Code  Gb  OSAL_Clock.o [2]
+osalDeleteTimer         0x00014bc7     0x8  Code  Gb  OSAL_Timers.o [2]
+osalFindTimer           0x00014bb1    0x16  Code  Gb  OSAL_Timers.o [2]
+osalInitTasks           0x0001740d    0x3c  Code  Gb  osaltasks.o [2]
+osalTimerInit           0x00014b6d     0x8  Code  Gb  OSAL_Timers.o [2]
+osalTimerUpdate         0x00014c85    0xd2  Code  Gb  OSAL_Timers.o [2]
+osal_GetSystemClock     0x00014d73     0x6  Code  Gb  OSAL_Timers.o [2]
+osal_alien2proxy        0x00013bcf    0x2c  Code  Lc  OSAL.o [2]
+osal_bm_free            0x0001cd61    0x42  Code  Gb  osal_bufmgr.o [2]
+osal_buffer_uint32      0x00013dd5    0x14  Code  Gb  OSAL.o [2]
+osal_build_uint32       0x00013737    0x3c  Code  Gb  OSAL.o [2]
+osal_clear_event        0x00013ab9    0x30  Code  Gb  OSAL.o [2]
+osal_dispatch_entities  0x20004250     0x4  Data  Lc  OSAL.o [2]
+osal_enroll_dispatchid  0x00013777    0x10  Code  Gb  OSAL.o [2]
+osal_enroll_notasksender
+                        0x0001378d     0x8  Code  Gb  OSAL.o [2]
+osal_entity             0x200049e4     0x2  Data  Gb  OSAL.o [2]
+osal_eventloop_hook     0x20004234     0x4  Data  Gb  OSAL.o [2]
+osal_get_timeoutEx      0x00014c51    0x24  Code  Gb  OSAL_Timers.o [2]
+osal_init_system        0x00013b13    0x6a  Code  Gb  OSAL.o [2]
+osal_int_disable        0x00013af1    0x12  Code  Gb  OSAL.o [2]
+osal_isbufset           0x00013def    0x1e  Code  Gb  OSAL.o [2]
+osal_last_timestamp     0x2000423c     0x4  Data  Gb  OSAL.o [2]
+osal_max_msecs          0x20004244     0x4  Data  Gb  OSAL.o [2]
+osal_mem_alloc          0x0001363d    0x1a  Code  Gb  OSAL_MemoryICall.o [2]
+osal_mem_free           0x00013657    0x14  Code  Gb  OSAL_MemoryICall.o [2]
+osal_memcmp             0x00013707    0x1c  Code  Gb  OSAL.o [2]
+osal_memcpy             0x000136f3    0x14  Code  Gb  OSAL.o [2]
+osal_memset             0x00013723    0x14  Code  Gb  OSAL.o [2]
+osal_msec_timer_cback   0x00013c15    0x1c  Code  Lc  OSAL.o [2]
+osal_msec_timer_seq     0x2000424c     0x4  Data  Lc  OSAL.o [2]
+osal_msg_allocate       0x00013795    0x24  Code  Gb  OSAL.o [2]
+osal_msg_deallocate     0x000137b9    0x1e  Code  Gb  OSAL.o [2]
+osal_msg_dequeue        0x00013961    0x22  Code  Gb  OSAL.o [2]
+osal_msg_enqueue        0x00013931    0x24  Code  Gb  OSAL.o [2]
+osal_msg_enqueue_max    0x000139db    0x36  Code  Gb  OSAL.o [2]
+osal_msg_enqueue_push   0x00013833    0x62  Code  Lc  OSAL.o [2]
+osal_msg_extract        0x000139a7    0x26  Code  Gb  OSAL.o [2]
+osal_msg_find           0x000138fb    0x2a  Code  Gb  OSAL.o [2]
+osal_msg_push           0x0001398d    0x1a  Code  Gb  OSAL.o [2]
+osal_msg_receive        0x00013895    0x5e  Code  Gb  OSAL.o [2]
+osal_msg_send           0x000137d7    0x5c  Code  Gb  OSAL.o [2]
+osal_next_timeout       0x00014d57    0x1c  Code  Gb  OSAL_Timers.o [2]
+osal_notask_entity      0x2000422d     0x1  Data  Lc  OSAL.o [2]
+osal_nv_delete          0x00014025     0x8  Code  Gb  osal_nv.o [2]
+osal_nv_delete_ex       0x00013fc5    0x50  Code  Gb  osal_nv.o [2]
+osal_nv_item_init       0x00013e87     0xa  Code  Gb  osal_nv.o [2]
+osal_nv_item_init_ex    0x00013e31    0x56  Code  Gb  osal_nv.o [2]
+osal_nv_item_len        0x00013ebb     0x6  Code  Gb  osal_nv.o [2]
+osal_nv_item_len_ex     0x00013e91    0x2a  Code  Gb  osal_nv.o [2]
+osal_nv_read            0x00013fad     0xc  Code  Gb  osal_nv.o [2]
+osal_nv_read_ex         0x00013f1f    0x8e  Code  Gb  osal_nv.o [2]
+osal_nv_write           0x00013f13     0xc  Code  Gb  osal_nv.o [2]
+osal_nv_write_ex        0x00013ec1    0x52  Code  Gb  osal_nv.o [2]
+osal_proxy2alien        0x00013bfb    0x16  Code  Lc  OSAL.o [2]
+osal_proxy_tasks        0x2000422e     0x2  Data  Lc  OSAL.o [2]
+osal_pwrmgr_init        0x0001738f     0xc  Code  Gb  OSAL_PwrMgr.o [2]
+osal_pwrmgr_task_state  0x0001739b    0x56  Code  Gb  OSAL_PwrMgr.o [2]
+osal_qHead              0x20004230     0x4  Data  Gb  OSAL.o [2]
+osal_rand               0x00013773     0x4  Code  Gb  OSAL.o [2]
+osal_run_system         0x00013c3b   0x190  Code  Gb  OSAL.o [2]
+osal_semaphore          0x20004238     0x4  Data  Gb  OSAL.o [2]
+osal_set_event          0x00013a19    0xa0  Code  Gb  OSAL.o [2]
+osal_start_reload_timer
+                        0x00014bed    0x22  Code  Gb  OSAL_Timers.o [2]
+osal_start_system       0x00013b7d    0x52  Code  Gb  OSAL.o [2]
+osal_start_timerEx      0x00014bcf    0x1e  Code  Gb  OSAL_Timers.o [2]
+osal_stop_timerEx       0x00014c25    0x2c  Code  Gb  OSAL_Timers.o [2]
+osal_systemClock        0x20004960     0x4  Data  Lc  OSAL_Timers.o [2]
+osal_tickperiod         0x20004240     0x4  Data  Gb  OSAL.o [2]
+osal_timerid_msec_timer
+                        0x20004248     0x4  Data  Lc  OSAL.o [2]
+pAPSF_IgnoreBlock       0x20004128     0x4  Data  Gb  AddrMgr.o [4]
+pAPS_BindingTimeoutCB   0x2000410c     0x4  Data  Gb  AddrMgr.o [4]
+pAPS_DataConfirmReflect
+                        0x20004104     0x4  Data  Gb  AddrMgr.o [4]
+pAPS_DataIndReflect     0x20004108     0x4  Data  Gb  AddrMgr.o [4]
+pAPS_GetBind            0x20004100     0x4  Data  Gb  AddrMgr.o [4]
+pAPS_UnBind             0x200040fc     0x4  Data  Gb  AddrMgr.o [4]
+pAssocChildAging        0x20004138     0x4  Data  Gb  AddrMgr.o [4]
+pAssocChildTableUpdateTimeout
+                        0x2000413c     0x4  Data  Gb  AddrMgr.o [4]
+pBindInitNV             0x20004830     0x4  Data  Gb  BindingTable.o [2]
+pBindRestoreFromNV      0x20004838     0x4  Data  Gb  BindingTable.o [2]
+pBindSetDefaultNV       0x20004834     0x4  Data  Gb  BindingTable.o [2]
+pBindWriteNV            0x2000483c     0x4  Data  Gb  BindingTable.o [2]
+pEpTableHdr             0x20004288     0x4  Data  Lc  zstacktask.o [2]
+pMacDataTx {Abs}        0x20004dc8     0x4  Data  Gb  timac_rom_PATCH.symbols [1]
+pNLME_NetworkFormationConfirm
+                        0x20004264     0x4  Data  Gb  AddrMgr.o [4]
+pNwkFreqAgilityIncErrorCnt
+                        0x20004270     0x4  Data  Gb  AddrMgr.o [4]
+pNwkFreqAgilityIncTotalTx
+                        0x2000426c     0x4  Data  Gb  AddrMgr.o [4]
+pNwkFreqAgilityScanCfg  0x20004268     0x4  Data  Gb  AddrMgr.o [4]
+pNwkNotMyChildListAdd   0x20004148     0x4  Data  Gb  AddrMgr.o [4]
+pNwkNotMyChildListAging
+                        0x20004144     0x4  Data  Gb  AddrMgr.o [4]
+pNwkNotMyChildListDelete
+                        0x2000414c     0x4  Data  Gb  AddrMgr.o [4]
+pNwkNotMyChildListInit  0x20004140     0x4  Data  Gb  AddrMgr.o [4]
+pNwkNotMyChildSendLeave
+                        0x20004150     0x4  Data  Gb  AddrMgr.o [4]
+pRandomSeedCB           0x200049b8     0x4  Data  Lc  mac_mcu.o [2]
+pRxBuf                  0x200048a4     0x4  Data  Lc  mac_rx.o [2]
+pSspAesEncrypt          0x200049ac     0x4  Data  Gb  hal_aes.o [2]
+pZMac_AppCallback       0x200049d0     0x4  Data  Gb  zmac_cb.o [2]
+pZStackCfg              0x20004968     0x4  Data  Gb  osaltasks.o [2]
+patchImage              0x0001a2f8    0xe0  Data  Lc  mac.o [2]
+patchRfCore             0x00019dd9   0x102  Code  Gb  mac.o [2]
+pbindAddEntry           0x20004824     0x4  Data  Gb  BindingTable.o [2]
+pbindNumOfEntries       0x20004828     0x4  Data  Gb  BindingTable.o [2]
+pbindRemoveDev          0x2000482c     0x4  Data  Gb  BindingTable.o [2]
+pnwk_ScanJoiningOrphan  0x20004260     0x4  Data  Gb  AddrMgr.o [4]
+pnwk_ScanPANChanSelect  0x20004258     0x4  Data  Gb  AddrMgr.o [4]
+pnwk_ScanPANChanVerify  0x2000425c     0x4  Data  Gb  AddrMgr.o [4]
+prevDevState            0x2000417e     0x1  Data  Gb  ZDApp.o [2]
+processAfDataReq        0x00019b7d   0x114  Code  Lc  zstacktask.o [2]
+processAfIncomingMsgInd
+                        0x000186e1    0xb4  Code  Lc  zstacktask.o [2]
+processAfRegisterReq    0x000199eb   0x180  Code  Lc  zstacktask.o [2]
+processApsFindGroupReq  0x00018f09    0x5e  Code  Lc  zstacktask.o [2]
+processDevForceNetworkSettingsReq
+                        0x00018e6b    0x9a  Code  Lc  zstacktask.o [2]
+processDevZDOCBReq      0x00019789   0x262  Code  Lc  zstacktask.o [2]
+processSecApsLinkKeyGetReq
+                        0x00018f67    0xa6  Code  Lc  zstacktask.o [2]
+processSecApsLinkKeySetReq
+                        0x0001900d    0xd0  Code  Lc  zstacktask.o [2]
+processSysConfigReadReq
+                        0x000190f9   0x392  Code  Lc  zstacktask.o [2]
+processSysConfigWriteReq
+                        0x00019495   0x2e0  Code  Lc  zstacktask.o [2]
+processZdoBindReq       0x00019c91    0x96  Code  Lc  zstacktask.o [2]
+pwrmgr_attribute        0x20004958     0x4  Data  Gb  OSAL_PwrMgr.o [2]
+pwrmgr_initialized      0x20004954     0x1  Data  Gb  OSAL_PwrMgr.o [2]
+radioComputeED          0x0001afb7    0x32  Code  Lc  mac_radio.o [2]
+ratChanInfo {Abs}       0x20004fac    0x20  Data  Gb  timac_rom_PATCH.symbols [1]
+reflectTrack_AddNewEntry
+                        0x00011cbb    0x2a  Code  Gb  AddrMgr.o [4]
+reflectTrack_AddToEnd   0x00011d3d    0x20  Code  Gb  AddrMgr.o [4]
+reflectTrack_FindHandle
+                        0x00011d5d    0x2c  Code  Gb  AddrMgr.o [4]
+reflectTrack_GetNewEntry
+                        0x00011c91    0x2a  Code  Gb  AddrMgr.o [4]
+reflectTrack_NumEntries
+                        0x00011ce5    0x16  Code  Gb  AddrMgr.o [4]
+reflectTrack_RemoveEntry
+                        0x00011cfd    0x3e  Code  Gb  AddrMgr.o [4]
+reflectTrack_RemoveEntryNotify
+                        0x0000da19     0x4  Code  Gb  AddrMgr.o [4]
+reflectTrack_UpdateOption
+                        0x00011d89    0x2a  Code  Gb  AddrMgr.o [4]
+reflectTracking_GetMaxIndirectAdjusted
+                        0x00011c5d    0x2e  Code  Gb  AddrMgr.o [4]
+reflectTracking_GetMaxSimultaneousAdjusted
+                        0x00011c25    0x2e  Code  Gb  AddrMgr.o [4]
+reqChannel              0x200049a5     0x1  Data  Lc  mac_radio.o [2]
+reqTxPower              0x200049a8     0x2  Data  Lc  mac_radio.o [2]
+retryCnt                0x20004180     0x1  Data  Gb  ZDApp.o [2]
+rreqCounter             0x200049f8     0x1  Data  Gb  AddrMgr.o [4]
+rtDiscTable             0x20004700    0x50  Data  Gb  nwk_globals.o [2]
+rtgSrcRelayList         0x200048a8    0x18  Data  Gb  nwk_globals.o [2]
+rtgSrcTable             0x200046a0    0x60  Data  Gb  nwk_globals.o [2]
+rtgTable                0x200042e0   0x140  Data  Gb  nwk_globals.o [2]
+runtimeChannel          0x200041ac     0x4  Data  Gb  ZDApp.o [2]
+rxAddrIsr               0x0001b87d   0x130  Code  Lc  mac_rx.o [2]
+rxBuf                   0x20004890     0x4  Data  Lc  mac_rx.o [2]
+rxBufFull               0x2000489c     0x1  Data  Lc  mac_rx.o [2]
+rxDone                  0x0001bb63    0x14  Code  Lc  mac_rx.o [2]
+rxFcsIsr                0x0001ba77    0xc8  Code  Lc  mac_rx.o [2]
+rxFilter                0x2000489b     0x1  Data  Lc  mac_rx.o [2]
+rxNextLen               0x20004899     0x1  Data  Lc  mac_rx.o [2]
+rxPayloadIsr            0x0001ba4f    0x28  Code  Lc  mac_rx.o [2]
+rxPayloadLen            0x2000489a     0x1  Data  Lc  mac_rx.o [2]
+rxPostRxUpdates         0x0001bb95    0x12  Code  Lc  mac_rx.o [2]
+rxPromiscuousMode       0x20004898     0x1  Data  Gb  mac_rx.o [2]
+rxSecurityHdrIsr        0x0001b9ad    0x86  Code  Lc  mac_rx.o [2]
+rxStartIsr              0x0001b6e5   0x198  Code  Lc  mac_rx.o [2]
+sAddrCmp {Abs}          0x10013a59    0x2c  Code  Gb  timac_rom_PATCH.symbols [1]
+sAddrCpy {Abs}          0x10013ab1    0x18  Code  Gb  timac_rom_PATCH.symbols [1]
+sAddrExtCmp {Abs}       0x10013ac9    0x30  Code  Gb  timac_rom_PATCH.symbols [1]
+sAddrExtCpy {Abs}       0x10013af9     0xa  Code  Gb  timac_rom_PATCH.symbols [1]
+sAddrIden {Abs}         0x10013a85    0x2c  Code  Gb  timac_rom_PATCH.symbols [1]
+saveExtAddr             0x2000499c     0x8  Data  Gb  AddrMgr.o [4]
+savedQueuedPollRate     0x200040f0     0x2  Data  Gb  AddrMgr.o [4]
+savedResponseRate       0x200040ee     0x2  Data  Gb  AddrMgr.o [4]
+sendBeaconNotifyInd     0x000189b9    0x62  Code  Lc  zstacktask.o [2]
+sendBindRspInd          0x00018dad    0x1e  Code  Lc  zstacktask.o [2]
+sendDevPermitJoinInd    0x00018bd9    0x1a  Code  Lc  zstacktask.o [2]
+sendDevStateChangeInd   0x00018e47    0x1a  Code  Lc  zstacktask.o [2]
+sendDeviceAnnounceInd   0x00018c49    0x6c  Code  Lc  zstacktask.o [2]
+sendEndDeviceBindRspInd
+                        0x00018dcd    0x1e  Code  Lc  zstacktask.o [2]
+sendIeeeAddrRspInd      0x00018cd5    0x16  Code  Lc  zstacktask.o [2]
+sendJoinCnfInd          0x00018b25    0x3a  Code  Lc  zstacktask.o [2]
+sendLeaveInd            0x00018b89    0x3e  Code  Lc  zstacktask.o [2]
+sendMatchDescRspInd     0x00018d51    0x5a  Code  Lc  zstacktask.o [2]
+sendMgmtPermitJoinRspInd
+                        0x00018e29    0x1e  Code  Lc  zstacktask.o [2]
+sendMsgToAllCBMsgs      0x00018923    0x26  Code  Lc  zstacktask.o [2]
+sendMsgToAllCBs         0x00018901    0x22  Code  Lc  zstacktask.o [2]
+sendNwkAddrRspInd       0x00018cb5    0x16  Code  Lc  zstacktask.o [2]
+sendNwkDiscCnf          0x0001898d    0x20  Code  Lc  zstacktask.o [2]
+sendTcDeviceInd         0x00018c15    0x34  Code  Lc  zstacktask.o [2]
+sendUnbindRspInd        0x00018ded    0x1e  Code  Lc  zstacktask.o [2]
+sendZdoConcentratorInd  0x00018ac1    0x30  Code  Lc  zstacktask.o [2]
+sendZdoSrcRtgInd        0x00018a3d    0x76  Code  Lc  zstacktask.o [2]
+slow_crc16              0x0001c4e9    0x34  Code  Gb  ICall_startup.o [2]
+sspAesEncrypt           0x000178c5    0x16  Code  Gb  ssp_hash.o [2]
+sspAesEncryptHW         0x00017911    0x1c  Code  Gb  hal_aes.o [2]
+sspMMOHash              0x00017791    0xee  Code  Gb  ssp_hash.o [2]
+ssp_HW_KeyInit          0x00017909     0x6  Code  Gb  hal_aes.o [2]
+stack_main              0x00017449   0x13a  Code  Gb  osaltasks.o [2]
+startup_entry           0x0000d001    0x30  Code  Gb  ICall_startup.o [2]
+tasksArr                0x0001ce0c    0x18  Data  Gb  osaltasks.o [2]
+tasksCnt                0x0001ce24     0x1  Data  Gb  osaltasks.o [2]
+tasksEvents             0x20004964     0x4  Data  Gb  osaltasks.o [2]
+timeMSec                0x2000494c     0x4  Data  Lc  OSAL_Clock.o [2]
+timeoutValue            0x0001cc64    0x3c  Data  Gb  nwk_globals.o [2]
+timerHead               0x2000495c     0x4  Data  Gb  OSAL_Timers.o [2]
+txAckReq                0x20004942     0x1  Data  Lc  mac_tx.o [2]
+txComplete              0x0001beed    0x26  Code  Lc  mac_tx.o [2]
+txCsmaPrep              0x0001bcef    0x10  Code  Lc  mac_tx.o [2]
+txGo                    0x0001bcff    0x3c  Code  Lc  mac_tx.o [2]
+txRetransmitFlag        0x20004943     0x1  Data  Lc  mac_tx.o [2]
+txSeqn                  0x20004941     0x1  Data  Lc  mac_tx.o [2]
+validChecksum           0x0001c51d    0x2e  Code  Gb  ICall_startup.o [2]
+zaesccmAuthEncrypt      0x0001c82b    0x20  Code  Gb  zaesccm_cc2650.o [2]
+zaesccmDecryptAuth      0x0001c84b    0x1e  Code  Gb  zaesccm_cc2650.o [2]
+zdappHoldKeys           0x20004181     0x1  Data  Lc  ZDApp.o [2]
+zdoBeaconNotifyIndCB    0x000189ad     0xc  Code  Lc  zstacktask.o [2]
+zdoCBFunc               0x20004184    0x24  Data  Gb  ZDApp.o [2]
+zdoConcentratorIndCB    0x00018ab3     0xc  Code  Lc  zstacktask.o [2]
+zdoDiscCounter          0x20004178     0x1  Data  Gb  ZDApp.o [2]
+zdoJoinCnfCB            0x00018af1    0x2c  Code  Lc  zstacktask.o [2]
+zdoLeaveIndCB           0x00018b7d     0xc  Code  Lc  zstacktask.o [2]
+zdoMsgCBs               0x200049c8     0x4  Data  Gb  ZDProfile.o [2]
+zdoNwkDiscCnfCB         0x00018955    0x36  Code  Lc  zstacktask.o [2]
+zdoPermitJoinIndCB      0x00018bc7    0x10  Code  Lc  zstacktask.o [2]
+zdoSendStateChangeMsg   0x00016131    0x3e  Code  Lc  ZDObject.o [2]
+zdoSrcRtgCB             0x00018a29     0xc  Code  Lc  zstacktask.o [2]
+zdoTcDeviceIndCB        0x00018bff     0xe  Code  Lc  zstacktask.o [2]
+zdpExternalStateTaskID  0x200042a8     0x2  Data  Gb  ZDObject.o [2]
+zdpMsgProcs             0x000172d0    0x38  Data  Gb  ZDProfile.o [2]
+zdpProcessAddrReq       0x00016d4b    0xb6  Code  Gb  ZDProfile.o [2]
+zgApsAckWaitMultiplier  0x200042d3     0x1  Data  Gb  ZGlobals.o [2]
+zgApsAllowR19Sec        0x200049f2     0x1  Data  Gb  ZGlobals.o [2]
+zgApsDefaultMaxBindingTime
+                        0x200042b2     0x2  Data  Gb  ZGlobals.o [2]
+zgApsLinkKeyType        0x200042d7     0x1  Data  Gb  ZGlobals.o [2]
+zgApsMinDupRejTableSize
+                        0x200042b8     0x2  Data  Gb  ZGlobals.o [2]
+zgApsNonMemberRadius    0x200042d5     0x1  Data  Gb  ZGlobals.o [2]
+zgApsTrustCenterAddr    0x2000497c     0x8  Data  Gb  ZGlobals.o [2]
+zgApsUseExtendedPANID   0x20004984     0x8  Data  Gb  ZGlobals.o [2]
+zgApsUseInsecureJoin    0x200042d4     0x1  Data  Gb  ZGlobals.o [2]
+zgApscAckWaitDurationPolled
+                        0x200042b0     0x2  Data  Gb  ZGlobals.o [2]
+zgApscDupRejTimeoutCount
+                        0x200042d6     0x1  Data  Gb  ZGlobals.o [2]
+zgApscDupRejTimeoutInc  0x200042b6     0x2  Data  Gb  ZGlobals.o [2]
+zgApscMaxFrameRetries   0x200042d2     0x1  Data  Gb  ZGlobals.o [2]
+zgBcastDeliveryTime     0x200042cb     0x1  Data  Gb  ZGlobals.o [2]
+zgChildAgingEnable      0x200049ef     0x1  Data  Gb  ZGlobals.o [2]
+zgConcentratorDiscoveryTime
+                        0x200049ea     0x1  Data  Gb  ZGlobals.o [2]
+zgConcentratorEnable    0x200049e9     0x1  Data  Gb  ZGlobals.o [2]
+zgConcentratorRC        0x200049eb     0x1  Data  Gb  ZGlobals.o [2]
+zgConcentratorRadius    0x200042cd     0x1  Data  Gb  ZGlobals.o [2]
+zgConfigPANID           0x200042ba     0x2  Data  Gb  ZGlobals.o [2]
+zgDefaultChannelList    0x200042a4     0x4  Data  Gb  ZGlobals.o [2]
+zgDefaultRejoinBackoff  0x2000429c     0x4  Data  Gb  ZGlobals.o [2]
+zgDefaultRejoinScan     0x200042a0     0x4  Data  Gb  ZGlobals.o [2]
+zgDefaultStartingScanDuration
+                        0x200042c2     0x1  Data  Gb  ZGlobals.o [2]
+zgDeviceLogicalType     0x200042d8     0x1  Data  Gb  ZGlobals.o [2]
+zgEndDeviceConfiguration
+                        0x200049ee     0x1  Data  Gb  ZGlobals.o [2]
+zgEndDeviceKAInterval   0x200049cc     0x4  Data  Gb  ZGlobals.o [2]
+zgEndDeviceTimeoutValue
+                        0x200042d1     0x1  Data  Gb  ZGlobals.o [2]
+zgExtendedPANID         0x20004278     0x8  Data  Gb  ZGlobals.o [2]
+zgIndirectMsgTimeout    0x200042c4     0x1  Data  Gb  ZGlobals.o [2]
+zgInit                  0x000167c9    0x9e  Code  Gb  ZGlobals.o [2]
+zgInitItems             0x00016867    0x56  Code  Gb  ZGlobals.o [2]
+zgItemTable             0x00016928   0x1b8  Data  Lc  ZGlobals.o [2]
+zgMaxBcastRetires       0x200042c9     0x1  Data  Gb  ZGlobals.o [2]
+zgMaxDataRetries        0x200042c0     0x1  Data  Gb  ZGlobals.o [2]
+zgMaxPollFailureRetries
+                        0x200042c1     0x1  Data  Gb  ZGlobals.o [2]
+zgNwkCommissionedNwkAddr
+                        0x200042b4     0x2  Data  Gb  ZGlobals.o [2]
+zgNwkEndDeviceTimeoutDefault
+                        0x200042d0     0x1  Data  Gb  ZGlobals.o [2]
+zgNwkLeaveRequestAllowed
+                        0x200042cf     0x1  Data  Gb  ZGlobals.o [2]
+zgNwkMgrMinTransmissions
+                        0x200042da     0x1  Data  Gb  ZGlobals.o [2]
+zgNwkMgrMode            0x200042db     0x1  Data  Gb  ZGlobals.o [2]
+zgNwkMode               0x200042cc     0x1  Data  Gb  ZGlobals.o [2]
+zgNwkParentInformation  0x200049ed     0x1  Data  Gb  ZGlobals.o [2]
+zgNwkSrcRtgExpiryTime   0x200042ce     0x1  Data  Gb  ZGlobals.o [2]
+zgPassiveAckTimeout     0x200042ca     0x1  Data  Gb  ZGlobals.o [2]
+zgPollRate              0x20004274     0x4  Data  Gb  ZGlobals.o [2]
+zgPreConfigKeys         0x200049f0     0x1  Data  Gb  ZGlobals.o [2]
+zgQueuedPollRate        0x200042aa     0x2  Data  Gb  ZGlobals.o [2]
+zgReadStartupOptions    0x000168c9    0x1e  Code  Gb  ZGlobals.o [2]
+zgRejoinPollRate        0x200042ae     0x2  Data  Gb  ZGlobals.o [2]
+zgResponsePollRate      0x200042ac     0x2  Data  Gb  ZGlobals.o [2]
+zgRouteDiscoveryTime    0x200042c7     0x1  Data  Gb  ZGlobals.o [2]
+zgRouteExpiryTime       0x200042c8     0x1  Data  Gb  ZGlobals.o [2]
+zgRouterOffAssocCleanup
+                        0x200049ec     0x1  Data  Gb  ZGlobals.o [2]
+zgSapiEndpoint          0x200042dc     0x1  Data  Gb  ZGlobals.o [2]
+zgSecurePermitJoin      0x200042c6     0x1  Data  Gb  ZGlobals.o [2]
+zgSecurityMode          0x200042c5     0x1  Data  Gb  ZGlobals.o [2]
+zgStackProfile          0x200042c3     0x1  Data  Gb  ZGlobals.o [2]
+zgStartDelay            0x200042d9     0x1  Data  Gb  ZGlobals.o [2]
+zgUseDefaultTCLK        0x200049f1     0x1  Data  Gb  ZGlobals.o [2]
+zgWriteStartupOptions   0x000168e7    0x34  Code  Gb  ZGlobals.o [2]
+zgZdoDirectCB           0x200049f3     0x1  Data  Gb  ZGlobals.o [2]
+zigbeeXsIsMcePatchAdd   0x0001a3d8     0x8  Data  Lc  mac.o [2]
+zigbeeXsIsMcePatchDat   0x0001a3e0    0x10  Data  Lc  mac.o [2]
+zmacCBSizeTable         0x0001c770    0x14  Data  Gb  zmac_cb.o [2]
+zsProcessZDOMsgs        0x00018795    0xe0  Code  Lc  zstacktask.o [2]
+zspbPermitJoin          0x20004282     0x1  Data  Gb  zstacktask.o [2]
+
+
+[1] = D:\Development\zstack_home_1_02_02_42930\Projects\common\TIMAC_ROM_Release\03282014
+[2] = D:\Development\zstack_home_1_02_02_42930\Projects\zstack\Core\Thread\CC26xx\Coordinator\Obj
+[3] = command line
+[4] = EndDevice.a
+[5] = dl7M_tln.a
+[6] = driverlib.lib
+[7] = rt7M_tl.a
+
+  64 867 bytes of readonly  code memory
+     344 bytes of readonly  data memory
+   2 329 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
