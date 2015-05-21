@@ -67,7 +67,7 @@
  * Range: 0 - 0xFFFF
  */
 #if !defined( ZSTART_SCAN_OFF_PERIOD )
-#define ZSTART_SCAN_OFF_PERIOD 0
+#define ZSTART_SCAN_OFF_PERIOD 1
 #endif // ZSTART_SCAN_OFF_PERIOD
 
 /* Define the default number of scans to perform before joining/rejoining.

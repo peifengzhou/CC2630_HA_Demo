@@ -377,6 +377,10 @@ extern uint32 zgEndDeviceKAInterval;
 
 extern uint8 zgChildAgingEnable;
 
+#ifdef LUMI_PROJECT
+extern uint8 zgEndDeviceBindflag;
+#endif
+
 /*********************************************************************
  * APS GLOBAL VARIABLES
  */

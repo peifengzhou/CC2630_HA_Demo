@@ -1109,6 +1109,7 @@ static void processAfIncomingMsgInd( afIncomingMSGPacket_t *pkt )
  *
  * @return  none
  */
+
 static void zsProcessZDOMsgs( zdoIncomingMsg_t *inMsg )
 {
   switch ( inMsg->clusterID )
@@ -1260,6 +1261,14 @@ static void zsProcessZDOMsgs( zdoIncomingMsg_t *inMsg )
       {
         uint8 result = ZDO_ParseBindRsp( inMsg );
         sendEndDeviceBindRsp( inMsg->srcAddr.addr.shortAddr, &result );
+        #ifdef LUMI_PROJECT
+        if(result == ZDP_SUCCESS)
+        {
+          zgEndDeviceBindflag =  !zgEndDeviceBindflag;
+          osal_nv_write( ZCD_NV_END_DEV_BINDFLAG, 0,sizeof(zgEndDeviceBindflag), &zgEndDeviceBindflag );
+        }
+        #endif
+
       }
       break;
 #endif
@@ -5232,6 +5241,14 @@ static bool processSysConfigReadReq( ICall_EntityID srcEntityID, void *pMsg )
       pPtr->pRsp->has_rejoinScanDuration = TRUE;
       pPtr->pRsp->rejoinScanDuration = zgDefaultRejoinScan;
     }
+    
+    #ifdef LUMI_PROJECT
+    if ( pPtr->pReq->enddevicebindflag)
+    {
+	pPtr->pRsp->has_enddevicebindflag= TRUE;
+	pPtr->pRsp->enddevicebindflag= zgEndDeviceBindflag;
+    }
+    #endif
   }
   else
   {
@@ -5485,6 +5502,14 @@ static bool processSysConfigWriteReq( ICall_EntityID srcEntityID, void *pMsg )
     {
       ZDApp_SetRejoinScanDuration( pPtr->pReq->rejoinScanDuration );
     }
+    
+    #ifdef LUMI_PROJECT
+    if ( pPtr->pReq->has_enddevicebindflag )
+    {
+  	zgEndDeviceBindflag =  pPtr->pReq->enddevicebindflag;
+	osal_nv_write( ZCD_NV_END_DEV_BINDFLAG, 0,sizeof(zgEndDeviceBindflag), &zgEndDeviceBindflag );
+    }
+    #endif
   }
   else
   {

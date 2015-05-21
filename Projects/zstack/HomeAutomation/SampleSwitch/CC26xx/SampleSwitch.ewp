@@ -187,6 +187,7 @@
           <state>xdc_runtime_Assert_DISABLE_ALL</state>
           <state>MODULE_CC26XX_7X7</state>
           <state>TI_DRIVERS_LCD_INCLUDED</state>
+          <state>LUMI_PROJECT</state>
         </option>
         <option>
           <name>CCPreprocFile</name>

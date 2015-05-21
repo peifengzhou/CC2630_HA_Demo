@@ -794,6 +794,10 @@ typedef struct _zstack_sysconfigreadreq_t
     bool rejoinBackoffDuration;
     /** True to return rejoin scan duration */
     bool rejoinScanDuration;
+    
+    #ifdef LUMI_PROJECT
+    bool enddevicebindflag; 
+    #endif
 } zstack_sysConfigReadReq_t;
 
 /**
@@ -963,6 +967,11 @@ typedef struct _zstack_sysconfigwritereq_t
     bool has_rejoinScanDuration;
     /**  rejoin scan duration */
     uint32_t rejoinScanDuration;
+    
+    #ifdef LUMI_PROJECT
+    bool has_enddevicebindflag;
+    bool enddevicebindflag;
+    #endif
 } zstack_sysConfigWriteReq_t;
 
 /**
@@ -1168,7 +1177,11 @@ typedef struct _zstack_sysconfigreadrsp_t
     bool has_rejoinScanDuration;
     /** Rejoin scan duration */
     uint32_t rejoinScanDuration;
-
+    
+    #ifdef LUMI_PROJECT
+    bool has_enddevicebindflag;
+    bool enddevicebindflag;
+    #endif
 } zstack_sysConfigReadRsp_t;
 
 /**

@@ -258,7 +258,16 @@ extern "C"
 
 // NV Items Reserved for applications (user applications)
 // 0x0401 – 0x0FFF
-
+#ifdef LUMI_PROJECT
+#define ZCD_NV_ON_RESET_TO_FACTORY_DEFAULT	    0x0501  //reset factory flag
+#define ZCD_NV_ATTRIB_LOW_BAT_THRESHOLD		    0x0502  //low battery threshold
+#define ZCD_NV_ATTRIB_PIRSENSOR_Y2N_DELAY           0x0503
+#define ZCD_NV_ATTRIB_PIRSENSOR_N2Y_DELAY           0x0504  
+#define ZCD_NV_ATTRIB_PIRSENSOR_N2Y_THRESHOLD       0x0505 
+#define ZCD_NV_ATTRIB_PIRSENSOR_SIGNAL_THRESHOLD    0x0506
+#define ZCD_NV_END_DEV_BINDFLAG			    0x0055	 //0x0507: NV init always 0x09???
+#define ZCD_NV_RESET_STAGE		            0x0508
+#endif
 
 // ZCD_NV_STARTUP_OPTION values
 //   These are bit weighted - you can OR these together.

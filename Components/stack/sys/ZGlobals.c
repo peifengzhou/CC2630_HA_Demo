@@ -284,6 +284,10 @@ uint8 zgNwkMgrMode = ZDNWKMGR_ENABLE;
 // Simple API Endpoint
 uint8 zgSapiEndpoint = SAPI_ENDPOINT;
 
+
+#ifdef LUMI_PROJECT
+uint8 zgEndDeviceBindflag = 0;
+#endif
 /*********************************************************************
  * LOCAL VARIABLES
  */
@@ -460,6 +464,13 @@ static CONST zgItem_t zgItemTable[] =
   {
     ZCD_NV_END_DEV_CONFIGURATION, sizeof(zgEndDeviceConfiguration), &zgEndDeviceConfiguration
   },
+  
+  #ifdef LUMI_PROJECT
+  {
+    ZCD_NV_END_DEV_BINDFLAG, sizeof(zgEndDeviceBindflag), &zgEndDeviceBindflag
+  },
+  #endif
+  
 #endif // NV_INIT
   // Last item -- DO NOT MOVE IT!
   {
@@ -620,6 +631,7 @@ uint8 zgInit( void )
  *
  * @return      none
  */
+
 void zgInitItems( uint8 setDefault )
 {
   uint8  i = 0;
